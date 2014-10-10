@@ -32,26 +32,25 @@ In *Landscape Analysis and Modeling* we w
 
 # Schedule
 
-* * * * 
-
 ## Week 1: Intro to GIS and Landscape Ecology
 
 ### Day 1
+*Assignment Due: None*
 
 * Readings:
 	* None
-* Schedule: 
+* Agenda: 
 	* Introductions
 	* Logistics
 	* Lecture: Introduction to GIS and Landscape Ecology
 
 ### Day 2
-**Assignment Due: 
+*Assignment Due: *
 
 * Readings:
-	* Wiens 1989
-* Schedule: 
-	* Paper Discussion
+	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612)
+* Agenda: 
+	* Paper Discussion 
 	* Exploring QGIS
 
 		
