@@ -53,7 +53,7 @@ In *Landscape Analysis and Modeling* we w
 *Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
 
 * Readings: **Might Change to Turner 2005 Ecology**
-	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612)
+	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612) {:target="_blank"}
 * Agenda: 
 	* Discuss Wiens 1989 
 	* Notes about Free and Open Source Software (FOSS)
