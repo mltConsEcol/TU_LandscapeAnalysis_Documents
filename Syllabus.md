@@ -12,15 +12,21 @@ output: pdf_document
 ##Instructor: Michael L. Treglia
 
 ***Course Description:***
-Understanding spatial relationships across landscapes can provide critical insight into evolutionary and ecological patterns and processes. This course will focus on quantifying spatial relationships, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling connectivity across landscapes.  The course will take advantage of powerfull free and open source software for GIS and statistical analyses.
+Understanding spatial relationships across landscapes can provide critical insight into evolutionary and ecological patterns and processes, ultimately necessary for biodiversity conservation. This course will focus on quantifying spatial relationships, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling connectivity across landscapes.  The course will take advantage of powerfull free and open source software for GIS and statistical analyses.
 
-NEED TO IMPROVE THIS A LOT!!!
 
-Landscape Analysis and Modeling* will focus on understanding spatial relationships among 
- 
-| Points 	|	 Item 	|
-|:------:	|:-------:	|
-|5		|Participation| 
+###Grading: 
+
+Grades will be assigned accord
+
+|	 Item 	|Due Date	|Points		|
+|:-------:	|:-------------:|:-------------:|
+|Participation	|N/A		|		|
+|Final Project	|April XX	|		|
+|		|		|		|
+|		|		|		|
+|***Total***	|		|***100***	|
+
 
 
 * Theory/background: 
@@ -28,11 +34,10 @@ Landscape Analysis and Modeling* will focus on understanding spatial relationshi
 * What tools will be used
 In *Landscape Analysis and Modeling* we w
 
-\newpage
 
 # Schedule
 
-## Week 1: Intro to GIS and Landscape Ecology
+## Week 1: Intro to Landscape Ecology and GIS
 
 ### Day 1
 *Assignment Due: None*
@@ -42,27 +47,58 @@ In *Landscape Analysis and Modeling* we w
 * Agenda: 
 	* Introductions
 	* Logistics
-	* Lecture: Introduction to GIS and Landscape Ecology
+	* Lecture: Introduction to Landscape Ecology and GIS
 
 ### Day 2
-*Assignment Due: *
+*Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
 
-* Readings:
+* Readings: **Might Change to Turner 2005 Ecology**
 	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612)
 * Agenda: 
-	* Paper Discussion 
-	* Exploring QGIS
-
-		
-
-
-## Week 2
+	* Discuss Wiens 1989 
+	* Notes about Free and Open Source Software (FOSS)
+	* Exploring QGIS (Computer Exercise)
+* Supplementary Material
+	* List some useful references(?)
 
 
-## Week 3
+
+## Week 2: Spatial Dependence and Spatial Autocorrelation; Introduction to R
+
+### Day 3
+*Assignment Due: (Basic GIS exercise to familiarize students with software)*
+
+* Readings: 
+	* **Maybe Legendre et al 2002 Ecography** or ***Lichstein et al 2002 Ecological Monographs***
+* Agenda:
+	* Stationarity
+	* Correlation and Autocorrelation
+		* Introduce Correlograms, Variograms, Semi-variograms
+
+### Day 4
+*Assignment Due:*
+
+* Readings:
+	* (A good Ripley's K paper?)
+* Agenda:
+	* Work through Nearest Neighbor and Ripley's K Analyses in QGIS/R
+	* Maybe tutorial to R, depending on how much we'll use it
 
 
-## Week 4
+
+
+## Week 3: Point Pattern Analysis (Ripley's K)
+
+### Day 5
+
+### Day 6
+
+
+## Week 4: 
+
+### Day 7
+
+### Day 8
 
 
 ## Week 5
