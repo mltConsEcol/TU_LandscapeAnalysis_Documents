@@ -18,14 +18,15 @@ Understanding spatial relationships across landscapes can provide critical insig
 
 Grades will be assigned accord
 
-|	 Item 	|Due Date	|Points		|
-|:-------:	|:-------------:|:-------------:|
-|Participation	|N/A		|		|
-|Final Project	|April XX	|		|
-|		|		|		|
-|		|		|		|
-|***Total***	|		|***100***	|
-
+|	 Item 		|Due Date	|Points		|
+|:-------:		|:-------------:|:-------------:|
+|Participation		|N/A		|		|
+|Reading *Quizzes	|N/A		|		|
+|Final Project		|April XX	|		|
+|			|		|		|
+|			|		|		|
+|***Total***		|		|***100***	|
+*Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all quiz points.
 
 
 * Theory/background: 
@@ -51,14 +52,11 @@ In *Landscape Analysis and Modeling* we w
 #### Day 2
 *Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
 
-* Readings: **Might Change to Turner 2005 Ecology**
-	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612)
+* Readings: Might Change to Turner 2005 Ecology [Does this get at Pattern/Process enough?]
 * Agenda: 
-	* Discuss Wiens 1989 
+	* Discuss Turner 2005 
 	* Notes about Free and Open Source Software (FOSS)
 	* Exploring QGIS (Computer Exercise)
-* Supplementary Material
-	* List some useful references(?)
 
 
 
@@ -68,72 +66,77 @@ In *Landscape Analysis and Modeling* we w
 *Assignment Due: (Basic GIS exercise to familiarize students with software)*
 
 * Readings: 
-	* **Maybe Legendre et al 2002 Ecography** or ***Lichstein et al 2002 Ecological Monographs***
+	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612)
 * Agenda:
 	* Stationarity
 	* Correlation and Autocorrelation
 		* Introduce Correlograms, Variograms, Semi-variograms
-	* Introduction to Nearest Neighbor and Ripley's K
+	* Nearest Neighbor Analyses; Moran's I & Geary's C
 
-### Day 4
-*Assignment Due: Maybe something about paper?*
+#### Day 4
 
 * Readings:
-	* (A good Ripley's K paper?)
+	* ***Maybe Legendre et al 2002 Ecography*** or ***Lichstein et al 2002 Ecological Monographs***
 * Agenda:
 
-	* Work through Nearest Neighbor and Ripley's K Analyses in QGIS/R
+	* Nearest Neighbor Analyses in QGIS/R
 	* Maybe tutorial to R, depending on how much we'll use it
-	* 
 
 
 
-## Week 3: Point Pattern Analysis (Ripley's K)
+### Week 3: Point Pattern Analysis (Ripley's K)
 
 
-### Day 5
+#### Day 5
+*Assignment Due: Homework on Nearest Neighbor Analyses using R*
 
-### Day 6
+* Readings:
+	* Ripley's K paper
+* Agenda:
+	* Discussion About Paper
+	
 
-
-## Week 4: 
-
-### Day 7
-
-### Day 8
-
-
-## Week 5
+#### Day 6
 
 
-## Week 6
+### Week 4: 
+
+#### Day 7
+
+#### Day 8
 
 
-## Week 7
+### Week 5
 
 
-## Week 8
+### Week 6
 
 
-## Week 9
+### Week 7
 
 
-## Week 10
+### Week 8
 
 
-## Week 11
+### Week 9
 
 
-## Week 12
+### Week 10
 
 
-## Week 13
+### Week 11
 
 
-## Week 14
+### Week 12
 
 
-## Week 15
+### Week 13
+
+
+### Week 14
+
+
+### Week 15
 
 
 
