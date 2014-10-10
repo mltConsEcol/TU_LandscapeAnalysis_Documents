@@ -5,6 +5,7 @@ date:
 output: pdf_document
 ---
 
+[TOC]
 
 
 #Landscape Analysis and Modeling
@@ -53,8 +54,7 @@ In *Landscape Analysis and Modeling* we w
 *Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
 
 * Readings: **Might Change to Turner 2005 Ecology**
-	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612) {:target="_blank"}
-	* <a href= "http://www.jstor.org/stable/2389612" target="_blank">test</a> 
+	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612)
 * Agenda: 
 	* Discuss Wiens 1989 
 	* Notes about Free and Open Source Software (FOSS)
@@ -75,20 +75,23 @@ In *Landscape Analysis and Modeling* we w
 	* Stationarity
 	* Correlation and Autocorrelation
 		* Introduce Correlograms, Variograms, Semi-variograms
+	* Introduction to Nearest Neighbor and Ripley's K
 
 ### Day 4
-*Assignment Due:*
+*Assignment Due: Maybe something about paper?*
 
 * Readings:
 	* (A good Ripley's K paper?)
 * Agenda:
+
 	* Work through Nearest Neighbor and Ripley's K Analyses in QGIS/R
 	* Maybe tutorial to R, depending on how much we'll use it
-
+	* 
 
 
 
 ## Week 3: Point Pattern Analysis (Ripley's K)
+
 
 ### Day 5
 
