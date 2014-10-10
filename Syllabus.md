@@ -13,26 +13,32 @@ output: pdf_document
 ## Course Description:
 Understanding spatial relationships across landscapes can provide critical insight into evolutionary and ecological patterns and processes, ultimately necessary for biodiversity conservation. This course will focus on quantifying spatial relationships, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling connectivity across landscapes.  The course will take advantage of powerfull free and open source software for GIS and statistical analyses.
 
-
-###Grading: 
-
-Grades will be assigned accord
-
-|	 Item 		|Due Date	|Points		|
-|:-------:		|:-------------:|:-------------:|
-|Participation		|N/A		|		|
-|Reading *Quizzes	|N/A		|		|
-|Final Project		|April XX	|		|
-|			|		|		|
-|			|		|		|
-|***Total***		|		|***100***	|
-*Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all quiz points.
-
-
+Things to be included in Course Description:
 * Theory/background: 
 * What students should expect to learn
 * What tools will be used
-In *Landscape Analysis and Modeling* we w
+
+
+
+## Time and Location:
+
+TBA
+
+## Grading: 
+
+Grades will be based on the categories listed below
+
+|	 Item 		|*Due Date	|Points		|
+|:-------:		|:-------------:|:-------------:|
+|Participation		|N/A		|		|
+|**Reading Quizzes	|N/A		|		|
+|Final Project		|April XX	|		|
+|			|		|		|
+|***Total***		|		|***100***	|
+*Note about Due Date...
+**Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all quiz points.
+
+## Special Policies (attendance, TU stuff...)
 
 
 ## Schedule
