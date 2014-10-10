@@ -5,14 +5,12 @@ date:
 output: pdf_document
 ---
 
-[TOC]
 
+# Landscape Analysis and Modeling
 
-#Landscape Analysis and Modeling
-#Course Number: 
-##Instructor: Michael L. Treglia
+#Instructor: Michael L. Treglia
 
-***Course Description:***
+## Course Description:
 Understanding spatial relationships across landscapes can provide critical insight into evolutionary and ecological patterns and processes, ultimately necessary for biodiversity conservation. This course will focus on quantifying spatial relationships, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling connectivity across landscapes.  The course will take advantage of powerfull free and open source software for GIS and statistical analyses.
 
 
@@ -36,11 +34,11 @@ Grades will be assigned accord
 In *Landscape Analysis and Modeling* we w
 
 
-# Schedule
+## Schedule
 
-## Week 1: Intro to Landscape Ecology and GIS
+### Week 1: Intro to Landscape Ecology and GIS
 
-### Day 1
+#### Day 1
 *Assignment Due: None*
 
 * Readings:
@@ -50,7 +48,7 @@ In *Landscape Analysis and Modeling* we w
 	* Logistics
 	* Lecture: Introduction to Landscape Ecology and GIS
 
-### Day 2
+#### Day 2
 *Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
 
 * Readings: **Might Change to Turner 2005 Ecology**
@@ -64,9 +62,9 @@ In *Landscape Analysis and Modeling* we w
 
 
 
-## Week 2: Spatial Dependence and Spatial Autocorrelation; Introduction to R
+### Week 2: Spatial Dependence and Spatial Autocorrelation; Introduction to R
 
-### Day 3
+#### Day 3
 *Assignment Due: (Basic GIS exercise to familiarize students with software)*
 
 * Readings: 
