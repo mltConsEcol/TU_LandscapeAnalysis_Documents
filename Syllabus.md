@@ -37,7 +37,7 @@ Grades will be based on the categories listed below
 |Final Paper		|April XX	|30			|
 |Poster			|April XX	|20			|
 |***Total***		|		|***100***		|
-*Note about Due Date...
+*Note about Due Date
 **Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all quiz points.
 
 ## Special Policies (attendance, TU stuff...)
