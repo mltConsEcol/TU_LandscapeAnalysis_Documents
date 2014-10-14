@@ -30,15 +30,17 @@ Grades will be based on the categories listed below
 
 |	 Item 		|*Due Date	|Points			|
 |:-------:		|:-------------:|:---------------------:|
-|Participation		|N/A		|			|
+|Participation		|N/A		|5			|
 |**Reading Quizzes	|N/A		|10			|
-|Assignments		|See Schedule	|30 (10 @ Xpts each	|
-|Project Proposal	|Day XX		|10			|
+|Assignments		|See Schedule	|40 (10 @ Xpts each	|
+|Project Proposal	|Day XX		|5			|
 |Final Paper		|April XX	|30			|
-|Poster			|April XX	|20			|
+|Poster			|April XX	|10			|
 |***Total***		|		|***100***		|
 *Note about Due Date
+
 **Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all quiz points.
+
 
 ## Special Policies (attendance, TU stuff...)
 
@@ -61,7 +63,6 @@ Grades will be based on the categories listed below
 *Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
 
 * Readings: [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
-Might Change to Turner 2005 Ecology [Does this get at Pattern/Process enough?]
 * Agenda: 
 	* Discuss Turner 2005 
 	* Notes about Free and Open Source Software (FOSS)
@@ -198,7 +199,7 @@ Might Change to Turner 2005 Ecology [Does this get at Pattern/Process enough?]
 
 #### Day 30
 
-*** Poster Session Open To The Department ***
+***Poster Session Open To The Department***
 
 
 
