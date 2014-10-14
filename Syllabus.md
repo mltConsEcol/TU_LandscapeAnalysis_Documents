@@ -58,7 +58,8 @@ Grades will be based on the categories listed below
 #### Day 2
 *Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
 
-* Readings: Might Change to Turner 2005 Ecology [Does this get at Pattern/Process enough?]
+* Readings: [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
+Might Change to Turner 2005 Ecology [Does this get at Pattern/Process enough?]
 * Agenda: 
 	* Discuss Turner 2005 
 	* Notes about Free and Open Source Software (FOSS)
@@ -69,10 +70,10 @@ Grades will be based on the categories listed below
 ### Week 2: Spatial Dependence and Spatial Autocorrelation; Introduction to R
 
 #### Day 3
-*Assignment Due: (Basic GIS exercise to familiarize students with software)*
+***Assignment Due: (Basic GIS exercise to familiarize students with software)***
 
 * Readings: 
-	* [Wiens, J.A., 1989. Spatial scaling in ecology. **Functional Ecology** 3, 385-397.](http://www.jstor.org/stable/2389612)
+	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
 * Agenda:
 	* Stationarity
 	* Correlation and Autocorrelation
@@ -94,57 +95,108 @@ Grades will be based on the categories listed below
 
 
 #### Day 5
-*Assignment Due: Homework on Nearest Neighbor Analyses using R*
+***Assignment Due: Homework on Nearest Neighbor Analyses using R***
 
 * Readings:
-	* Ripley's K paper
+	* Paper that uses previous week's methods
 * Agenda:
 	* Discussion About Paper
+	* Lecture about Ripley's K
 	
 
 #### Day 6
 
+* Agenda: 
+	* Lab exercise on Ripley's K
 
-### Week 4: 
+
+### Week 4: Multivariate Relationships (Mantel Tests and Alternatives)
 
 #### Day 7
 
 #### Day 8
 
 
-### Week 5
+### Week 5: Interpolation
+
+#### Day 9
+
+#### Day 10
 
 
-### Week 6
+### Week 6: Fragstats 1
+
+#### Day 11
+
+#### Day 12
 
 
-### Week 7
+
+### Week 7: Fragstats 2
+
+#### Day 13
+
+#### Day 14
 
 
-### Week 8
+### Week 8: Network Analysis
+
+#### Day 15
+
+#### Day 16
 
 
-### Week 9
+
+### Week 9: Animal Movement
+
+#### Day 17
+
+#### Day 18
 
 
-### Week 10
+### Week 10: Accounting for Spatial Autocorrelation
+
+#### Day 19
+
+#### Day 20
 
 
-### Week 11
+### Week 11: Distribution Modeling 
+
+#### Day 21
+
+#### Day 21
 
 
-### Week 12
+### Week 12: Integrating Techniques - Landscape Connectivity
+
+#### Day 22
+
+#### Day 23
 
 
-### Week 13
+### Week 13: Future Directions in Landscape Ecology
 
 
-### Week 14
+#### Day 25
+
+#### Day 26
+
+
+### Week 14: Work on Projects
+
+#### Day 27
+
+#### Day 28
 
 
 ### Week 15
 
+#### Day 29
 
+#### Day 30
+
+*** Poster Session Open To The Department ***
 
 
 
