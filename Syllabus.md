@@ -11,7 +11,7 @@ output: pdf_document
 #Instructor: Michael L. Treglia
 
 ## Course Description:
-Understanding spatial relationships across landscapes can provide critical insight into evolutionary and ecological patterns and processes, ultimately necessary for biodiversity conservation. This course will focus on quantifying spatial relationships, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling connectivity across landscapes.  The course will take advantage of powerfull free and open source software for GIS and statistical analyses.
+Understanding spatial relationships across landscapes can provide critical insight into evolutionary and ecological patterns and processes, ultimately necessary for biodiversity conservation. This course will focus on quantifying spatial relationships, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling connectivity across landscapes.  The course will take advantage of powerful free and open source software for GIS and statistical analyses.
 
 Things to be included in Course Description:
 * Theory/background: 
@@ -60,9 +60,10 @@ Grades will be based on the categories listed below
 	* Lecture: Introduction to Landscape Ecology and GIS
 
 #### Day 2
-*Assignment Due: (Something related to paper - simple and short, just to make sure they read)*
+***Assignment Due: [Assignment 1](Assignments/Assignment1.md)***
 
-* Readings: [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
+* Readings:
+	* [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
 * Agenda: 
 	* Discuss Turner 2005 
 	* Notes about Free and Open Source Software (FOSS)
