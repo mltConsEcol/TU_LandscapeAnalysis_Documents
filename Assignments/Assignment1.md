@@ -1,6 +1,6 @@
 ---
 title: "Spatial Analysis and Modeling"
-	"Assignment 1"
+subtitle: "Assignment 1"
 date: "Due Date: "
 ---
 
