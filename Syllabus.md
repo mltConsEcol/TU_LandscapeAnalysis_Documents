@@ -97,7 +97,6 @@ Grades will be based on the categories listed below
 
 ### Week 3: Quantifying Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
-
 #### Day 5
 ***Assignment Due: Assignment 2 - Practice with Nearest Neighbor/Ripley's K Analysis***
 
@@ -114,9 +113,6 @@ Grades will be based on the categories listed below
 
 * Agenda: 
 	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation 
-
-
-
 
 
 ### Week 4: Multivariate Relationships (Mantel Tests and Alternatives)
