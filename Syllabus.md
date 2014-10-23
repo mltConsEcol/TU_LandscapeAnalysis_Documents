@@ -32,11 +32,12 @@ Final percentage grades will be calculated based on the below allocation from re
 |Final Paper		|April XX	|30			|
 |Poster			|April XX	|10			|
 |***Total***		|		|***100***		|
-*All items turned in after the due-date will be penalized 5 percent per class-day late, unless a valid excuse is provided.
+**All items turned in after the due-date will be penalized 5 percent per class-day late, unless a valid excuse is provided.*
 
-**Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all 'quiz' points.
+***Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all 'quiz' points.*
 
 Letter grades will be based on typical A, B, C, D, F scheme:
+
 | Percentage of Total Points | Letter Grade| 
 |:--------------------------:|:-----------:|
 |≥90|A|
