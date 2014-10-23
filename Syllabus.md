@@ -60,36 +60,36 @@ Grades will be based on the categories listed below
 	* Lecture: Introduction to Landscape Ecology and GIS
 
 #### Day 2
-***Assignment Due: [Assignment 1](Assignments/Assignment1.md)***
+***Assignment Due: None***
 
 * Readings:
 	* [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
+	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
 * Agenda: 
-	* Discuss Turner 2005 
+	* Discuss papers ([Review this Discussion Question](./Reading_DiscussionPts/Turner2005_Wiens1989_Discussion.md))
 	* Notes about Free and Open Source Software (FOSS)
-	* Exploring QGIS (Computer Exercise)
+	* Exploring QGIS
 
 
 
-### Week 2: Spatial Dependence and Spatial Autocorrelation; Introduction to R
+### Week 2: Spatial Dependence and Spatial Autocorrelation; Nearest Neighbor Analyses 
 
 #### Day 3
-***Assignment Due: (Basic GIS exercise to familiarize students with software)***
+***Assignment Due: Assignment 1 - Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
 
 * Readings: 
-	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
+
 * Agenda:
 	* Stationarity
 	* Correlation and Autocorrelation
 		* Introduce Correlograms, Variograms, Semi-variograms
-	* Nearest Neighbor Analyses; Moran's I & Geary's C
+	* Nearest Neighbor Analyses
 
 #### Day 4
 
 * Readings:
-	* ***Maybe Legendre et al 2002 Ecography*** or ***Lichstein et al 2002 Ecological Monographs***
+	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
 * Agenda:
-
 	* Nearest Neighbor Analyses in QGIS/R
 	* Maybe tutorial to R, depending on how much we'll use it
 
@@ -99,7 +99,7 @@ Grades will be based on the categories listed below
 
 
 #### Day 5
-***Assignment Due: Homework on Nearest Neighbor Analyses using R***
+***Assignment Due: Homework on Nearest Neighbor Analyses***
 
 * Readings:
 	* Paper that uses previous week's methods
@@ -112,6 +112,13 @@ Grades will be based on the categories listed below
 
 * Agenda: 
 	* Lab exercise on Ripley's K
+
+
+
+Moran's I & Geary's C
+	* http://www.sciencedirect.com/science/article/pii/S0143622813000623#
+
+
 
 
 ### Week 4: Multivariate Relationships (Mantel Tests and Alternatives)
@@ -158,6 +165,11 @@ Grades will be based on the categories listed below
 #### Day 18
 
 
+
+### ***Spring Break - Have Fun!*** 
+
+
+
 ### Week 10: Accounting for Spatial Autocorrelation
 
 #### Day 19
@@ -179,22 +191,21 @@ Grades will be based on the categories listed below
 #### Day 23
 
 
-### Week 13: Future Directions in Landscape Ecology
-
+### Week 13: Work on Projects
 
 #### Day 25
 
 #### Day 26
 
 
-### Week 14: Work on Projects
+### Week 14: Future Directions in Landscape Ecology
 
 #### Day 27
 
 #### Day 28
 
 
-### Week 15
+### Week 15: Project Presentations
 
 #### Day 29
 
