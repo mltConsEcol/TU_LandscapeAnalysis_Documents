@@ -81,42 +81,40 @@ Grades will be based on the categories listed below
 
 * Agenda:
 	* Stationarity
-	* Correlation and Autocorrelation
-		* Introduce Correlograms, Variograms, Semi-variograms
-	* Nearest Neighbor Analyses
+	* Spatial Dependence and Autocorrelation
+		* Brief Introduction to Correlograms, Variograms, Semi-variograms
+	* Nearest Neighbor Analyses, Ripley's K
 
 #### Day 4
 
 * Readings:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
 * Agenda:
-	* Nearest Neighbor Analyses in QGIS/R
+	* Nearest Neighbor Analyses in QGIS or R
 	* Maybe tutorial to R, depending on how much we'll use it
 
 
 
-### Week 3: Point Pattern Analysis (Ripley's K)
+### Week 3: Quantifying Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 
 #### Day 5
-***Assignment Due: Homework on Nearest Neighbor Analyses***
+***Assignment Due: Assignment 2 - Practice with Nearest Neighbor/Ripley's K Analysis***
 
 * Readings:
-	* Paper that uses previous week's methods
+	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
+](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
+
 * Agenda:
-	* Discussion About Paper
-	* Lecture about Ripley's K
-	
+	* Discuss paper
+	* Measuring Spatial Autocorrelation
+	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 6
 
 * Agenda: 
-	* Lab exercise on Ripley's K
+	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation 
 
-
-
-Moran's I & Geary's C
-	* http://www.sciencedirect.com/science/article/pii/S0143622813000623#
 
 
 
