@@ -1,12 +1,12 @@
 ---
-title: "Spatial Analysis and Modeling"
+title: "Landscape Analysis and Modeling"
 author: "Michael Treglia"
 date: 
 output: pdf_document
 ---
 
 
-# Landscape Analysis and Modeling
+# Landscape Analysis and Modeling: BIOL 4383-02/6383-02
 
 #Instructor: Michael L. Treglia
 
@@ -50,7 +50,6 @@ Grades will be based on the categories listed below
 ### Week 1: Intro to Landscape Ecology and GIS
 
 #### Day 1
-*Assignment Due: None*
 
 * Readings:
 	* None
@@ -65,6 +64,7 @@ Grades will be based on the categories listed below
 * Readings:
 	* [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
 	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
+	* Might switch one of these for Fortin et al 2012 Spatial Statistics paper
 * Agenda: 
 	* Discuss papers ([Review this Discussion Question](./Reading_DiscussionPts/Turner2005_Wiens1989_Discussion.md))
 	* Notes about Free and Open Source Software (FOSS)
@@ -90,8 +90,8 @@ Grades will be based on the categories listed below
 * Readings:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
 * Agenda:
+	* Tutorial to R
 	* Nearest Neighbor Analyses in QGIS or R
-	* Maybe tutorial to R, depending on how much we'll use it
 
 
 
@@ -103,7 +103,6 @@ Grades will be based on the categories listed below
 * Readings:
 	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
 ](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
-
 * Agenda:
 	* Discuss paper
 	* Measuring Spatial Autocorrelation
@@ -111,6 +110,8 @@ Grades will be based on the categories listed below
 
 #### Day 6
 
+*Readings:
+	* None
 * Agenda: 
 	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation 
 
@@ -119,7 +120,18 @@ Grades will be based on the categories listed below
 
 #### Day 7
 
+* Readings:
+	* [Guillot, G., and F. Rousset. 2013. Dismantling the Mantel tests. *Methods in Ecology and Evolution* 4:336-344.](http://onlinelibrary.wiley.com/doi/10.1111/2041-210x.12018/abstract)
+* Agenda:
+	* Discuss paper
+	* What are Mantel Tests and what are they used for, and why are they problematic in Ecology?
+ 	* Spatial Regression as an alternative to Mantel Tests
+
 #### Day 8
+* Readings:
+	*  None
+* Agenda
+	* Mantel Tests, Partial Mantel Tests, and Spatial Regression in R
 
 
 ### Week 5: Interpolation
