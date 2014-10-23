@@ -78,7 +78,7 @@ Grades will be based on the categories listed below
 ***Assignment Due: Assignment 1 - Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
 
 * Readings: 
-
+	* None or Lichtenstein et al 2002 (TBD)
 * Agenda:
 	* Stationarity
 	* Spatial Dependence and Autocorrelation
