@@ -40,7 +40,11 @@ Letter grades will be based on typical A, B, C, D, F scheme:
 
 | Percentage of Total Points | Letter Grade| 
 |:--------------------------:|:-----------:|
-|≥90|A|
+|\u226490|A|
+|\u2264 80, <90| B|
+|\u2264 70, <80| C|
+|\u2264 60, <70| D|
+|<60|F|
  
 
 
