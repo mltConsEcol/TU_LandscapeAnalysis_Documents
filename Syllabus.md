@@ -12,12 +12,27 @@ output: pdf_document
 #Instructor: Dr. Michael L. Treglia
 
 ## Course Description:
-Understanding spatial relationships across landscapes can provide critical insight into evolutionary and ecological patterns and processes. Such insight may aid in using appropriate analyses in future research, and can guide tasks such as biodiversity conservation and pest management, among others. This course will focus on quantifying spatial relationships, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling habitat and connectivity across landscapes.  The course will take advantage of powerful free and open source software for GIS and statistical analyses.
+
+Understanding spatial relationships across landscapes can provide critical insight into patterns and processes observed in ecology and evolutionary biology. Analytical techniques used in understanding these relationships can detect and help control for spatial biases in data, which may obscure effects of other variables. Results from such analyses can inform future research, and guide efforts for tasks including biodiversity conservation and pest management, among others. 
+
+This course will focus on quantifying and controlling for spatial relationships in data, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling habitat and connectivity across landscapes. The main tools we will use are free and open source, including the statistical package, R, and the GIS software, QGIS. Though examples given in the class will focus on ecology and evolutionary biology, most analytical techniques covered can easily be applied to other fields of study, and students will be encouraged to use their own data (or available datasets from their field of study) for assignments throughout the semester. 
+
+Here is a tentative list of specific topics that will be covered, which may be adjusted according to student interest:
+* Intro to Landscape Ecology and GIS
+* Spatial Dependence and Autocorrelation
+* Nearest Neighbor Analyses
+* Spatial Interpolation
+* Mantel Tests and Spatial Regression
+* Quantifying Landscape Pattern ("Fragstats")
+* Animal Movement
+* Landscape Connectivity (Network Analysis, Graph Analysis)
+* Species Distribution Modeling/Environmental Niche Modeling
 
 
 ## Time and Location:
 
 TBA
+
 
 ## Grading: 
 
@@ -37,7 +52,7 @@ Final percentage grades will be calculated based on the below allocation from re
 
 *All items turned in after the due-date will be penalized 5 percent per class-day late, unless a valid excuse is provided.*
 
-***Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all 'quiz' points.*
+***Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throughout the semester, all students will receive all 'quiz' points, provided they have regularly attended class*
 
 Letter grades will be based on typical A, B, C, D, F scheme:
 
@@ -49,9 +64,9 @@ Letter grades will be based on typical A, B, C, D, F scheme:
 | 60, <70| D|
 |<60|F|
 
+**Attendance Policy:**
+Students are expected to attend class regularly. Skipping class without excuse will directly contribute to loss of points for Participation, Reading Quizzes (is absent on days of paper discussions), and it may make it more difficult to complete assignments. If students must miss class for any reasons, I encourage them to meet with me and get notes from classmates.
 
-
-## Special Policies (attendance, TU stuff...)
 
 
 ## Schedule
@@ -130,7 +145,7 @@ Letter grades will be based on typical A, B, C, D, F scheme:
 ***Assignment 3 Due: Spatial Autocorrelation***
 
 * Readings:
-	* 
+
 *Agenda:
 	* What is Interpolation?
 	* When might we use Interpolation in Ecology?
@@ -249,4 +264,8 @@ Letter grades will be based on typical A, B, C, D, F scheme:
 ***Poster Session Open To The Department***
 
 
+
+
+
+## Special Policies (attendance, TU stuff...)
 
