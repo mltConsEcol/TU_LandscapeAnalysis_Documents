@@ -60,7 +60,8 @@ as.factor(pm)  2   1.39623     9.25      8     32       1.694e-06
 |Final Paper		|April XX	|30			|
 |Poster			|April XX	|10			|
 |***Total***		|		|***100***		|
-**All items turned in after the due-date will be penalized 5 percent per class-day late, unless a valid excuse is provided.*
+
+*All items turned in after the due-date will be penalized 5 percent per class-day late, unless a valid excuse is provided.*
 
 ***Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throught the semester, all students will receive all 'quiz' points.*
 
@@ -73,7 +74,7 @@ Letter grades will be based on typical A, B, C, D, F scheme:
 | 70, <80| C|
 | 60, <70| D|
 |<60|F|
- 
+
 
 
 ## Special Policies (attendance, TU stuff...)
