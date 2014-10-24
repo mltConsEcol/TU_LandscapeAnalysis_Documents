@@ -23,6 +23,26 @@ TBA
 
 Final percentage grades will be calculated based on the below allocation from respective categories:
 
+test table
+
+-    .      Tweedledee       Tweedledum
+--------   --------------   ----------------
+Age        14               14
+Height     3'2"             3'2"
+Politics   Conservative     Conservative
+Religion   "New Age"        Syrian Orthodox
+---------  --------------   ----------------
+
+
+
+&nbsp;        Df  test stat approx F  num Df  den Df    Pvalue    
+------------- --  --------- --------  ------  ------    -------
+(Intercept)    1   0.99279   516.11      4     15       7.290e-16  
+as.factor(pm)  2   1.39623     9.25      8     32       1.694e-06
+
+
+
+
 |	 Item 		|*Due Date	|Percent of Grade	|
 |:---------------------:|:-------------:|:---------------------:|
 |Participation		|N/A		|5			|
@@ -40,10 +60,10 @@ Letter grades will be based on typical A, B, C, D, F scheme:
 
 | Percentage of Total Points | Letter Grade| 
 |:--------------------------:|:-----------:|
-|\u226490|A|
-|\u2264 80, <90| B|
-|\u2264 70, <80| C|
-|\u2264 60, <70| D|
+|90|A|
+| 80, <90| B|
+| 70, <80| C|
+| 60, <70| D|
 |<60|F|
  
 
