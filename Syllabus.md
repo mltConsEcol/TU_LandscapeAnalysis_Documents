@@ -146,7 +146,7 @@ Students are expected to attend class regularly. Skipping class without excuse w
 
 * Readings:
 
-*Agenda:
+* Agenda:
 	* What is Interpolation?
 	* When might we use Interpolation in Ecology?
 	* Interpolation Methods
