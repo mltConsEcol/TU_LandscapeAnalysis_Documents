@@ -18,6 +18,7 @@ Understanding spatial relationships across landscapes can provide critical insig
 This course will focus on quantifying and controlling for spatial relationships in data, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling habitat and connectivity across landscapes. The main tools we will use are free and open source, including the statistical package, R, and the GIS software, QGIS. Though examples given in the class will focus on ecology and evolutionary biology, most analytical techniques covered can easily be applied to other fields of study, and students will be encouraged to use their own data (or available datasets from their field of study) for assignments throughout the semester. 
 
 Here is a tentative list of specific topics that will be covered, which may be adjusted according to student interest:
+
 * Intro to Landscape Ecology and GIS
 * Spatial Dependence and Autocorrelation
 * Nearest Neighbor Analyses
