@@ -32,7 +32,9 @@ Here is a tentative list of specific topics that will be covered, which may be a
 
 ## Time and Location:
 
-TBA
+Keplinger L2 Computer Lab
+Tuesday/Thursday 11:00-12:15
+*Extra time will be available on Thursdays for lab assignments*
 
 
 ## Grading: 
@@ -47,13 +49,15 @@ Final percentage grades will be calculated based on the below allocation from re
 |Reading Quizzes**	|N/A		|10			|
 |Assignments		|See Schedule	|40			|
 |Project Proposal	|Day XX		|5			|
-|Final Paper		|April XX	|30			|
-|Poster			|April XX	|10			|
+|Final Paper***		|April XX	|30			|
+|Poster/Presentation***			|April XX	|10			|
 |***Total***		|		|***100***		|
 
-*All items turned in after the due-date will be penalized 5 percent per class-day late, unless a valid excuse is provided.*
+**All items turned in after the due-date will be penalized 5 percent per class-day late, unless a valid excuse is provided.*
 
 ***Quizzes about reading material will be administered if students are routinely not prepared.  If discussion is productive throughout the semester, all students will receive all 'quiz' points, provided they have regularly attended class*
+
+****Undergraduates enrolled in the course will only be required to complete one of these itmes (for 40% of the total grade)*
 
 Letter grades will be based on typical A, B, C, D, F scheme:
 
@@ -91,7 +95,7 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
 	* Might switch one of these for Fortin et al 2012 Spatial Statistics paper
 * Agenda: 
-	* Discuss papers ([Review this Discussion Question](./Reading_DiscussionPts/Turner2005_Wiens1989_Discussion.md))
+	* Discuss reading assignment
 	* Notes about Free and Open Source Software (FOSS)
 	* Exploring QGIS
 
@@ -102,50 +106,48 @@ Students are expected to attend class regularly. Skipping class without excuse w
 #### Day 3
 ***Assignment 1 Due: Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
 
-* Readings: 
-	* None or Lichtenstein et al 2002 (TBD)
 * Agenda:
-	* Stationarity
-	* Spatial Dependence and Autocorrelation
-		* Brief Introduction to Correlograms, Variograms, Semi-variograms
-	* Nearest Neighbor Analyses, Ripley's K, Lacunarity
+	* Concepts of Spatial Data
+		* Stationarity
+		* Spatial Dependence and Autocorrelation
+	* Working with Complete Population Data
+		* Nearest Neighbor Analyses, Ripley's K, Lacunarity
 
 #### Day 4
 
 * Readings:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
 * Agenda:
+	* Discuss Reading Material
 	* Tutorial to R
-	* Nearest Neighbor Analyses in QGIS or R
+	* Nearest Neighbor and Ripley's K analyses in QGIS and R
 
 
 
-### Week 3: Quantifying Spatial Autocorrelation (Moran's *i* and Geary's *c*)
+### Week 3: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 5
-***Assignment 2 Due: Nearest Neighbor/Ripley's K Analysis***
+***Assignment 2 Due: Nearest Neighbor/Ripley's K Analysis Lab***
 
-* Readings:
-	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
-](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
 * Agenda:
-	* Discuss paper
-	* Measuring Spatial Autocorrelation
+	* Measuring and Visualizing Spatial Autocorrelation
 	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 6
 
+* Readings:
+	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
+](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
 * Agenda: 
-	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation 
+	* Discuss Reading Material
+	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation in QGIS & R
 
 
 
 ### Week 4: Interpolation
 
 #### Day 7
-***Assignment 3 Due: Spatial Autocorrelation***
-
-* Readings:
+***Assignment 3 Due: Spatial Autocorrelation Lab***
 
 * Agenda:
 	* What is Interpolation?
@@ -154,6 +156,8 @@ Students are expected to attend class regularly. Skipping class without excuse w
 
 #### Day 8
 
+* Readings
+	* 
 * Agenda:
 	* Spatial Interpolation in R and QGIS
 
