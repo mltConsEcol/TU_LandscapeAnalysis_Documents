@@ -88,7 +88,6 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* Lecture: Introduction to Landscape Ecology and GIS
 
 #### Day 2
-***Assignment Due: None***
 
 * Readings:
 	* [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
@@ -107,11 +106,11 @@ Students are expected to attend class regularly. Skipping class without excuse w
 ***Assignment 1 Due: Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
 
 * Agenda:
-	* Concepts of Spatial Data
+	* Things to be Aware of with Spatial Data
 		* Stationarity
 		* Spatial Dependence and Autocorrelation
 	* Working with Complete Population Data
-		* Nearest Neighbor Analyses, Ripley's K, Lacunarity
+		* Nearest Neighbor Analyses, Ripley's K
 
 #### Day 4
 
@@ -124,16 +123,53 @@ Students are expected to attend class regularly. Skipping class without excuse w
 
 
 
-### Week 3: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
+### Week 3: Fragstats 1 - Describing Landscape-Scale Pattern
 
 #### Day 5
+***Assignment 5 Due: Spatial Regression Exercise***
+
+* Agenda
+	* An introduction to Fragstats
+	* Landscape Metrics: Lacunarity and Contagion
+
+#### Day 6
+
+* Readings:
+	* [McIntyre, N.E. and J.A. Wiens. 2000. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
+* Agenda
+	* Discuss Reading Material
+	* Preparing Data For and Working with Fragstats Lab
+
+
+### Week 4: Fragstats 2 - Describing Patches
+
+#### Day 7
+***Assignment 6 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
+
+* Agenda
+	* Patches vs. Landscapes: What do patch metrics describe?
+	* Applications of Patch Metrics in Ecology
+
+#### Day 8
+
+* Reading
+
+* Agenda
+	* Discuss Reading Material
+	* Landscape Patch Lab
+
+
+	
+### Week 5: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
+
+#### Day 9
 ***Assignment 2 Due: Nearest Neighbor/Ripley's K Analysis Lab***
 
 * Agenda:
 	* Measuring and Visualizing Spatial Autocorrelation
 	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
-#### Day 6
+#### Day 10
 
 * Readings:
 	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
@@ -143,10 +179,9 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation in QGIS & R
 
 
+### Week 6: Interpolation
 
-### Week 4: Interpolation
-
-#### Day 7
+#### Day 11
 ***Assignment 3 Due: Spatial Autocorrelation Lab***
 
 * Agenda:
@@ -154,55 +189,42 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* When might we use Interpolation in Ecology?
 	* Interpolation Methods
 
-#### Day 8
+#### Day 12
 
 * Readings
-	* 
+	* [Yao et al. 2013. Comparison of Four Spatial Interpolation Methods for Estimating Soil Moisture in a Complex Terrain Catchment. *PLoS ONE* 8, e54660](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0054660#pone-0054660-g008)
 * Agenda:
-	* Spatial Interpolation in R and QGIS
+	* Spatial Interpolation Lab
 
 
 
+### Week 7: Multivariate Relationships (Mantel Tests and Alternatives)
 
-### Week 5: Multivariate Relationships (Mantel Tests and Alternatives)
-
-#### Day 9
+#### Day 13
 ***Assignment 4 Due: Interpolation Exercise***
+
+* Agenda:
+	* What are Mantel Tests and what are they used for, and why are they problematic?
+ 	* Spatial Regression as an alternative to Mantel Tests
+
+#### Day 14
 
 * Readings:
 	* [Guillot, G., and F. Rousset. 2013. Dismantling the Mantel tests. *Methods in Ecology and Evolution* 4:336-344.](http://onlinelibrary.wiley.com/doi/10.1111/2041-210x.12018/abstract)
-* Agenda:
-	* Discuss paper
-	* What are Mantel Tests and what are they used for, and why are they problematic in Ecology?
- 	* Spatial Regression as an alternative to Mantel Tests
-
-#### Day 10
-
 * Agenda
+	* Discuss Reading Material
 	* Spatial Regression in R
-
-
-### Week 6: Fragstats 1 - Describing Landscape Pattern
-
-#### Day 11
-***Assignment 5 Due: Spatial Regression Exercise***
-
-#### Day 12
-
-
-
-### Week 7: Fragstats 2 - Describing Patch Characteristics
-
-#### Day 13
-***Assignment 6 Due: Fragstats Exercises***
-
-#### Day 14
 
 
 ### Week 8: Network Analysis
 
 #### Day 15
-***Assignment 7 Due:***
+***Assignment 7 Due: Landscape Patch Lab & Exercises***
+
+* Agenda
+	* What is Network Analysis?
+	* Uses of Network Analysis in Ecology
+	* 
 
 #### Day 16
 
@@ -221,7 +243,7 @@ Students are expected to attend class regularly. Skipping class without excuse w
 
 
 
-### Week 10: Accounting for Spatial Autocorrelation
+### Week 10: Distribution Modeling (Environmental Niche Modeling)
 
 #### Day 19
 ***Assignment 9 Due***
@@ -229,7 +251,7 @@ Students are expected to attend class regularly. Skipping class without excuse w
 #### Day 20
 
 
-### Week 11: Distribution Modeling
+### Week 11: Accounting for Spatial Autocorrelation
 
 #### Day 21
 ***Assignment 10 Due:***
