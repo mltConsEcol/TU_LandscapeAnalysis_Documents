@@ -12,7 +12,9 @@ output: pdf_document
 #Instructor: Dr. Michael L. Treglia
 
 Office: N214 Oliphant Hall
+
 Telephone: 918-631-3465
+
 E-mail: [mike-treglia@utulsa.edu](mailto:mike-treglia@utulsa.edu)
 
 ## Course Description:
@@ -87,7 +89,7 @@ The final presentation should cover the details of your final project, and effec
 
 
 
-Letter grades will be based on typical A, B, C, D, F scheme:
+**Letter grades will be based on typical A, B, C, D, F scheme:**
 
 | Percentage of Total Points | Letter Grade| 
 |:--------------------------:|:-----------:|
@@ -106,8 +108,9 @@ General Schedule
 
 | Week	 | Topic |
 |:---------:|:-------------:|
-|Participation |N/A |
-|Reading Quizzes |N/A		|
+|1 |Intro to Landscpae Ecology and GIS |
+|2 |Working with Spatial Data; Introduction to R	|
+
 
 
 ## Detailed Schedule
