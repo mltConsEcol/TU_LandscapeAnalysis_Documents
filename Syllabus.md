@@ -54,9 +54,9 @@ Final percentage grades will be calculated based on the below allocation from re
 |Participation |N/A |5 |
 |Reading Quizzes |N/A		|10			|
 |Assignments		|See Schedule	|40			|
-|Project Proposal	|Day XX		|5			|
-|Final Paper**		|April XX	|30			|
-|Final Presentation**			|April XX	|10			|
+|Project Proposal	|March 12		|5			|
+|Final Paper**		|April 24	|30			|
+|Final Presentation**			|April 24	|10			|
 |***Total***		|		|***100***		|
 
 **All items turned in after the due-date will be penalized 10 percent per class-day late, unless a valid excuse is provided.*
