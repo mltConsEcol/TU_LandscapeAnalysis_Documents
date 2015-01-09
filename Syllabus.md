@@ -90,14 +90,11 @@ Students are expected to attend class regularly. Skipping class without excuse w
 #### Day 2
 
 * Readings:
-	* [Turner, M.G., 2005. Landscape ecology in North America: past, present, and future. *Ecology* 86, 1967-1974.](http://www.esajournals.org/doi/abs/10.1890/04-0890)
 	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
-	* Might switch one of these for Fortin et al 2012 Spatial Statistics paper
 * Agenda: 
 	* Discuss reading assignment
 	* Notes about Free and Open Source Software (FOSS)
 	* Exploring QGIS
-
 
 
 ### Week 2: Spatial Dependence and Spatial Autocorrelation; Nearest Neighbor Analyses 
@@ -106,13 +103,36 @@ Students are expected to attend class regularly. Skipping class without excuse w
 ***Assignment 1 Due: Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
 
 * Agenda:
+	* Some Basic Stats
+		* Covariance & Correlation
 	* Things to be Aware of with Spatial Data
 		* Stationarity
 		* Spatial Dependence and Autocorrelation
-	* Working with Complete Population Data
-		* Nearest Neighbor Analyses, Ripley's K
+	* An Introduction to R & RStudio
+	
+### Day 4
 
-#### Day 4
+* Readings
+
+* Agenda
+	* Discuss Reading Material
+	* Get familiar with R, RStudio, & R Packages
+		* Get Data In
+		* Understand Data Types
+		* Basic Data Manipulations
+
+
+### Week 3		
+
+#### Day 5
+***Assignment 2 Due: Intro to R Lab***
+
+* Agenda
+	* Understanding Complete Population Data - Vector Datasets
+	* Nearest Neighbor Analyses
+	* Ripley's K
+
+### Day 6
 
 * Readings:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
@@ -122,17 +142,29 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* Nearest Neighbor and Ripley's K analyses in QGIS and R
 
 
+### Week 4: Network Analysis
 
-### Week 3: Fragstats 1 - Describing Landscape-Scale Pattern
+#### Day 7
+***Assignment 7 Due: Landscape Patch Lab & Exercises***
 
-#### Day 5
-***Assignment 5 Due: Spatial Regression Exercise***
+* Agenda
+	* What is Network Analysis?
+	* Uses of Network Analysis in Ecology
+	* 
+
+#### Day 8
+
+
+### Week 5: Fragstats 1 - Describing Landscape-Scale Pattern
+
+#### Day 9
+***Assignment 2 Due: Ripley's K & Nearest Neighbor Analysis Lab***
 
 * Agenda
 	* An introduction to Fragstats
 	* Landscape Metrics: Lacunarity and Contagion
 
-#### Day 6
+#### Day 10
 
 * Readings:
 	* [McIntyre, N.E. and J.A. Wiens. 2000. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
@@ -141,16 +173,16 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* Preparing Data For and Working with Fragstats Lab
 
 
-### Week 4: Fragstats 2 - Describing Patches
+### Week 6: Fragstats 2 - Describing Patches
 
-#### Day 7
+#### Day 11
 ***Assignment 6 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
 
 * Agenda
 	* Patches vs. Landscapes: What do patch metrics describe?
 	* Applications of Patch Metrics in Ecology
 
-#### Day 8
+#### Day 12
 
 * Reading
 
@@ -160,16 +192,16 @@ Students are expected to attend class regularly. Skipping class without excuse w
 
 
 	
-### Week 5: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
+### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
-#### Day 9
+#### Day 13
 ***Assignment 2 Due: Nearest Neighbor/Ripley's K Analysis Lab***
 
 * Agenda:
 	* Measuring and Visualizing Spatial Autocorrelation
 	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
-#### Day 10
+#### Day 14
 
 * Readings:
 	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
@@ -179,9 +211,9 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation in QGIS & R
 
 
-### Week 6: Interpolation
+### Week 8: Interpolation
 
-#### Day 11
+#### Day 15
 ***Assignment 3 Due: Spatial Autocorrelation Lab***
 
 * Agenda:
@@ -189,7 +221,7 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* When might we use Interpolation in Ecology?
 	* Interpolation Methods
 
-#### Day 12
+#### Day 16
 
 * Readings
 	* [Yao et al. 2013. Comparison of Four Spatial Interpolation Methods for Estimating Soil Moisture in a Complex Terrain Catchment. *PLoS ONE* 8, e54660](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0054660#pone-0054660-g008)
@@ -198,16 +230,16 @@ Students are expected to attend class regularly. Skipping class without excuse w
 
 
 
-### Week 7: Multivariate Relationships (Mantel Tests and Alternatives)
+### Week 9: Multivariate Relationships (Mantel Tests and Alternatives)
 
-#### Day 13
+#### Day 17
 ***Assignment 4 Due: Interpolation Exercise***
 
 * Agenda:
 	* What are Mantel Tests and what are they used for, and why are they problematic?
- 	* Spatial Regression as an alternative to Mantel Tests
+ 	* Spatial Regression (& Basics of Regression)
 
-#### Day 14
+#### Day 18
 
 * Readings:
 	* [Guillot, G., and F. Rousset. 2013. Dismantling the Mantel tests. *Methods in Ecology and Evolution* 4:336-344.](http://onlinelibrary.wiley.com/doi/10.1111/2041-210x.12018/abstract)
@@ -216,76 +248,65 @@ Students are expected to attend class regularly. Skipping class without excuse w
 	* Spatial Regression in R
 
 
-### Week 8: Network Analysis
-
-#### Day 15
-***Assignment 7 Due: Landscape Patch Lab & Exercises***
-
-* Agenda
-	* What is Network Analysis?
-	* Uses of Network Analysis in Ecology
-	* 
-
-#### Day 16
+### ***Spring Break - Have Fun!*** 	
 
 
-
-### Week 9: Animal Movement
-
-#### Day 17
-***Assignment 8 Due:***
-
-#### Day 18
-
-
-
-### ***Spring Break - Have Fun!*** 
-
-
-
-### Week 10: Distribution Modeling (Environmental Niche Modeling)
+### Week 10: Animal Movement
 
 #### Day 19
-***Assignment 9 Due***
+***Assignment 8 Due:***
 
 #### Day 20
 
 
-### Week 11: Accounting for Spatial Autocorrelation
+
+
+### Week 11: Distribution Modeling (Environmental Niche Modeling)
 
 #### Day 21
-***Assignment 10 Due:***
-
-#### Day 21
-
-
-### Week 12: Integrating Techniques - Landscape Connectivity
+***Assignment 9 Due***
 
 #### Day 22
-***Assignment 11 Due:***
+
+
+### Week 12: Distribution Modeling Part 2
 
 #### Day 23
+***Assignment 10 Due:***
+
+#### Day 24
 
 
-### Week 13: Work on Projects
+### Week 13: Integrating Techniques - Landscape Connectivity
 
 #### Day 25
+***Assignment 11 Due:***
 
 #### Day 26
 
 
-### Week 14: Future Directions in Landscape Ecology
+### Week 14: Project Status Updates/Sort Out Problems
+
+#### Day 25
+***Assignment 12 Due***
+
+* Agenda
+
+#### Day 26
+
+* Agenda
+	* Work on Projects
+
+### Week 15: Future Directions in Landscape Ecology
 
 #### Day 27
+* Reading:
+	* 
+
 
 #### Day 28
 
 
-### Week 15: Project Presentations
-
-#### Day 29
-
-#### Day 30
 ***Final Paper Due***
 
 ***Poster Session Open To The Department***
