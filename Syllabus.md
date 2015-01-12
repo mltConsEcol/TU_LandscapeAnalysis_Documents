@@ -1,5 +1,5 @@
-# Landscape Analysis and Modeling - Spring 2015
-## BIOL 4383/6383-02
+# Syllabus for *Landscape Analysis and Modeling*
+### BIOL 4383/6383-02 (Spring 2015)
 
 ## Instructor: Dr. Michael L. Treglia
 
@@ -10,7 +10,7 @@
 *E-mail: [mike-treglia@utulsa.edu](mailto:mike-treglia@utulsa.edu)*
 
 
-## Time and Location:
+## Meeting Time and Location:
 
 Keplinger L2 Computer Lab
 
@@ -28,8 +28,18 @@ This course will focus on quantifying and controlling for spatial relationships 
 
 ## Grading: 
 
-Final percentage grades will be calculated based on the below allocation from respective categories:
+Letter grades will be based on typical A, B, C, D, F scheme:
 
+| Percentage of Total Points | Letter Grade| 
+|:--------------------------:|:-----------:|
+| ≥90|A|
+| ≥80, <90| B|
+| ≥70, <80| C|
+| ≥60, <70| D|
+|<60|F|
+
+
+Percentages for grades will be calculated as per the table below:
 
 | Item	 | Due Date* | Percent of Grade |
 |:---------:|:-------------:|:----------------:|
@@ -41,47 +51,36 @@ Final percentage grades will be calculated based on the below allocation from re
 |Final Presentation**	|April 24		|10			|
 |***Total***			|				|***100***	|
 
-**All items turned in after the due-date will be penalized 10 percent per class-day late, unless a valid excuse is provided.*
+*All items turned in after the due-date will be penalized 10 percent per class-day late, unless a valid excuse is provided
 
-***Undergraduates enrolled in the course will only be required to complete one of these itmes (for 40% of the total grade)*
+**Undergraduates enrolled in the course will only be required to complete one of these times (for 40% of the total grade)
 
-#### Participation
+#### Participation:
 
 Students will be expected to participate in classroom discussions throughout the course, and trying to answer questions when appropriate. Just "laying low" in the class will result in deduction of points.
 
-#### Reading Quizzes
+#### Reading Quizzes:
 
 Quizzes on reading will be given if it appears to the instructor that students have not been doing the reading (i.e., there is lack of participation in paper discussion). If given, quizzes will be announced at least 24 hours in advance, not requiring any studying other than a thorough reading of the paper. If quizzes deemed unnecessary, all students will receive full credit for that portion of the course.
 
-#### Assignments (Due throughout the semester)
+#### Assignments (Due throughout the semester):
 
 Assignments will be given approximately weekly, and will generally consist of complete the Thursday labs work. Occasionally, the assignments may also include some additional work, such as by-hand calculations, designed to reinforce understanding of the course material. 
 
-#### Project Proposal (Due March 12)
+#### Project Proposal (Due March 12):
 
 The project proposal should be a 1-2 page document of what you intend to do for your final project for the course. For the project, you may use data from your own research if applicable, or you can mine the literature for existing datasets that fit your research interests. Further details about the project will be discussed in class. In the proposal you should describe the following (in the order you see appropriate): 1) your research question; 2) some of the relevant literature (e.g., previous studies on the focal topic issue); 3) the general methods you propose to use; and 4) anticipated results or relevant preliminary observations of your dataset. This proposal may draw on material from class, but should also include at least 5 citations to the scientific literature.
 
-#### Final Paper (Due April 24)
+#### Final Paper (Due April 24):
 
 The final paper should describe a completed project in the form of a scientific paper, complete the following sections: Abstract; Introduction; Methods; Results; Discussion; Conclusion; Literature Cited; Tables; and Figures. As a guideline, the paper should be ~15-25 pages; there is no minimum page limit, but the paper may not be longer than 30 pages (double-spaced and standard font sizes). Details and guidelines for the final paper, along with a rubric, will be provided in class.
 
-#### Final Presentation (April 24)
+#### Final Presentation (April 24):
 
 The final presentation should cover the details of your final project, and effectively be a summary of your paper. This presentation should be in the format of a 15 minute conference presentation (with 5 minutes following for questions). Specific details and a grading rubric will be provided in class.
 
+#### Attendance Policy:
 
-
-**Letter grades will be based on typical A, B, C, D, F scheme:**
-
-| Percentage of Total Points | Letter Grade| 
-|:--------------------------:|:-----------:|
-| ≥90|A|
-| ≥80, <90| B|
-| ≥70, <80| C|
-| ≥60, <70| D|
-|<60|F|
-
-**Attendance Policy:**
 Students are expected to attend class regularly, and to attend on time. Skipping class or arriving late without excuse will directly contribute to loss of points for Participation, Reading Quizzes (if absent on days of paper discussions), and it may make it more difficult to complete assignments. If students must miss class for any reasons, I encourage them to contact me and get notes from classmates.
 
 
@@ -106,255 +105,31 @@ Students are expected to attend class regularly, and to attend on time. Skipping
 |14|Future of Landscape Ecology; Presentations|
 
 
-## Textbook
+## Additional Information
+
+
+#### Website
+
+A website with a detailed, week-by-week schedule and PDFs of labs/assignments will be maintained at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents). Lecture materials and readings will be shared via e-mail, or the university Shared drive (to be explained in class).
+
+#### Communication
+
+E-mail will be used as the primary means of communication in this course, and students are expected to check their e-mail regularly during the semester.
+
+#### Textbook
 
 No textbook is required for the course. Readings from book chapters and the peer reviewed literature will be provided, along with optional supplemental materials as appropriate.
 
 
-## Computers and Software
+#### Computers and Software
 
-Keplinger L2, where class will meet, has capable computers and will have all necessary software installed. The computer lab is generally open when no classes are scheduled, and thus students may use those computers for assignments and their projects. All software that will be used in the class is free and open source, and may be installed on student's personal computers as well - instructions will be provided during class. If additional resources are needed, students should meet with the instructor to find solutions as necessary.
+Keplinger L2, where class will meet, has capable computers and will have all necessary software installed. The computer lab is generally open when no classes are scheduled there, thus students may use those computers for assignments and projects. All software that will be used in the class is free and open source, and may be installed on student's personal computers as well - instructions will be provided during class. If additional resources are needed, students should meet with the instructor to find solutions as necessary.
 
 
-## Additional Policies
+#### Academic Honesty and Academic Support
 
 Students are expected to adhere to all University of Tulsa policies regarding academic honesty. All work turned in should be that of the individual students, though working together to get through specific problems is strongly encouraged. Plagiarism will not be tolerated in any assignments. Students should see the instructor with about specific problems with the course. If students are facing general academic difficulties (e.g., time management, poor study skills), they should consider taking advantage of services from the Center for Student Academic Support.  Students with disabilities should also contact the Center for Student Academic Support to self-identify their needs to facilitate their rights under the Americans with Disabilities Act.
 
 
 
 
-## BIOL 4383/6383-02 Detailed Schedule
-
-### Week 1: Intro to Landscape Ecology and GIS
-
-#### Day 1
-
-* Readings:
-	* None
-* Agenda: 
-	* Introductions
-	* Logistics
-	* Lecture: Introduction to Landscape Ecology and GIS
-
-#### Day 2
-
-* Readings:
-	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
-* Agenda: 
-	* Discuss reading assignment
-	* Notes about Free and Open Source Software (FOSS)
-	* Exploring QGIS
-
-
-### Week 2: Some Basics of Spatial Data; Intro to R 
-
-#### Day 3
-***Assignment 1 Due: Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
-
-* Agenda:
-	* Some Basic Stats
-		* Covariance & Correlation
-	* Things to be Aware of with Spatial Data
-		* Stationarity
-		* Spatial Dependence and Autocorrelation
-	* An Introduction to R & RStudio
-	
-### Day 4
-
-* Readings
-	* [Legendre et al. 2002. The consequences of spatial structure for the design and analysis of ecological ﬁeld surveys. *Ecography*. 25:601-615](http://onlinelibrary.wiley.com/doi/10.1034/j.1600-0587.2002.250508.x/full)
-	* Agenda
-	* Discuss Reading Material
-	* Get familiar with R, RStudio, & R Packages
-		* Get Data Into R
-		* Understand Data Types
-		* Basic Data Manipulations
-
-
-### Week 3: Nearest Neighbor Analyses; Ripley's K
-
-#### Day 5
-***Assignment 2 Due***
-
-* Agenda
-	* Complete Population Data: Vector Datasets
-	* Nearest Neighbor Analyses
-	* Ripley's K
-
-### Day 6
-
-* Readings:
-	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
-* Agenda:
-	* Discuss Reading Material
-	* Tutorial to R
-	* Nearest Neighbor and Ripley's K analyses in QGIS and R
-
-
-### Week 4: Network Analysis
-
-#### Day 7
-***Assignment 7 Due: Landscape Patch Lab & Exercises***
-
-* Agenda
-	* What is Network Analysis?
-	* Uses of Network Analysis in Ecology 
-
-#### Day 8
-
-
-### Week 5: Fragstats 1 - Describing Landscape-Scale Pattern
-
-#### Day 9
-***Assignment 2 Due: Ripley's K & Nearest Neighbor Analysis Lab***
-
-* Agenda
-	* Complete Population Data: Raster Datasets
-	* An introduction to Fragstats
-	* Landscape Metrics: Lacunarity and Contagion
-
-#### Day 10
-
-* Readings:
-	* [McIntyre, N.E. and J.A. Wiens. 2000. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
-* Agenda
-	* Discuss Reading Material
-	* Preparing Data For Fragstats and Working with the Software
-
-
-### Week 6: Fragstats 2 - Analyzing Patches
-
-#### Day 11
-***Assignment 6 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
-
-* Agenda
-	* Patches vs. Landscapes: What do patch metrics describe?
-	* Applications of Patch Metrics in Ecology
-
-#### Day 12
-
-* Reading
-	* 
-* Agenda
-	* Discuss Reading Material
-	* Landscape Patch Lab
-
-
-	
-### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
-
-#### Day 13
-***Assignment 2 Due: Nearest Neighbor/Ripley's K Analysis Lab***
-
-* Agenda:
-	* Measuring and Visualizing Spatial Autocorrelation
-	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
-
-#### Day 14
-
-* Readings:
-	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
-](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
-* Agenda: 
-	* Discuss Reading Material
-	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation in QGIS & R
-
-
-### Week 8: Interpolation
-
-#### Day 15
-***Assignment 3 Due: Spatial Autocorrelation Lab***
-
-* Agenda:
-	* What is Interpolation?
-	* When might we use Interpolation in Ecology?
-	* Interpolation Methods
-
-#### Day 16
-
-* Readings
-	* [Yao et al. 2013. Comparison of Four Spatial Interpolation Methods for Estimating Soil Moisture in a Complex Terrain Catchment. *PLoS ONE* 8, e54660](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0054660#pone-0054660-g008)
-* Agenda:
-	* Spatial Interpolation Lab
-
-
-
-### Week 9: Multivariate Relationships (Mantel Tests and Alternatives)
-
-#### Day 17 (March 10)
-***Assignment 4 Due: Interpolation Exercise***
-
-* Agenda:
-	* What are Mantel Tests and what are they used for, and why are they problematic?
- 	* Spatial Regression (& Basics of Regression)
-
-#### Day 18 (March 12)
-***Project Proposal Due***
-
-* Readings:
-	* [Guillot, G., and F. Rousset. 2013. Dismantling the Mantel tests. *Methods in Ecology and Evolution* 4:336-344.](http://onlinelibrary.wiley.com/doi/10.1111/2041-210x.12018/abstract)
-* Agenda
-	* Discuss Reading Material
-	* Spatial Regression in R
-
-
-### ***Spring Break - Have Fun!*** 	
-
-
-### Week 10: Animal Movement
-
-#### Day 19
-***Assignment 8 Due:***
-
-#### Day 20
-
-
-
-
-### Week 11: Distribution Modeling (Environmental Niche Modeling)
-
-#### Day 21
-***Assignment 9 Due***
-
-#### Day 22
-
-
-### Week 12: Integrating Techniques - Landscape Connectivity
-
-#### Day 23
-***Assignment 10 Due:***
-
-#### Day 24
-
-
-### Week 13: Project Status Updates/Sort Out Problems
-
-#### Day 25
-***Assignment 11 Due:***
-
-#### Day 26
-
-* Work on Projects
-
-### Week 14: Future Directions of Landscape Ecology
-
-#### Day 25
-
-* Reading:
-	*
-* Agenda
-	* Discuss Papers
-	* Short Lecture on Future Directions of Landscape Ecology
-	* Hash out Any Lingering Problems on Projects
-
-#### Day 26
-
-* Agenda
-	* Work on Projects
-
-#### Day 27
-
-* ***Final Presentations***
-
-
-* ***Final Paper Due***
