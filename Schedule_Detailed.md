@@ -45,7 +45,7 @@ date:
 
 * Readings
 	* [Legendre et al. 2002. The consequences of spatial structure for the design and analysis of ecological ﬁeld surveys. *Ecography*. 25:601-615](http://onlinelibrary.wiley.com/doi/10.1034/j.1600-0587.2002.250508.x/full)
-	* Agenda
+* Agenda
 	* Discuss Reading Material
 	* Get familiar with R, RStudio, & R Packages
 		* Get Data Into R
