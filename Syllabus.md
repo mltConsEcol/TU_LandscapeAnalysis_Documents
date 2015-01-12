@@ -14,7 +14,7 @@ Keplinger L2 (Computer Lab)
 
 Tuesday/Thursday 11:00-12:15 (*Extra time will be available on Thursdays for lab assignments*)
 
-Office Hours: By Appointment (feel free to stop in my office & see if my door is open)
+Office Hours: By Appointment (*Feel free to stop by if the door is open*)
 
 
 ## Course Description:
@@ -42,9 +42,9 @@ Percentages for grades will be calculated as per the table below (followed by de
 | Item	 | Due Date* | Percent of Grade |
 |:---------:|:-------------:|:----------------:|
 |Participation 			|N/A 			|5 			|
-|Reading Quizzes 		|N/A			|10			|
-|Assignments			|See Schedule	|40			|
-|Project Proposal		|March 12		|5			|
+|Reading Quizzes 		|N/A			|5			|
+|Assignments			|See Below	|40			|
+|Project Proposal		|March 12		|10			|
 |Final Paper**			|April 24		|30			|
 |Final Presentation**	|April 24		|10			|
 |***Total***			|				|***100***	|
@@ -85,7 +85,7 @@ Students are expected to attend class regularly, and to arrive on time. Skipping
 ## General Schedule:
 
 | Week	 | Topic |
-|:---------:|:-------------:|
+|:---------:|:-------------|
 |1 |Intro to Landscape Ecology and GIS |
 |2 |Some Basics of Spatial Data; Intro to R|
 |3 |Nearest Neighbor Analyses; Ripley's K|
