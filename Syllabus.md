@@ -7,7 +7,7 @@ output: pdf_document
 
 
 # Landscape Analysis and Modeling
-# (BIOL 4383-02/6383-02)
+# (BIOL 4383/6383-02)
 
 #Instructor: Dr. Michael L. Treglia
 
@@ -17,23 +17,12 @@ Telephone: 918-631-3465
 
 E-mail: [mike-treglia@utulsa.edu](mailto:mike-treglia@utulsa.edu)
 
+
 ## Course Description:
 
 Understanding spatial relationships across landscapes can provide critical insight into patterns and processes observed in ecology and evolutionary biology. Analytical techniques used in understanding these relationships can detect and help control for spatial biases in data, which may obscure effects of other variables. Results from such analyses can inform future research, and guide efforts for tasks including biodiversity conservation and pest management, among others. 
 
 This course will focus on quantifying and controlling for spatial relationships in data, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling habitat and connectivity across landscapes. The main tools we will use are free and open source, including the statistical package, R, and the GIS software, QGIS. Though examples given in the class will focus on ecology and evolutionary biology, most analytical techniques covered can easily be applied to other fields of study, and students will be encouraged to use their own data (or available datasets from their field of study) for assignments throughout the semester. 
-
-Here is a tentative list of specific topics that will be covered, which may be adjusted according to student interest:
-
-* Intro to Landscape Ecology and GIS
-* Spatial Dependence and Autocorrelation
-* Nearest Neighbor Analyses
-* Quantifying Landscape Pattern
-* Spatial Interpolation
-* Mantel Tests and Spatial Regression
-* Animal Movement
-* Species Distribution Modeling/Environmental Niche Modeling
-* Landscape Connectivity (Network Analysis, Least Cost Path)
 
 
 ## Time and Location:
@@ -100,20 +89,48 @@ The final presentation should cover the details of your final project, and effec
 |<60|F|
 
 **Attendance Policy:**
-Students are expected to attend class regularly. Skipping class without excuse will directly contribute to loss of points for Participation, Reading Quizzes (is absent on days of paper discussions), and it may make it more difficult to complete assignments. If students must miss class for any reasons, I encourage them to meet with me and get notes from classmates.
+Students are expected to attend class regularly, and to attend on time. Skipping class or arriving late without excuse will directly contribute to loss of points for Participation, Reading Quizzes (if absent on days of paper discussions), and it may make it more difficult to complete assignments. If students must miss class for any reasons, I encourage them to contact me and get notes from classmates.
 
 
-General Schedule
-
+## General Schedule
 
 | Week	 | Topic |
 |:---------:|:-------------:|
 |1 |Intro to Landscpae Ecology and GIS |
-|2 |Working with Spatial Data; Introduction to R	|
+|2 |Some Basics of Spatial Data; Intro to R|
+|3 |Nearest Neighbor Analyses; Ripley's K|
+|4 |Network Analysis|
+|5 |Fragstats 1 - Describing Landscape-Scale Pattern|
+|6 |Fragstats 2 - Analyzing Patches|
+|7 |Testing for Spatial Autocorrelation|
+|8 |Interpolation|
+|9 |Multivariate Relationships|
+|- |Spring Break|
+|10|Animal Movement|
+|11|Distribution Modeling|
+|12|Landscape Connectivity|
+|13|Focus on Projects|
+|14|Future of Landscape Ecology; Presentations|
+
+
+## Textbook
+
+No textbook is required for the course. Readings from book chapters and the peer reviewed literature will be provided, along with optional supplemental materials as appropriate.
+
+
+## Computers and Software
+
+Keplinger L2, where class will meet, has capable computers and will have all necessary software installed. The computer lab is generally open when no classes are scheduled, and thus students may use those computers for assignments and their projects. All software that will be used in the class is free and open source, and may be installed on student's personal computers as well - instructions will be provided during class. If additional resources are needed, students should meet with the instructor to find solutions as necessary.
+
+
+## Additional Policies
+
+Students are expected to adhere to all University of Tulsa policies regarding academic honesty. All work turned in should be that of the individual students, though working together to get through specific problems is strongly encouraged. Plagiarism will not be tolerated in any assignments. Students should see the instructor with about specific problems with the course. If students are facing general academic difficulties (e.g., time management, poor study skills), they should consider taking advantage of services from the Center for Student Academic Support.  Students with disabilities should also contact the Center for Student Academic Support to self-identify their needs to facilitate their rights under the Americans with Disabilities Act.
 
 
 
-## Detailed Schedule
+
+## BIOL 4383/6383-02 Detailed Schedule
 
 ### Week 1: Intro to Landscape Ecology and GIS
 
@@ -136,7 +153,7 @@ General Schedule
 	* Exploring QGIS
 
 
-### Week 2: Spatial Dependence and Spatial Autocorrelation; Nearest Neighbor Analyses 
+### Week 2: Some Basics of Spatial Data; Intro to R 
 
 #### Day 3
 ***Assignment 1 Due: Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
@@ -161,7 +178,7 @@ General Schedule
 		* Basic Data Manipulations
 
 
-### Week 3		
+### Week 3: Nearest Neighbor Analyses; Ripley's K
 
 #### Day 5
 ***Assignment 2 Due***
@@ -212,7 +229,7 @@ General Schedule
 	* Preparing Data For Fragstats and Working with the Software
 
 
-### Week 6: Fragstats 2 - Describing Patches
+### Week 6: Fragstats 2 - Analyzing Patches
 
 #### Day 11
 ***Assignment 6 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
@@ -345,11 +362,6 @@ General Schedule
 #### Day 27
 
 * ***Final Presentations***
+
+
 * ***Final Paper Due***
-
-
-
-
-
-## Special Policies (attendance, TU stuff...)
-
