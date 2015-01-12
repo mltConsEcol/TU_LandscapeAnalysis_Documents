@@ -1,3 +1,10 @@
+---
+title: "Landscape Analysis and Modeling: Detailed Schedule"
+author: "Michael Treglia"
+date: 
+---
+
+
 ## BIOL 4383/6383-02 Detailed Schedule
 
 ### Week 1: Intro to Landscape Ecology and GIS
