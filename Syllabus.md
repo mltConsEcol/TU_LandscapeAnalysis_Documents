@@ -5,8 +5,6 @@
 
 *Office: N224 Oliphant Hall*
 
-*Telephone: 918-631-3465*
-
 *E-mail: [mike-treglia@utulsa.edu](mailto:mike-treglia@utulsa.edu)*
 
 
@@ -39,7 +37,7 @@ Letter grades will be based on typical A, B, C, D, F scheme:
 |<60|F|
 
 
-Percentages for grades will be calculated as per the table below:
+Percentages for grades will be calculated as per the table below (with descriptions of the graded elements following):
 
 | Item	 | Due Date* | Percent of Grade |
 |:---------:|:-------------:|:----------------:|
@@ -84,7 +82,7 @@ The final presentation should cover the details of your final project, and effec
 Students are expected to attend class regularly, and to attend on time. Skipping class or arriving late without excuse will directly contribute to loss of points for Participation, Reading Quizzes (if absent on days of paper discussions), and it may make it more difficult to complete assignments. If students must miss class for any reasons, I encourage them to contact me and get notes from classmates.
 
 
-## General Schedule
+## General Schedule:
 
 | Week	 | Topic |
 |:---------:|:-------------:|
@@ -105,28 +103,29 @@ Students are expected to attend class regularly, and to attend on time. Skipping
 |14|Future of Landscape Ecology; Presentations|
 
 
-## Additional Information
+## Additional Information:
 
 
-#### Website
+#### Website:
 
 A website with a detailed, week-by-week schedule and PDFs of labs/assignments will be maintained at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents). Lecture materials and readings will be shared via e-mail, or the university Shared drive (to be explained in class).
 
-#### Communication
+#### Communication:
 
-E-mail will be used as the primary means of communication in this course, and students are expected to check their e-mail regularly during the semester.
+E-mail will be used as the primary means of communication in this course, and it is the best way for students to contact the instructor outside of class. Students are expected to check their e-mail regularly throughout the semester for updates on course information.
 
-#### Textbook
+
+#### Textbook:
 
 No textbook is required for the course. Readings from book chapters and the peer reviewed literature will be provided, along with optional supplemental materials as appropriate.
 
 
-#### Computers and Software
+#### Computers and Software:
 
 Keplinger L2, where class will meet, has capable computers and will have all necessary software installed. The computer lab is generally open when no classes are scheduled there, thus students may use those computers for assignments and projects. All software that will be used in the class is free and open source, and may be installed on student's personal computers as well - instructions will be provided during class. If additional resources are needed, students should meet with the instructor to find solutions as necessary.
 
 
-#### Academic Honesty and Academic Support
+#### Academic Honesty and Academic Support:
 
 Students are expected to adhere to all University of Tulsa policies regarding academic honesty. All work turned in should be that of the individual students, though working together to get through specific problems is strongly encouraged. Plagiarism will not be tolerated in any assignments. Students should see the instructor with about specific problems with the course. If students are facing general academic difficulties (e.g., time management, poor study skills), they should consider taking advantage of services from the Center for Student Academic Support.  Students with disabilities should also contact the Center for Student Academic Support to self-identify their needs to facilitate their rights under the Americans with Disabilities Act.
 
