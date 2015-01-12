@@ -1,21 +1,22 @@
----
-title: "Landscape Analysis and Modeling"
-author: "Michael Treglia"
-date: 
-output: pdf_document
----
+# Landscape Analysis and Modeling - Spring 2015
+## BIOL 4383/6383-02
+
+## Instructor: Dr. Michael L. Treglia
+
+*Office: N224 Oliphant Hall*
+
+*Telephone: 918-631-3465*
+
+*E-mail: [mike-treglia@utulsa.edu](mailto:mike-treglia@utulsa.edu)*
 
 
-# Landscape Analysis and Modeling
-# (BIOL 4383/6383-02)
+## Time and Location:
 
-#Instructor: Dr. Michael L. Treglia
+Keplinger L2 Computer Lab
 
-Office: N214 Oliphant Hall
+Tuesday/Thursday 11:00-12:15 (*Extra time will be available on Thursdays for lab assignments*)
 
-Telephone: 918-631-3465
-
-E-mail: [mike-treglia@utulsa.edu](mailto:mike-treglia@utulsa.edu)
+Office Hours: By Appointment (feel free to stop in my office & see if my door is open)
 
 
 ## Course Description:
@@ -25,14 +26,6 @@ Understanding spatial relationships across landscapes can provide critical insig
 This course will focus on quantifying and controlling for spatial relationships in data, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling habitat and connectivity across landscapes. The main tools we will use are free and open source, including the statistical package, R, and the GIS software, QGIS. Though examples given in the class will focus on ecology and evolutionary biology, most analytical techniques covered can easily be applied to other fields of study, and students will be encouraged to use their own data (or available datasets from their field of study) for assignments throughout the semester. 
 
 
-## Time and Location:
-
-Keplinger L2 Computer Lab
-Tuesday/Thursday 11:00-12:15
-*Extra time will be available on Thursdays for lab assignments*
-Office Hours: By Appointment (or just stop in my office & see if my door is open)
-
-
 ## Grading: 
 
 Final percentage grades will be calculated based on the below allocation from respective categories:
@@ -40,13 +33,13 @@ Final percentage grades will be calculated based on the below allocation from re
 
 | Item	 | Due Date* | Percent of Grade |
 |:---------:|:-------------:|:----------------:|
-|Participation |N/A |5 |
-|Reading Quizzes |N/A		|10			|
-|Assignments		|See Schedule	|40			|
-|Project Proposal	|March 12		|5			|
-|Final Paper**		|April 24	|30			|
-|Final Presentation**			|April 24	|10			|
-|***Total***		|		|***100***		|
+|Participation 			|N/A 			|5 			|
+|Reading Quizzes 		|N/A			|10			|
+|Assignments			|See Schedule	|40			|
+|Project Proposal		|March 12		|5			|
+|Final Paper**			|April 24		|30			|
+|Final Presentation**	|April 24		|10			|
+|***Total***			|				|***100***	|
 
 **All items turned in after the due-date will be penalized 10 percent per class-day late, unless a valid excuse is provided.*
 
@@ -105,7 +98,7 @@ Students are expected to attend class regularly, and to attend on time. Skipping
 |7 |Testing for Spatial Autocorrelation|
 |8 |Interpolation|
 |9 |Multivariate Relationships|
-|- |Spring Break|
+|(March 16-20) |Spring Break|
 |10|Animal Movement|
 |11|Distribution Modeling|
 |12|Landscape Connectivity|
