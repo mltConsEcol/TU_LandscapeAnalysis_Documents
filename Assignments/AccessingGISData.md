@@ -21,7 +21,7 @@ To view what is available and download available datasets, use [The National Map
 
 #### Downloading Data from The National Map
 
-![TNM Download Icon](../Images/TNM_DownloadIcon.png)\ To begin the process of downloading data from The National Map, simply click one of the "Download Data" icons, either at the top of the webpage, or just above the map window (in a row with other icons).   You do not need to have the layers you want to download visible on your map; you will select the layers in a later step.
+![TNM Download Icon](./Images/TNM_DownloadIcon.png)\ To begin the process of downloading data from The National Map, simply click one of the "Download Data" icons, either at the top of the webpage, or just above the map window (in a row with other icons).   You do not need to have the layers you want to download visible on your map; you will select the layers in a later step.
 
 You can select any of the appropriate options for defining the extent of data you wish to download. For beginners to GIS, the simplest ways are likely 
 	* draw and download by bounding box;
@@ -30,7 +30,7 @@ You can select any of the appropriate options for defining the extent of data yo
 	
 In this example, we'll focus on a natural area near our campus, Turkey Mountain. A search for "Turkey Mountain, Tulsa, OK" yields a fairly accurate result. Zoom to the appropriate area, and select the option to download data by drawing a bounding box (the first option).  Here's an image of the bounding box I have selected: 
 
-![TNM Bounding Box](../Images/TNM_BoundingBoxDownload.png)\
+![TNM Bounding Box](./Images/TNM_BoundingBoxDownload.png)\
 
 After you draw the box, a new window will appear with check-boxes of data you want to download.  For now, lets check the options for "Boundaries", "Elevation", and "Land Cover", and click "Next" (read the on-page instructions at this point if you are having issues).
 
