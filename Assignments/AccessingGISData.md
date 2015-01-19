@@ -30,7 +30,7 @@ You can select any of the appropriate options for defining the extent of data yo
 	
 In this example, we'll focus on a natural area near our campus, Turkey Mountain. A search for "Turkey Mountain, Tulsa, OK" yields a fairly accurate result. Zoom to the appropriate area, and select the option to download data by drawing a bounding box (the first option).  Here's an image of the bounding box I have selected: 
 
-![TNM Bounding Box](./Images/TNM_BoundingBoxDownload.png)\
+![TNM Bounding Box](./Images/TNM_BoundingBoxDownload.PNG)\
 
 After you draw the box, a new window will appear with check-boxes of data you want to download.  For now, lets check the options for "Boundaries", "Elevation", and "Land Cover", and click "Next" (read the on-page instructions at this point if you are having issues).
 
