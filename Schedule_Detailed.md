@@ -44,7 +44,7 @@ date:
 ### Day 4
 
 * Readings
-	* [Legendre et al. 2002. The consequences of spatial structure for the design and analysis of ecological ﬁeld surveys. *Ecography*. 25:601-615](http://onlinelibrary.wiley.com/doi/10.1034/j.1600-0587.2002.250508.x/full)
+	* [Foster et al. 2003. The importance of land-use legacies to ecology and conservation. Bioscience. 53:77-88.](http://bioscience.oxfordjournals.org/content/53/1/77.short)
 * Agenda
 	* Discuss Reading Material
 	* Get familiar with R, RStudio, & R Packages
