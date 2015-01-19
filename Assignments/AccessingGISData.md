@@ -49,7 +49,9 @@ Once you have the data downloaded, you can import them into your favorite GIS so
 
 ### USDA GIS Resources
 
-The [USDA Geospatial Gateway](http://datagateway.nrcs.usda.gov/) also has a wide variety of data available for download, including soil data, and high resolution aerial imagery. To get started, go to the [website](http://datagateway.nrcs.usda.gov/) and click the green "Get Data" button (towards the upper-right). ![USDA Get Data](./Images/USDA_GetData.PNG)\  From there, you'll need to select the desired State/County of interest, and the datasets you need. see the panes on the left of the screen that describe each step, as in the example below). Note, this website has available Climate data from PRISM, further described below.
+The [USDA Geospatial Gateway](http://datagateway.nrcs.usda.gov/) also has a wide variety of data available for download, including soil data, and high resolution aerial imagery. To get started, go to the [website](http://datagateway.nrcs.usda.gov/) and click the green "Get Data" button (towards the upper-right). ![USDA Get Data](./Images/USDA_GetData.PNG)\ 
+
+From there, you'll need to select the desired State/County of interest, and the datasets you need. see the panes on the left of the screen that describe each step, as in the example below). Note, this website has available Climate data from PRISM, further described below.
 
 ![USDA Order Form](./Images/USDA_OrderForm.PNG)\
 
