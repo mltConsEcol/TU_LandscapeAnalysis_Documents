@@ -21,7 +21,6 @@ To view what is available and download available datasets, use [The National Map
 
 #### Downloading Data from The National Map
 
-
 ![TNM Download Icon](../Images/TNM_DownloadIcon.png)\ To begin the process of downloading data from The National Map, simply click one of the "Download Data" icons, either at the top of the webpage, or just above the map window (in a row with other icons).   You do not need to have the layers you want to download visible on your map; you will select the layers in a later step.
 
 You can select any of the appropriate options for defining the extent of data you wish to download. For beginners to GIS, the simplest ways are likely 
