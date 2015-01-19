@@ -16,7 +16,7 @@ Though many studies use various spatial/GIS datasets, finding and working with t
 
 To view what is available and download available datasets, use [The National Map Viewer](http://viewer.nationalmap.gov/viewer/) platform. Upon opening the webpage, you will see something similar to the image below. Browse  this page - hover your mouse over the icons just above the the map to see what they do, and expand the lists of layers on the left by clicking the + and - icons next to the categories. Check and un-check the boxes to see what these data look like; use the scroll-wheel on your mouse, or the magnifying glass with the + in it to adjust the zoom. You can also search for specific places in the search bar at the top. Note, for the layers labeled "... Availability", this will show polygons representing areas that the data are available for, as the layers themselves can be complex. However, when you go to download data, you will be able to download the actual layers.
 
-![The National Map Viewer](Images/TNM_Image.PNG)\
+![The National Map Viewer](../Images/TNM_Image.PNG)\
 
 
 #### Downloading Data from The National Map
