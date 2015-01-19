@@ -1,11 +1,11 @@
 ---
-title: "Finding, Accessing,and Loading Ecologically Relevant GIS Data (with a focus on the United States)"
+title: "Finding and Downloading GIS Data (Focus on the United States)"
 author: "Michael Treglia"
 ---
 
 # Accessing Ecologically-relevant GIS Datasets
 
-Though many studies use various spatial/GIS datasets, finding and working with them can be a bit of a mystery to a GIS newcomer. This document is designed to point users in the right direction to get started, with a focus on the United States (though some datasets discussed here are also available for other parts of the world). The resources listed below are not necessarily mutually-exclusive to one-another (i.e, you can often find some of the same datasets at multiple places), though some datasets may only be available from individual sources. Detailed instructions on downloading the data are given for the first source to familiarize users with data downloads, but they should explore the other websites to try and figure out how to access the data there - unfortunately every website is a bit different.
+Though many studies use various spatial/GIS datasets, finding and working with them can be a bit of a mystery to a GIS newcomer. This document is designed to point users in the right direction to get started, with a focus on the United States (though some datasets discussed here are also available for other parts of the world). The resources listed below are not necessarily mutually-exclusive to one-another (i.e, you can often find some of the same datasets at multiple places), though some datasets may only be available from individual sources. Detailed instructions on downloading the data are given for the first source to familiarize users with data downloads, but they should explore the other websites to try and figure out how to access the data there - unfortunately every website is a bit different. Typically the projection information is provided and will be read by your GIS software, but if it is not, you may need to look into metadata that comes with the files. This document is meant to get users started, and is thus not to serve as a comprehensive manual for accessing every data source available. Remember - Google is your friend. If it helps, start at these websites to look for datasets you need; if you can't find them, they may exist, but that might require some web-searches. Also, internet Q&A outlets like [GIS Stack Exchange](http://gis.stackexchange.com/) are invaluable when you really get stuck.
 
 ## National-Scale Data
 
@@ -49,7 +49,9 @@ Once you have the data downloaded, you can import them into your favorite GIS so
 
 ### USDA GIS Resources
 
-The [USDA Geospatial Gateway](http://datagateway.nrcs.usda.gov/) also has a wide variety of data available for download, including soil data, and high resolution aerial imagery. To get started, go to the [website](http://datagateway.nrcs.usda.gov/) and click the green "Get Data" button (towards the upper-right). ![USDA Get Data](./Images/USDA_GetData.PNG)\ 
+The [USDA Geospatial Gateway](http://datagateway.nrcs.usda.gov/) also has a wide variety of data available for download, including soil data, and high resolution aerial imagery. To get started, go to the [website](http://datagateway.nrcs.usda.gov/) and click the green "Get Data" button (towards the upper-right). 
+
+![USDA Get Data](./Images/USDA_GetData.PNG)\ 
 
 From there, you'll need to select the desired State/County of interest, and the datasets you need. see the panes on the left of the screen that describe each step, as in the example below). Note, this website has available Climate data from PRISM, further described below.
 
@@ -64,18 +66,13 @@ Most states have their own repositories for GIS data. Typically when I'm trying 
 * [Tulsa City-County Library GIS resources](http://guides.tulsalibrary.org/content.php?pid=557423&sid=4599537)
 * [Carleton College webpage from theNational Association of Geoscience Teachers](http://serc.carleton.edu/NAGTWorkshops/gis/state_resources.html)
 
-For Oklahoma, a couple of particular websites that can be useful are are:
+For Oklahoma, a couple of particular websites that can be useful are:
 
 * [The OKMaps Website](http://ogi.state.ok.us/ogi/search.aspx)
 * [Center for Spatial Analysis at the University of Oklahoma](http://geo.ou.edu/DataFrame.htm)
 
 
+
 ## Climate Data
 
-
-## 
-
-
-
-
-
+In ecological studies, climate data are frequently most useful 
