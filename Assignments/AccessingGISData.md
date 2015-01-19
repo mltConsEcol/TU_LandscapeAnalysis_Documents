@@ -3,9 +3,9 @@ title: "Finding, Accessing,and Loading Ecologically Relevant GIS Data (with a fo
 author: "Michael Treglia"
 ---
 
-# Access for Ecologically-relevant GIS Datasets
+# Accessing Ecologically-relevant GIS Datasets
 
-Though many studies use various spatial/GIS datasets, finding and working with them can be a bit of a mystery to a GIS newcomer. This document is designed to point users in the right direction to get started, with a focus on the United States (though some datasets discussed here are also available for other parts of the world). The resources listed below are not necessarily mutually-exclusive to one-another (i.e, you can often find some of the same datasets at multiple places), though some datasets may only be availalbe from individual sources.
+Though many studies use various spatial/GIS datasets, finding and working with them can be a bit of a mystery to a GIS newcomer. This document is designed to point users in the right direction to get started, with a focus on the United States (though some datasets discussed here are also available for other parts of the world). The resources listed below are not necessarily mutually-exclusive to one-another (i.e, you can often find some of the same datasets at multiple places), though some datasets may only be available from individual sources. Detailed instructions on downloading the data are given for the first source to familiarize users with data downloads, but they should explore the other websites to try and figure out how to access the data there - unfortunately every website is a bit different.
 
 ## National-Scale Data
 
@@ -32,17 +32,26 @@ In this example, we'll focus on a natural area near our campus, Turkey Mountain.
 
 ![TNM Bounding Box](./Images/TNM_BoundingBoxDownload.PNG)\
 
-After you draw the box, a new window will appear with check-boxes of data you want to download.  For now, lets check the options for "Boundaries", "Elevation", and "Land Cover", and click "Next" (read the on-page instructions at this point if you are having issues).
+After you draw the box, a new window will appear with check-boxes of data you want to download.  For now, lets check the options for "Boundaries" and "Elevation" and click "Next" (read the on-page instructions at this point if you are having issues).
 
+A new window should now appear (image below), with lots of products available to download (right now you are only looking at the "Boundaries" products; you'll need to click the gray "Elevation" category to access those). Admittedly, this can be a bit overwhelming, and it might take a bit of trial and error to figure out what you need. In most contexts, for vector data,  shapefiles are the easiest to work with, but you might need to download a "File GDB" option instead. In this case, the third option, "USGS National Boundary Dataset (NBD) for Oklahoma 20140401 State or Territory Shapefile" might suffice, but if you want the fine-scale map of cities and towns, scroll down to that option as well. Check the box for both of those.  If data are available for multiple dates, but they otherwise look the same, get the most recent, or most appropriate for your focal time period.
 
+![TNM Bounding Box](./Images/TNM_LayerSelection.PNG)\
 
+Next, open the tab for "Elevation" - again, there are lots of options. Notice that in the product name, it typically says "1 arc-second",  "1/3 arc-second" or "100 [or 200]-Meter Resolution" - this identifies the resolution (i.e., grain size), as these are raster layers. 1 arc-second is ~30 meters x 30 meters and 1/3 arc-second is ~10 meters x 10 meters. You'll notice there are also a number of formats available. GeoTIFF or IMG files are typically among the easiest to open, with the projection information embedded and nothing to do but import those in QGIS.  If you are working with a large area, you'll have to take notice of the location these are from - in the name, the n37w096 indicates the latitude/longitude of the upper left corner of the individual tile. For large areas, it will have multiple tiles with different latitude/longitude designations, and you'll need to download all that cover your study area. In this case, we'll select the "USGS NED n37w096 1 arc-second 2013 1 x 1 degree IMG".
 
+After you select all desired layers, click the "Next" button. (In your own work, select whatever layers you might need.)
 
+On the left hand side of the screen, ad new panel should be displayed, the "Cart" - you can click on the products you previously selected, and a preview will appear; you can also remove layers, or opt to add more. If you are satisfied with the selection, click "Checkout" to move on with your data order. You'll need to enter your e-mail address twice, and click the "Place Order" button.  You'll receive download links in your e-mail, though it can take a little while. The links typically don't work in Mozilla Firefox, but work to start downloads in Internet Explorer or Google Chrome.
+
+Once you have the data downloaded, you can import them into your favorite GIS software.
 
 
 ### USDA GIS Resources
 
-The USDA ... 
+The [USDA Geospatial Gateway](http://datagateway.nrcs.usda.gov/) also has a wide variety of data available for download, including soil data, and high resolution aerial imagery. To get started, go to the [website](http://datagateway.nrcs.usda.gov/) and click the green "Get Data" button (towards the upper-right). ![USDA Get Data](./Images/USDA_GetData.PNG)\  From there, you'll need to select the desired State/County of interest, and the datasets you need. see the panes on the left of the screen that describe each step, as in the example below). Note, this website has available Climate data from PRISM, further described below.
+
+![USDA Order Form](./Images/USDA_OrderForm.PNG)\
 
 
 
@@ -56,7 +65,7 @@ Most states have their own repositories for GIS data. Typically when I'm trying 
 For Oklahoma, a couple of particular websites that can be useful are are:
 
 * [The OKMaps Website](http://ogi.state.ok.us/ogi/search.aspx)
-* 
+* [Center for Spatial Analysis at the University of Oklahoma](http://geo.ou.edu/DataFrame.htm)
 
 
 ## Climate Data
@@ -65,10 +74,6 @@ For Oklahoma, a couple of particular websites that can be useful are are:
 ## 
 
 
-
-## Some Things to Pay Attention To
-
-When accessing GIS Data, there are a few 
 
 
 
