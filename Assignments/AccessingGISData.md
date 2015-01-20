@@ -76,7 +76,7 @@ For Oklahoma, a couple of particular websites that can be useful are:
 
 ## Climate Data
 
-Climate data are typically recorded at individual weather stations, though in ecological studies, it is typically useful to have summaries of climate conditions for entire landscapes, describing characteristics of temperature and precipitation regimes. Thus, multiple organizations have interpolated the data from weather stations, to estimate conditions for large areas. There are two main sources I frequently go to:
+Climate data are typically recorded at individual weather stations, though in ecological studies, it is typically useful to have summaries of climate conditions for entire landscapes, describing characteristics of temperature and precipitation regimes. Thus, multiple organizations have interpolated the data from weather stations, to estimate conditions for large areas. There are two main sources I frequently go to, listed below. Browse the respective website for information on downloading the data. If you need information from a specific weather station, you can search the resources from the [NOAA National Climatic Data Center](http://www.ncdc.noaa.gov/data-access/land-based-station-data). Other sources may be available from state-wide monitoring networks (e.g., [Mesonet for Oklahoma](https://www.mesonet.org/) and other organizations.
 
 * [PRISM Climate Group at Oregon State](http://www.prism.oregonstate.edu/)
 	* Has 800 meter pixel data for the continental United States
@@ -89,7 +89,8 @@ Climate data are typically recorded at individual weather stations, though in ec
 		* These layers are derived from monthly precipitation and temperature data, to describe the climate in biologically meaningful ways.
 	* Datasets include current conditions (based on 50 year average), projected future conditions under various climate change scenarios, and historical conditions.
 
-## Some Notes about Spatial Referece Information in GIS Data Layers
+	
+## A Note about Spatial Reference Information for GIS Data Layers
 
 When you load data into a GIS program, the projection information should automatically be interpreted by the software, if it is stored correctly with the relevant files. If the projection information is non-existent, you may need to look through metadata files that come with the data (often stored in '.xml' or '.html' documents, labelled as 'metadata'). If you find the projection and need to set it in your GIS software, it may be easiest to do so by filtering for specific terms you find in the metadata. Furthermore, an internet search for the information you find in the metadata, with "EPSG" code in the search phrase can help you find a code used in GIS, the EPSG Code. For example, a Google search for 'wgs 84 epsg' returns [this webpage](http://spatialreference.org/ref/epsg/wgs-84/) as the first result, and indicates the EPSG code for projected (i.e., global coordinates of lat/long) in the datum WGS 84 is 4326. 
 	
