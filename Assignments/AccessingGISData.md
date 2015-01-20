@@ -73,7 +73,18 @@ For Oklahoma, a couple of particular websites that can be useful are:
 * [Center for Spatial Analysis at the University of Oklahoma](http://geo.ou.edu/DataFrame.htm)
 
 
-
 ## Climate Data
 
-In ecological studies, climate data are frequently most useful 
+Climate data are typically recorded at individual weather stations, though in ecological studies, it is typically useful to have summaries of climate conditions for entire landscapes, describing characteristics of temperature and precipitation regimes. Thus, multiple organizations have interpolated the data from weather stations, to estimate conditions for large areas. There are two main sources I frequently go to:
+
+* [PRISM Climate Group at Oregon State](http://www.prism.oregonstate.edu/)
+	* Has 800 meter pixel data for the continental United States
+	* Lots of information, including 30 year normals for monthly and annual precipitation, maximum temperature, and minimum temperature.
+	* Also has elevation layers, historical data, and recent data for individual months
+* [WorldClim Global Climate Data](http://www.worldclim.org/) 
+	* Global Dataset of 30 second resolution (~800-1,000 meter resolution); Coarser resolutions are available (which are smaller file size)
+	* Monthly and annual minimum, maximum, and mean temperature and precipitation
+	* Also contains "Bioclim" layers - described [here](http://www.worldclim.org/bioclim)
+		* These layers are derived from monthly precipitation and temperature data, to describe the climate in biologically meaningful ways.
+	* Datasets include current conditions (based on 50 year average), projected future conditions under various climate change scenarios, and historical conditions.
+	
