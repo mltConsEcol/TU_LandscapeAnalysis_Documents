@@ -25,9 +25,9 @@ To view what is available and download available datasets, use [The National Map
 
 You can select any of the appropriate options for defining the extent of data you wish to download. For beginners to GIS, the simplest ways are likely:
 
-	* draw and download by bounding box;
-	* download by current map extent; or
-	* download by coordinate input.
+* draw and download by bounding box;
+* download by current map extent; or
+* download by coordinate input.
 	
 In this example, we'll focus on a natural area near our campus, Turkey Mountain. A search for "Turkey Mountain, Tulsa, OK" yields a fairly accurate result. Zoom to the appropriate area, and select the option to download data by drawing a bounding box (the first option).  Here's an image of the bounding box I have selected: 
 
