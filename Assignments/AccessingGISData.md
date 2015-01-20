@@ -1,6 +1,7 @@
 ---
-title: "Finding and Downloading GIS Data (Focus on the United States)"
-author: "Michael Treglia"
+title: "Finding and Downloading GIS Data for (mostly) the United States"
+author: "Landscape Analysis and Modeling"
+date: "Instructor: Michael Treglia"
 ---
 
 # Accessing Ecologically-relevant GIS Datasets
@@ -87,4 +88,8 @@ Climate data are typically recorded at individual weather stations, though in ec
 	* Also contains "Bioclim" layers - described [here](http://www.worldclim.org/bioclim)
 		* These layers are derived from monthly precipitation and temperature data, to describe the climate in biologically meaningful ways.
 	* Datasets include current conditions (based on 50 year average), projected future conditions under various climate change scenarios, and historical conditions.
+
+## Some Notes about Spatial Referece Information in GIS Data Layers
+
+When you load data into a GIS program, the projection information should automatically be interpreted by the software, if it is stored correctly with the relevant files. If the projection information is non-existent, you may need to look through metadata files that come with the data (often stored in '.xml' or '.html' documents, labelled as 'metadata'). If you find the projection and need to set it in your GIS software, it may be easiest to do so by filtering for specific terms you find in the metadata. Furthermore, an internet search for the information you find in the metadata, with "EPSG" code in the search phrase can help you find a code used in GIS, the EPSG Code. For example, a Google search for 'wgs 84 epsg' returns [this webpage](http://spatialreference.org/ref/epsg/wgs-84/) as the first result, and indicates the EPSG code for projected (i.e., global coordinates of lat/long) in the datum WGS 84 is 4326. 
 	
