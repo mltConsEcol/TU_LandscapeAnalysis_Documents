@@ -103,7 +103,6 @@ Another compressed format you may encounter is or 'tar.gz', for which special so
 After installing 7-zip, you should see options to work with files in 7-zip when you right-click on them (as shown below; if not, you can find 7-zip in your programs, open the software, browse to your appropriate .tar.gz file, and use the extract functions as described hereafter).  In the example below, the compressed file is 'builtupp_usa.shp_nt00899.tar.gz', and we start by extracting it to a the current directory.
 
 ![7zip Right Click](./Images/7zip_RightClick.PNG)\
-![AddVectorLayer](./Images/QGIS_AddVectorLayer.PNG)\ 
 
 
 The resulting file will end in '.tar' Now you need to do one more de-compression step - right click on the .tar file, select 7-zip, and 'Extract to "[Filename]"'. This should create a new folder, with all of the files that were in the compressed folder.
