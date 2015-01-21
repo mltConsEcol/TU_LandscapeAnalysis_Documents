@@ -4,7 +4,7 @@ date: Landscape Analysis and Modeling, The University of Tulsa, Spring 2015
 author: "Instructor: Michael Treglia"
 ---
 
-*Note: This material is available online at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md)
+*Note: This material is available online with active hyperlinks at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md)
 
 # Accessing Ecologically-relevant GIS Datasets
 
@@ -129,8 +129,43 @@ Some GIS data are only available in a format developed by the company that makes
 * You cannot edit these layers while they are in .gdb files, but you can export them to Shapefiles, and conduct any manipulations/analyses with that format.
 	* Right click on the layer you need to work with in the Layers Pane of QGIS, and selct "Save As".
 	* Keep the Format as ESRI Shapefile and define a filename and location in the "Save As" box. The defaults should work for most purposes. The defaults should load the new Shapefile into your current project, but you can also use standard data import methods to bring the data into QGIS.
+	
+
+### Removing Unwanted Features from Vector Layers (e.g., isolating a single county of interest)
+
+Vector datasets may be available for larger areas than you really want - for example, if you want to work with Tulsa County, Oklahoma, and you download the appropriate layer from The National Map, the layer you have will likely include all counties of Oklahoma (and adjacent counties in neighboring states).
+
+![OK Counties](./Images/OK_Counties.PNG)\
+
+
+One way, described below, is to do a query on (i.e., filter out) the layer to show only the desired features, based on the Attribute Table. Alternatively, you may make a copy of the shapefile, use the layer editing tools to delete features. Here are instructions for the former option, with an example from the "County or Equivalent" layer for Oklahoma, to only display Tulsa County:
+
+* Right-click the focal layer and select "Properties"
+* Along the left side of the Properties window, select the "General" tab.
+* Make sure the "Feature subset" section is open by clicking the arrow next to that text, and click the "Query Builder" button (see screen-shot below).
+
+![QGIS Layer Properties](./Images/QGIS_PropertiesGeneral.PNG)\
+
+
+* In the next window that appears, there will be an area that says "Fields" - these are the columns in the Attribute Table for the layer. The field "County_NAM" contains the full names of counties. An example of the window filled as necessary is provided after this section.
+	* If you click a field name, and in the Values box click either "Sample" or "All", either a random sample or all of the possible values for the selected attribute will be displayed. So, if you select "COUNTY_NAM" and then click "All", you will see all of the county names listed.
+* Double-click the name of the field you wish to filter the data by, and it will appear in the white box towards the bottom of this window.  Then select the appropriate operator you wish to use. 
+	* In this case, we wish to select only Counties where the "COUNTY_NAM" is "Tulsa", so choose the "=" button. If you wanted all counties except for Tulsa, you would use the "!=" button.
+	* Then type " 'Tulsa' " (or double-click on "Tulsa" in list of Values).
+* If you click "Test" with these settings, it should tell you "The where clause returned 1 row(s).", meaning that only one feature in the dataset will be used (i.e., Tulsa County).
+* Click "OK", then Click "OK" again in the Properties window, and now Tulsa County is the only area displayed.
+* If you need to un-do this, simply get back into the Query Builder window, and use the "Clear" button towards the bottom.
+
+
+![QGIS Query Builder](./Images/QGIS_QueryBuilder.PNG)\
+
+	
+And here's what the result should look like:
+
+![OK Tulsa County](./Images/OK_TulsaCounty.PNG)\
+ 
 
 ### Spatial Reference Information for GIS Data Layers
 
 When you load data into a GIS program, the projection information should automatically be interpreted by the software, if it is stored correctly with the relevant files. If the projection information is non-existent, you may need to look through metadata files that come with the data (often stored in '.xml' or '.html' documents, labelled as 'metadata'). If you find the projection and need to set it in your GIS software, it may be easiest to do so by filtering for specific terms you find in the metadata. Furthermore, an internet search for the information you find in the metadata, with "EPSG" code in the search phrase can help you find a code used in GIS, the EPSG Code. For example, a Google search for 'wgs 84 epsg' returns [this webpage](http://spatialreference.org/ref/epsg/wgs-84/) as the first result, and indicates the EPSG code for projected (i.e., global coordinates of lat/long) in the datum WGS 84 is 4326.
-	
+
