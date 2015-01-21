@@ -8,4 +8,8 @@ author: "Instructor: Michael Treglia"
 
 1.	Download and create a map of GIS data. (10 points total)
 	*	Download at least one raster and one vector layer for an area of your choice. This may be a study site of yours, our university campus, Turkey Mountain, or anywhere else. At this point, it will be considerably easier to work with an area that is relatively small (e.g., contained within a single county). Larger areas may require more memory on your computer, and more steps to create a final product. Keep it simple for now. A county or city area is reasonable, with a fairly coarse raster (e.g., 30 meter resolution).
-	* Create a map of the area you selected. The features that you show are you choice, but the map layout should be logical (e.g., if you are trying to show elevation within boundaries of a city, consider clipping the elevation layer to the city boundary, and make sure to adjust the symbology of the city boundary so you can see the . If you have a polygon that you are using as 
+	* 	Create a map of the area you selected. The features that you show are you choice, but the map layout should be logical (e.g., if you are trying to show elevation within boundaries of a city, consider clipping the elevation layer to the city boundary, and make sure to adjust the symbology of the city boundary so you can see the raster layer underneath it (e.g., solid border for the polygon, and transparent fill).
+	* 	There are some key features to include in the map, which your grade will be based on:
+		* 	Show at least 1 Vector and 1 Raster layer (2 points)
+		*	Include a logical legend
+			*	Show all of (and only) features that you include in the map, and if you are using a continuous raster (e.g., of elevation), indicate the units.
