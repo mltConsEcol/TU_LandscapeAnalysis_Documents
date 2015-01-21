@@ -39,7 +39,7 @@ date:
 	* Things to be Aware of with Spatial Data
 		* Stationarity
 		* Spatial Dependence and Autocorrelation
-	* An Introduction to R & RStudio
+	* Accessing GIS Data
 	
 ### Day 4
 
@@ -47,16 +47,14 @@ date:
 	* [Foster et al. 2003. The importance of land-use legacies to ecology and conservation. Bioscience. 53:77-88.](http://bioscience.oxfordjournals.org/content/53/1/77.short)
 * Agenda
 	* Discuss Reading Material
-	* Get familiar with R, RStudio, & R Packages
-		* Get Data Into R
-		* Understand Data Types
-		* Basic Data Manipulations
+	* [Lab Assignment](./Assignments/Assignment2.md)
+		* Download GIS Data and Make Your Own Map
+		* Introduction to R
 
 
 ### Week 3: Nearest Neighbor Analyses; Ripley's K
 
 #### Day 5
-***Assignment 2 Due***
 
 * Agenda
 	* Complete Population Data: Vector Datasets
@@ -64,6 +62,7 @@ date:
 	* Ripley's K
 
 ### Day 6
+***Assignment 2 Due***
 
 * Readings:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
