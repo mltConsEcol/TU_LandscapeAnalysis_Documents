@@ -1,8 +1,10 @@
 ---
 title: "Finding and Downloading GIS Data for (mostly) the United States"
-author: "Landscape Analysis and Modeling"
-date: "Instructor: Michael Treglia"
+date: Landscape Analysis and Modeling, The University of Tulsa, Spring 2015
+author: "Instructor: Michael Treglia"
 ---
+
+*Note: This material is also available online at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md)
 
 # Accessing Ecologically-relevant GIS Datasets
 
