@@ -104,6 +104,7 @@ After installing 7-zip, you should see options to work with files in 7-zip when 
 
 ![](./Images/7zip_RightClick.PNG)\
 
+
 The resulting file will end in '.tar' Now you need to do one more de-compression step - right click on the .tar file, select 7-zip, and 'Extract to "[Filename]"'. This should create a new folder, with all of the files that were in the compressed folder.
 
 
