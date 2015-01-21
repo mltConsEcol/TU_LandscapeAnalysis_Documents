@@ -4,7 +4,7 @@ date: Landscape Analysis and Modeling, The University of Tulsa, Spring 2015
 author: "Instructor: Michael Treglia"
 ---
 
-*Note: This material is also available online at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md)
+*Note: This material is available online at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/AccessingGISData.md)
 
 # Accessing Ecologically-relevant GIS Datasets
 
