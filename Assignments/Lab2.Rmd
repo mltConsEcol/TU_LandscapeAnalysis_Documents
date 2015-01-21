@@ -1,0 +1,42 @@
+---
+title: "Lab 2: Intro to R"
+author: "Michael L. Treglia"
+date: "Wednesday, January 21, 2015"
+---
+
+[R](http://www.r-project.org/) is a powerful, free platform for statistical computing, and has become commonly employed in countless fields in the last decade. It is largely command-line driven, however, which creates a learning curve. This document and the exercises within is designed to give new users some familiarity with the program. Users can interface directly with R, or work with [RStudio](http://www.rstudio.com/), which some people find makes it easier to stay organized within a session of R.
+
+To install R on your own computer, look for the download links here: [http://cran.r-project.org/](http://cran.r-project.org/), and follow the respective instructions. To install RStudio, find the download button at the RStudio homepage, here: [http://www.rstudio.com/](http://www.rstudio.com/).
+
+## Getting Started with R
+
+Start by opening up the lastest version of R installed on your computer. You'll see a screen that may look a bit daunting, with a single window that has text in it and a blinking cursor. It should look something like this: 
+
+![](./Images/RConsole.PNG)\
+
+This is where you can type commands directly into R, and see immediately what R has done with your commands. There are two main ways to work with R:
+
+1) Interactively, within this window; and 
+2) Via scripting, using R Script files.
+
+
+
+Things to cover:
+1) R as a calculator
+2) Defining data in R (create vectors and dataframes)
+3) Importing .csv files in R
+4) Calculating summary statistics
+5) Making basic plots
+2) 
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
