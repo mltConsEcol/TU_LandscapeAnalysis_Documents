@@ -49,7 +49,7 @@ date:
 	* Discuss Reading Material
 	* [Work on Assignment 2](./Assignments/Assignment2.md)
 		* Download GIS Data and Make Your Own Map - see info on getting data [here](./Assignments/AccessingGISData.md) or in the PDF document available on Harvey.
-		* Introduction to R - answer the questions throughout the [Getting Familiar with R](Lab2_IntroToR.Rmd) document, also available as a PDF on Harvey.
+		* Introduction to R - answer the questions throughout the [Getting Familiar with R](./Assignments/Lab2_IntroToR.Rmd) document, also available as a PDF on Harvey.
 
 
 ### Week 3: Nearest Neighbor Analyses; Ripley's K
