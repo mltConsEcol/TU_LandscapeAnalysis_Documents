@@ -6,6 +6,8 @@ author: "Instructor: Michael Treglia"
 
 ***Due Date: Thursday, January 29, 2015***
 
+PLEASE WRITE YOUR NAME ON ALL WORK
+
 This assignment is composed of two parts. Complete as much as you desire during the class time; come back to the lab or work on your own computers to finish this work as needed. Contact the instructor regarding any issues completing this work, whether it be problems with QGIS, finding data for your focal area, etc.
 
 1.	Download and create a map of GIS data. (10 points total)
@@ -21,4 +23,6 @@ This assignment is composed of two parts. Complete as much as you desire during 
 		* An Inset to indicate where the focal area is within the a larger scale (if your focus is a city, perhaps the larger scale for the inset is the County or State) (1 point)
 		* A Short Title (e.g., "Elevation Map of the City of Tulsa, OK") (1 point)
 		
-2. Complete the R Tutorial and answer the contained questions (10 points total)
+2. Go through the "Getting Familiar with R" document and answer the contained questions (10 points total, one point per question)
+	* For figures that you need to include, simply copy and paste them into a Word document or something similar.
+	* Feel free to work together through problems, and use the resources linked in the document.
