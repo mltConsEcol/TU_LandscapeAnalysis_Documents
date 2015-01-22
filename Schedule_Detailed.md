@@ -47,9 +47,9 @@ date:
 	* [Foster et al. 2003. The importance of land-use legacies to ecology and conservation. Bioscience. 53:77-88.](http://bioscience.oxfordjournals.org/content/53/1/77.short)
 * Agenda
 	* Discuss Reading Material
-	* [Lab Assignment](./Assignments/Assignment2.md)
-		* Download GIS Data and Make Your Own Map
-		* Introduction to R
+	* [Work on Assignment 2](./Assignments/Assignment2.md)
+		* Download GIS Data and Make Your Own Map - see info on getting data [here](./Assignments/AccessingGISData.md) or in the PDF document available on Harvey.
+		* Introduction to R - answer the questions throughout the [Getting Familiar with R](Lab2_IntroToR.Rmd) document, also available as a PDF on Harvey.
 
 
 ### Week 3: Nearest Neighbor Analyses; Ripley's K
