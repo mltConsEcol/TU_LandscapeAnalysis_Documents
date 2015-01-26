@@ -68,8 +68,9 @@ date:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
 * Agenda:
 	* Discuss Reading Material
-	* Tutorial to R
-	* Nearest Neighbor and Ripley's K analyses in QGIS and R
+	* Work on Assignment 3
+		* Getting Data into R
+		* Nearest Neighbor and Ripley's K analyses in QGIS and R
 
 
 ### Week 4: Other Techniques for Complete Sample Data
@@ -78,10 +79,16 @@ date:
 ***Assignment 3 Due: Working with Data in R; Nearest Neighbor and Ripley's K Analyses in R/QGIS***
 
 * Agenda
-	* What is Network Analysis?
-	* Uses of Network Analysis in Ecology 
+	* Network Analysis
+	* Quadrat Variance Methods
 
 #### Day 8
+
+* Readings:
+	* 
+Agenda:
+	* Discuss Reading Material
+	* Work on Assignment 4
 
 
 ### Week 5: Fragstats 1 - Describing Landscape-Scale Pattern
