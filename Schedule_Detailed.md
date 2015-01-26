@@ -94,7 +94,7 @@ Agenda:
 ### Week 5: Fragstats 1 - Describing Landscape-Scale Pattern
 
 #### Day 9
-***Assignment 2 Due: Ripley's K & Nearest Neighbor Analysis Lab***
+***Assignment 4 Due***
 
 * Agenda
 	* Complete Population Data: Raster Datasets
@@ -113,7 +113,7 @@ Agenda:
 ### Week 6: Fragstats 2 - Analyzing Patches
 
 #### Day 11
-***Assignment 6 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
+***Assignment 5 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
 
 * Agenda
 	* Patches vs. Landscapes: What do patch metrics describe?
@@ -132,7 +132,7 @@ Agenda:
 ### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 13
-***Assignment 2 Due: Nearest Neighbor/Ripley's K Analysis Lab***
+***Assignment 6 Due***
 
 * Agenda:
 	* Measuring and Visualizing Spatial Autocorrelation
@@ -151,7 +151,7 @@ Agenda:
 ### Week 8: Interpolation
 
 #### Day 15
-***Assignment 3 Due: Spatial Autocorrelation Lab***
+***Assignment 7 Due***
 
 * Agenda:
 	* What is Interpolation?
@@ -170,7 +170,7 @@ Agenda:
 ### Week 9: Multivariate Relationships (Mantel Tests and Alternatives)
 
 #### Day 17 (March 10)
-***Assignment 4 Due: Interpolation Exercise***
+***Assignment 8 Due: Interpolation Exercise***
 
 * Agenda:
 	* What are Mantel Tests and what are they used for, and why are they problematic?
@@ -192,7 +192,7 @@ Agenda:
 ### Week 10: Animal Movement
 
 #### Day 19
-***Assignment 8 Due:***
+***Assignment 9 Due***
 
 #### Day 20
 
@@ -202,7 +202,7 @@ Agenda:
 ### Week 11: Distribution Modeling (Environmental Niche Modeling)
 
 #### Day 21
-***Assignment 9 Due***
+***Assignment 10 Due***
 
 #### Day 22
 
@@ -210,7 +210,7 @@ Agenda:
 ### Week 12: Integrating Techniques - Landscape Connectivity
 
 #### Day 23
-***Assignment 10 Due:***
+***Assignment 11 Due:***
 
 #### Day 24
 
@@ -218,7 +218,7 @@ Agenda:
 ### Week 13: Project Status Updates/Sort Out Problems
 
 #### Day 25
-***Assignment 11 Due:***
+***Assignment 12 Due:***
 
 #### Day 26
 
