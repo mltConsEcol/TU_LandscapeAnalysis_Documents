@@ -41,7 +41,7 @@ date:
 		* Spatial Dependence and Autocorrelation
 	* Accessing GIS Data
 	
-### Day 4
+#### Day 4
 
 * Readings
 	* [Foster et al. 2003. The importance of land-use legacies to ecology and conservation. Bioscience. 53:77-88.](http://bioscience.oxfordjournals.org/content/53/1/77.short)
@@ -61,8 +61,8 @@ date:
 	* Nearest Neighbor Analyses
 	* Ripley's K
 
-### Day 6
-***Assignment 2 Due***
+#### Day 6
+***[Assignment 2 Due: Making a Map, and Intro to R](./Assignments/Assignment2.md)***
 
 * Readings:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
@@ -72,10 +72,10 @@ date:
 	* Nearest Neighbor and Ripley's K analyses in QGIS and R
 
 
-### Week 4: Network Analysis
+### Week 4: Other Techniques for Complete Sample Data
 
 #### Day 7
-***Assignment 7 Due: Landscape Patch Lab & Exercises***
+***Assignment 3 Due: Working with Data in R; Nearest Neighbor and Ripley's K Analyses in R/QGIS***
 
 * Agenda
 	* What is Network Analysis?
