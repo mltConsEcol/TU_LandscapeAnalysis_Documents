@@ -1,11 +1,11 @@
 ---
-title: "R: Scripts, Getting Data into R, Simple Linear Regression, & Ripley's K"
+title: "Scripts, Importing Data, Simple Linear Regression, & Ripley's K in R"
 author: "Michael L. Treglia"
-date: 'Material for Lab 3 of Landscape Analysis and Modeling, Spring 2015'
+date: "Material for Lab 3 of Landscape Analysis and Modeling, Spring 2015"
 output: pdf_document
 ---
 
-*This document is available online, with active hyperlinks, at:*
+*This document, with active hyperlinks, is available online at: [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_MoreIntroToR.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_MoreIntroToR.Rmd)*
 
 In the first lab using R, we simply used the command line as an interactive interface. You can carry out the basic functions quickly and easily, though saving your commands and making your work repeatable might be difficult. Most simply, it seems you could copy and paste all of your commands into plain text editor (e.g., Notepad and Text Edit are built-in editors on Windows and Macs, respectively), although this is still cumbersome. Isn't there a better way?!?!
 
@@ -15,113 +15,60 @@ A new window will appear within R; you can type your commands here, and use [CTR
 
 ![](./Images/R_ScriptExample.png)\
 
+Now that you have this great tool at your fingertips to make your work repeatable, lets try to do some more complex steps, which are normal parts of working with your data in R. We'll work with a dataset from tree censusus, conducted at Harvard Forest ([http://harvardforest.fas.harvard.edu/](http://harvardforest.fas.harvard.edu/). We'll work with a '.csv' file, which stands for "Comma Separated Values" - this is among the easiest of formats to import into R. If your own data that you want to work with is stored in Excel, you can easily export it to a .csv file using the "Save As" option, and choosing '.csv' as the file type.
 
+Download the Lyford Mapped Tree Plot Data from Harvard Forest, available here: [http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032](http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032). Under the "Data" section of the website, there are two items: the first, ([hf032-02](http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-02-tree.csv)) is the data - simply click to initiate the download; The second ([hf032-01](http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-01-map.jpg)) is a map of plots in which data were collected. Save the dataset to a logical place that you can navigate to on your computer. If the data automatically open in Microsoft Excel, simply save it in the same format it came as (.csv). (It can be useful to browse the data in Excel, but we'll do all analysis and manipulation in R.)
+*The citation for this dataset is: Foster D, Barker Plotkin A, Lyford W. 1999. Lyford Mapped Tree Plot at Harvard Forest since 1969. Harvard Forest Data Archive: HF032.*
 
+You should browse the website with the data for information about how it was collected - in particular, look at the Detailed Metadata. This will explain what each column in the dataset refers to, and provides a key to the abbreviations (notably different tree species) in the dataset.
 
-
-```{r, results='hide'}
-vector1 <- c(1,2,5,8,2)
-```
-
-Once you have used the assignment operator, R has information loaded into memory. You can see what R has loaded into memory by using:
-
-```{r, results='hide'}
-ls()
-```
-
-Typing any item listed by that function will display that entire dataset.
-
-Note that the 'c' before the list of numbers above is actually a function. So in this case, the function is being used to define the assignment (i.e, what is being called vector1). Functions precede opening parentheses, and have various arguments, depending on the specific function. To see specifics for a function, simply type help([function name]), as with this:
+When you are working in R, it is generally a good idea to specify the folder location where you want R to be reading data from/writing data to. This location is the "working directory".  R has a default working directory, but that is not usually where you keep your data stored. To find out the current working directory, use
 
 ```{r, results='hide'}
-help(c)
+getwd()
 ```
 
-The help file may seem a bit elusive at first, but just read the description carefully - as you get more familiar with R, it will start to make some sense. Furthermore, help has useful examples at the end of each section - simply scroll down to the end of the help page for a specific function and you will find them.
-
-
-To see what is actually stored as the character or name, simply type the assignment
+To change it to the folder where you have your data stored you will use the "setwd" function, and the only argument that you need to include is the desired file path in quotation marks (either double or single quotes, as long as you are consistent, will both work. For example, I want to set my working directory to "My Documents" on my computer.
 
 ```{r, results='hide'}
-vector1
+setwd("D:/TregliaFiles/Documents")
 ```
 
-Furthermore, you can conduct mathematical operations on the assigned information, and get summary statistics. Try the following and see what happens:
+To get the folder path, you can simply browse the folder manager on your computer (e.g., My Computer/Windows Explorer on Windows), find where you have the data,  copy the path at the top of the window, and paste it into your script window in R. 
+*If you are a Windows user, you will have to make a small edit: you need to change the backslashes ('\') in  the file path to forward slashes ('/') or double backslashes ('\\') for your path to be read correctly.*
+
+To actually read the data into R, you will use the 'read.csv' function, with the only argument as the file name for the dataset you've saved. This is a specific form of a function 'read.table', which can import various types of text files, but 'read.csv' is set to use .csv files by default. We will assign the data to a logical name - maybe 'HTrees'. If I am doing this in a script window, you should have something similar to the following image.
+
+
+```{r, include=FALSE}
+HTrees <- read.csv("http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-02-tree.csv")
+```
+
+![](./Images/R_ScriptImportHarvardData.png)\
+
+
+At this point, you can inspect the dataset structure, and quickly look at the first and last few lines to get a feel for what it looks like.
+
+
+### Question 1: How many different types of tree species are listed in this dataset? (I want you to figure this out in R, and for full credit you must indicate what function you used). 
+
+*The following website may aid in the above question and the next few steps: [http://www.ats.ucla.edu/stat/r/modules/subsetting.htm](http://www.ats.ucla.edu/stat/r/modules/subsetting.htm)*
+
+
+This dataset is large, with many different species in a variety of plots across many years. We will only focus on the plot "SE11", and the species *Acer rubrum* and *Quercus alba*, from the year 1991. 
+
+### Question 2: take a subset of the data so you have a dataset with the properties just described. To show that you've done it, simply provide the commands you used. You can do this in one or multiple steps. For consistency with this document, assign the subsetted dataset the name 'lab3Subset'
+
+```{r, include=FALSE}
+lab3subset <- subset(HTrees, block=="SE11" & meas3yr==1991 & species=="ACRU"|species=="QUAL")
+```
+
+You can remove extraneous factor levels (e.g, other tree species, )
+
+Given that the our focal year is 1991, and a lot of the columns in the dataset have information about other years, we can discard those columns. There are a few ways to do this, but here we'll use a "column index" method. In R, every row and column has an numerical index (row i, column j), starting at 0. We can specifically call on these in functions and we refer to indices in R using 'datasetName[rowNumber,columnNumber]'. For example, if you want to see what is in the 2nd row and 3rd column of your subsetted dataset, you can use 
 
 ```{r, results='hide'}
-mean(vector1)
-vector1 * 4
-summary(vector1)
-length(vector1)
+lab3subset[2,3]
 ```
 
-*Question 1: What does the function 'length' do?*
 
-You can work with multiple vectors together too  (try these and see what happens):
-
-```{r, results='hide'}
-vector2 <- c(3,4,2,6,9)
-vector1 * vector2
-vector1 / vector2
-cor(vector1,vector2)
-```
-
-*Question 2: What does the function 'cor' do, and what value does it return in this case?*
-
-To store the result of an operation as a new entity, simply use an assignment:
-
-```{r, results='hide'}
-vector3 <- vector1 * vector2
-```
-An important thing to be aware of is that data can be in various forms - it can be stored as integers, as strings (i.e, non-numerical characters), and factors (i.e., categories). You can define these yourself, though R has automatic interpretations. To figure out how R sees data, use the 'str' command (which stands for Structure). For example,
-
-```{r, results='hide'}
-str(vector1)
-```
-
-The result of that command should be 'num [1:5] 1 2 5 8 2'. If you are dealing with multiple variables in a dataset, as you will later in this exercise, the results will also list the variable names.
-
-This indicates that it vector1 is numeric, contains 5 pieces of information (1 through 5), and lists the data. If it were a much longer vector, it would only list the first few pieces of information.
-
-You can also plot data in various ways. For example, the simple commands 'boxplot([vector name]' and 'hist[vector name]' create boxplot and histograms respectively. 
-
-You can also plot two variables together.
-
-*Question 3: using the help for the function 'plot', produce a plot of the variables vector1 and vector2 together, and copy and paste it into your results.*
-
-There are some datasets you can play around with, built into R. To see what they are, type the command below and hit enter/return.
-
-```{r, results='hide'}
-data()
-```
-
-Load the 'iris' dataset by typing
-
-```{r, results='hide'}
-data(iris)
-```
-
-You can view the beginning of the dataset (i.e, the first few rows) using the 'head' function, and the end of the dataset using the 'tail function'.  To view only a single column, you could use iris$[columnName]. You can also combine these, to view the beginning or end of a single variable in a dataset.
-
-```{r, results='hide'}
-head(iris$Sepal.Length)
-```
-
-*Note that spaces are not allowed in column names in R - they are replaced with periods. This is reflected when you view the dataset, and needs to be maintained when you use the data in functions.
-
-Now work with this dataset to complete answer the remaining questions/complete the remaining tasks.
-
-*Question 4: Inspect the structure of the iris dataset. What variable is recognized by R as a Factor variable?*
-*Bonus Question: Can you figure out what categories exist for this factor variable?*
-
-*Question 5: Make a histogram for Sepal Length, and paste it into your results. Here's a hint: to call on a single column of a dataset, you need to type 'datasetName$columnName'*
-
-*Question 6: Use the 'subset' command to create a subset of the data, where the only species represented is 'setosa' (you can use 'head' and 'tail' to inspect the beginning and end of the resulting dataset, or view the entire result by simply typing the new name of the resulting dataset)*
-
-*Question 7: For the entire iris dataset, calculate the correlation coefficient between Sepal Length and Petal Length.*
-
-*Question 8: Plot the relationship between Sepal Length and Petal Length for the entire dataset. As an extra challenge, see if you can use symbols other than the default*
-
-*Question 9: What is the maximum value for Petal Length across the entire dataset?*
-
-*Question 10: For the subset of data that you took earlier (Question 6), create a boxplot of Sepal Width.*
