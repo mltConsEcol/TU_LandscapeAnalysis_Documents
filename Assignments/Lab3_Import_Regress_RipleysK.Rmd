@@ -5,7 +5,7 @@ date: "Material for Lab 3 of Landscape Analysis and Modeling, Spring 2015"
 output: pdf_document
 ---
 
-*This document, with active hyperlinks, is available online at: [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_MoreIntroToR.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_MoreIntroToR.Rmd)*
+*This document, with active hyperlinks, is available online at: [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_Import_Regress_RipleysK.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_Import_Regress_RipleysK.Rmd)*
 
 **This assignment is worth 20 Points, with 2 points per question.**
 
