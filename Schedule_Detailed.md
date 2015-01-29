@@ -76,13 +76,15 @@ date:
 ### Week 4: Other Techniques for Complete Sample Data
 
 #### Day 7
-***Assignment 3 Due: Working with Data in R; Nearest Neighbor and Ripley's K Analyses in R/QGIS***
 
 * Agenda
 	* Network Analysis
 	* Quadrat Variance Methods
 
 #### Day 8
+
+***Assignment 3 Due: Answer Questions in [Scripts, Importing Data, Simple Linear Regression, and Ripley's K in R](./Assignments/Lab3_Import_Regress_RipleysK.Rmd) (PDF available on Harvey)***
+
 
 * Readings:
 	* 
