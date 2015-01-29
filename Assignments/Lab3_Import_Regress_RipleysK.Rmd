@@ -2,10 +2,13 @@
 title: "Scripts, Importing Data, Simple Linear Regression, & Ripley's K in R"
 author: "Michael L. Treglia"
 date: "Material for Lab 3 of Landscape Analysis and Modeling, Spring 2015"
-output: pdf_document
+output: html_document
 ---
 
 *This document, with active hyperlinks, is available online at: [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_Import_Regress_RipleysK.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab3_Import_Regress_RipleysK.Rmd)*
+
+
+**Due Date: Thursday, 5 February 2015**
 
 **This assignment is worth 20 Points, with 2 points per question.**
 
@@ -15,7 +18,7 @@ In the first lab involving R, we simply used the command line, or Console as an 
 
 **YES!!!** R has a built-in tool for this, "scripts". Scripts are sets of code that you can re-run as you desire from a static file, either a line at a time, or all-at-once. 
 
-To create a new script in R, use the File menu at the top of your R window, and select "New Script". A new window will appear within R (in the following image); you can type your commands here, and use [CTRL]+R to run an individual line where your cursor is, or all lines that you have selected with your mouse.  You can save this file as a '.R' file, which you can open up from within R, or work with it using a text editor.  
+To create a new script in R, use the File menu at the top of your R window, and select "New Script". A new window will appear within R (in the following image); you can type your commands here, and use [CTRL]+R (Windows) or [Command]+[Enter] (Macs) to run an individual line where your cursor is, or all lines that you have selected with your mouse.  You can save this file as a '.R' file, which you can open up from within R, or work with it using a text editor.  
 
 
 ![](./Images/R_ScriptExample.png)\
@@ -69,10 +72,12 @@ At this point, you can inspect the dataset structure, and quickly look at the fi
 
 ### Question 1: How many different types of tree species are listed in this dataset? (I want you to figure this out in R, and for full credit you must indicate what function you used). 
 
-*The following website may aid in the above question and the next few steps: [http://www.ats.ucla.edu/stat/r/modules/subsetting.htm](http://www.ats.ucla.edu/stat/r/modules/subsetting.htm)*
 
 
 # Subsetting Data
+
+*The following website may aid in the next few steps: [http://www.ats.ucla.edu/stat/r/modules/subsetting.htm](http://www.ats.ucla.edu/stat/r/modules/subsetting.htm)*
+
 
 This dataset is large, with many different species in a variety of plots from many years. We will only focus on the plot "SE11", and the species *Acer rubrum* and *Quercus alba*, from the year 1991. 
 
@@ -88,7 +93,7 @@ If you look at the structure of this dataset, you will notice that the number of
 HTreesSub <- droplevels(HTreesSub)
 ```
 
-Given that the our focal year is 1991, and a lot of the columns in the dataset have information about other years, we can discard those columns. There are a few ways to do this, but here we'll use a "column index" method. In R, every row and column has an numerical index (row i, column j), starting at 0. We can specifically call on these in functions and we refer to indices in R using 'datasetName[rowNumber,columnNumber]'. For example, if you want to see what is in the 2nd row and 3rd column of your subsetted dataset, you can use 
+Given that our focal year is 1991, and a lot of the columns in the dataset have information about other years, we can discard those columns. There are a few ways to do this, but here we'll use a "column index" method. In R, every row and column has an numerical index (row i, column j), starting at 0. We can specifically call on these in functions and we refer to indices in R using 'datasetName[rowNumber,columnNumber]'. For example, if you want to see what is in the 2nd row and 3rd column of your subsetted dataset, you can use 
 
 ```{r, results='hide'}
 HTreesSub[2,3]
@@ -123,7 +128,7 @@ It can be helpful to plot the data in advance and visually inspect the data.
 ### Question 4: Plot the diameter of trees along the y-axis and the x-position of trees along the x-axis; paste the result into a document with your answers.
 
 ```{r, include=FALSE}
-plot(HTreesSub91$ysite,HTreesSub91$dbh91)
+plot(HTreesSub91$xsite,HTreesSub91$dbh91)
 ```
 
 The function for a simple linear regression is 'lm' (i.e.,linear model). In functions like this, we need to define an equation, just as in a regular regression equation. The function, for a simple case like this, is structured as 'dependentVariable~independentVariable'. We can also specify our dataset in a separate argument of the function. Thus, in our case, we would use:
