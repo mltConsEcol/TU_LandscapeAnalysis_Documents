@@ -18,7 +18,7 @@ In the first lab involving R, we simply used the command line, or Console as an 
 
 **YES!!!** R has a built-in tool for this, "scripts". Scripts are sets of code that you can re-run as you desire from a static file, either a line at a time, or all-at-once. 
 
-To create a new script in R, use the File menu at the top of your R window, and select "New Script". A new window will appear within R (in the following image); you can type your commands here, and use [CTRL]+R (Windows) or [Command]+[Enter]  (Macs) to run an individual line where your cursor is, or all lines that you have selected with your mouse.  You can save this file as a '.R' file, which you can open up from within R, or work with it using a text editor.  
+To create a new script in R, use the File menu at the top of your R window, and select "New Script". A new window will appear within R (in the following image); you can type your commands here, and use [CTRL]+R on Windows or [Command]+[Enter] on Macs to run an individual line where your cursor is, or all lines that you have selected with your mouse.  You can save this file as a '.R' file, which you can open up from within R, or work with it using a text editor.  
 
 
 ![](./Images/R_ScriptExample.png)\
