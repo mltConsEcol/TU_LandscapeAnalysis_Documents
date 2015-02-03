@@ -91,7 +91,8 @@ date:
 
 * Readings:
 	* [Kelly, M., et al. 2008. Spatial pattern dynamics of oak mortality and associated disease symptoms in a California hardwood forest affected by sudden oak death. Journal of Forest Research 13:312-319.](http://link.springer.com/article/10.1007/s10310-008-0083-7)
-Agenda:
+	
+* Agenda:
 	* Discuss Reading Material
 	* Work on Assignment 4
 
