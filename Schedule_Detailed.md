@@ -99,7 +99,6 @@ Agenda:
 ### Week 5: Fragstats 1 - Describing Landscape-Scale Pattern
 
 #### Day 9
-***Assignment 4 Due***
 
 * Agenda
 	* Complete Population Data: Raster Datasets
@@ -107,6 +106,7 @@ Agenda:
 	* Landscape Metrics: Lacunarity and Contagion
 
 #### Day 10
+***Assignment 4 Due***
 
 * Readings:
 	* [McIntyre, N.E. and J.A. Wiens. 2000. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
@@ -139,13 +139,13 @@ Agenda:
 ### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 13
-***Assignment 6 Due***
 
 * Agenda:
 	* Measuring and Visualizing Spatial Autocorrelation
 	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 14
+***Assignment 6 Due***
 
 * Readings:
 	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
@@ -158,7 +158,6 @@ Agenda:
 ### Week 8: Interpolation
 
 #### Day 15
-***Assignment 7 Due***
 
 * Agenda:
 	* What is Interpolation?
@@ -166,6 +165,7 @@ Agenda:
 	* Interpolation Methods
 
 #### Day 16
+***Assignment 7 Due***
 
 * Readings
 	* [Yao et al. 2013. Comparison of Four Spatial Interpolation Methods for Estimating Soil Moisture in a Complex Terrain Catchment. *PLoS ONE* 8, e54660](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0054660#pone-0054660-g008)
@@ -177,13 +177,13 @@ Agenda:
 ### Week 9: Multivariate Relationships (Mantel Tests and Alternatives)
 
 #### Day 17 (March 10)
-***Assignment 8 Due: Interpolation Exercise***
 
 * Agenda:
 	* What are Mantel Tests and what are they used for, and why are they problematic?
  	* Spatial Regression, Spatial PCA
 
 #### Day 18 (March 12)
+***Assignment 8 Due: Interpolation Exercise***
 ***Project Proposal Due***
 
 * Readings:
@@ -199,9 +199,9 @@ Agenda:
 ### Week 10: Animal Movement
 
 #### Day 19
-***Assignment 9 Due***
 
 #### Day 20
+***Assignment 9 Due***
 
 
 
@@ -209,25 +209,25 @@ Agenda:
 ### Week 11: Distribution Modeling (Environmental Niche Modeling)
 
 #### Day 21
-***Assignment 10 Due***
 
 #### Day 22
+***Assignment 10 Due***
 
 
 ### Week 12: Integrating Techniques - Landscape Connectivity
 
 #### Day 23
-***Assignment 11 Due:***
 
 #### Day 24
+***Assignment 11 Due:***
 
 
 ### Week 13: Project Status Updates/Sort Out Problems
 
 #### Day 25
-***Assignment 12 Due:***
 
 #### Day 26
+***Assignment 12 Due:***
 
 * Work on Projects
 
