@@ -81,16 +81,16 @@ date:
 #### Day 7
 
 * Agenda
-	* Network Analysis
+	* Some notes about R and RStudio
 	* Quadrat Variance Methods
 
 #### Day 8
 
-***Assignment 3 Due: Answer Questions in [Scripts, Importing Data, Simple Linear Regression, and Ripley's K in R](./Assignments/Lab3_Import_Regress_RipleysK.Rmd) (PDF available on Harvey)***
+***[Assignment 3 Due: Answer Questions in Scripts, Importing Data, Simple Linear Regression, and Ripley's K in R](./Assignments/Lab3_Import_Regress_RipleysK.Rmd) (PDF available on Harvey)***
 
 
 * Readings:
-	* 
+	* [Kelly, M., et al. 2008. Spatial pattern dynamics of oak mortality and associated disease symptoms in a California hardwood forest affected by sudden oak death. Journal of Forest Research 13:312-319.](http://link.springer.com/article/10.1007/s10310-008-0083-7)
 Agenda:
 	* Discuss Reading Material
 	* Work on Assignment 4
@@ -112,19 +112,21 @@ Agenda:
 	* [McIntyre, N.E. and J.A. Wiens. 2000. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
 * Agenda
 	* Discuss Reading Material
-	* Preparing Data For Fragstats and Working with the Software
+	* Work on Assignment 5
+		* Preparing Data For Fragstats and Working with the Software
+		* Calculating Landscape Metrics
 
 
 ### Week 6: Fragstats 2 - Analyzing Patches
 
 #### Day 11
-***Assignment 5 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
 
 * Agenda
 	* Patches vs. Landscapes: What do patch metrics describe?
 	* Applications of Patch Metrics in Ecology
 
 #### Day 12
+***Assignment 5 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
 
 * Reading
 	* 
@@ -179,7 +181,7 @@ Agenda:
 
 * Agenda:
 	* What are Mantel Tests and what are they used for, and why are they problematic?
- 	* Spatial Regression (& Basics of Regression)
+ 	* Spatial Regression, Spatial PCA
 
 #### Day 18 (March 12)
 ***Project Proposal Due***
