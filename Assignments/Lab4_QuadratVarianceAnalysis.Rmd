@@ -7,25 +7,28 @@ output: pdf_document
 
 *This document, with active hyperlinks, is available online at: [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab4_QuadratVarianceAnalysis.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab4_QuadratVarianceAnalysis.Rmd)*
 
-
 **Due Date: Thursday, 12 February 2015**
 
-**Answer the 10 questions at end of document, worth 20 points total. The first 6 questions are focused on quadrat variance analyses; the other 4 involve workign with your own data in R.**
+***PLEASE WRITE YOUR NAME ON YOUR ANSWER DOCUMENT***
+
+**Answer the 10 questions at end of document, worth 20 points total (2 pts each). The first 6 questions are focused on quadrat variance analyses; the other 4 involve working with your own data in R.**
 
 # Introduction
 
-In this lab, we will take be starting with the same dataset we used last week - a multi-year tree census dataset from Harvard Forest ([http://harvardforest.fas.harvard.edu/](http://harvardforest.fas.harvard.edu/), the Lyford Mapped Tree Plot Data, available at [http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032](http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032) .  
+In this lab, we will take be starting with the same dataset we used last week - a multi-year tree census dataset from [Harvard Forest](http://harvardforest.fas.harvard.edu/), the Lyford Mapped Tree Plot Data, available at [http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032](http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032) .  
 
-Though the dataset is a complete census, and can be analyzed with Ripley's K analysis as we did last week, it is rare to have such a dataset, due to the constraints in collecting data (e.g., funding, person-power, time, etc.). Thus, we will take subsets of the data that represent transects, and analyze those with quadrat variance analyses - a form of contiguous units analyses.
+Though the dataset is a complete census, and can be analyzed with Ripley's K analysis as we did last week, it is rare to have such a dataset, due to logistical and financial constraints (e.g., funding, person-power, time, etc.). Thus, we will take a subsets of the data, which will be analogous to a transect, and analyze those with quadrat variance analyses - a form of contiguous units analyses.
 
-This lab will use [R](http://www.r-project.org/) for setting up the data, and [PASSaGE 2](http://www.passagesoftware.net/) for the analyses, which you can download for free at [http://www.passagesoftware.net/](http://www.passagesoftware.net/). There is a paper describing the software from Methods in Ecology and Evolution: [Rosenberg, M.S., and C.D. Anderson (2011) PASSaGE: Pattern Analysis, Spatial Statistics and Geographic Exegesis. Version 2. *Methods in Ecology and Evolution* 2(3):229-232.](http://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00081.x/full). There are lots of techniques available in this program, so browse around and check out what it can do.
+This lab will use [R](http://www.r-project.org/) for setting up the data, and [PASSaGE 2](http://www.passagesoftware.net/) for the analyses, which you can download for free at [http://www.passagesoftware.net/](http://www.passagesoftware.net/). There is a paper describing the software in Methods in Ecology and Evolution: 
+ 
+ [Rosenberg, M.S., and C.D. Anderson (2011) PASSaGE: Pattern Analysis, Spatial Statistics and Geographic Exegesis. Version 2. *Methods in Ecology and Evolution* 2(3):229-232.](http://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00081.x/full). There are lots of techniques available in this program, so browse around and check out what it can do.
 
-Note that the documentation for PASSaGE, available on the software website, has very good explanations and citations for the methods employed. It may be helpful to look at that information in addition to lecture notes and reading materials.
+Note that the documentation for PASSaGE 2, available in the help for the software and on the website, has very good explanations and citations for the methods employed. It may be helpful to look at that information in addition to lecture notes and supplemental reading materials.
 
 
 # Setting Up and Exporting Sample Data in R
 
-You can download the dataset and store locally to load it into R, as you did in the [previous lab](./Lab3_Import_Regress_RipleysK.Rmd). Alternatively, for datasets stored online, you can actually import them directly by using the appropriate import command and using the url of the dataset. For this lab we'll import the data and assign it to 'HTrees'. It is good practice to set your working directory to your desired folder, so do that too.
+You can download the dataset, store it locally and load it into R, as you did in the [previous lab](./Lab3_Import_Regress_RipleysK.Rmd). Alternatively, for datasets stored online, you can actually import them directly by using the appropriate import command and using the url of the dataset. For this lab we'll import the data and assign it to 'HTrees'. It is good practice to set your working directory to your desired folder, so do that too.
 
 ```{r}
 #use 'setwd([File Path])' to set your working directory.
@@ -66,14 +69,14 @@ write.csv(quruTransect2011, "quruTransect2011.csv")
 
 Now that we have the data set up, we will open up PASSaGE and get the data in. Find 'PASSaGE 2' on your computer and open it up.  
 
-The program may look a bit daunting at first (see the following screen-shot). The 'Output' window is where text of what you do/text output from analyses will be displayed; the 'Data Monitor' window shows what data you have imported and loaded.  At the top of the screen are tabs: Edit, Data, Create, Analysis, Analysis 2, Draw, and View - which you click on different tabs, you will see the available icons change, much like when you work modern versions of Microsoft Office.
+The program may look a bit daunting at first (see the following screen-shot). The 'Output' window is where text of what you do/text output from analyses will be displayed; the 'Data Monitor' window shows what data you have imported and loaded.  At the top of the screen are tabs: Edit, Data, Create, Analysis, Analysis 2, Draw, and View - as you click on different tabs, you will see the available icons change, much like when you work modern versions of Microsoft Office.
 
 
 ![](./Images/PassageOpening.png)\
 
 
 
-To get data in, click the icon at the top-left of the program (shown below) and select the 'Load Data' option:
+To get data into PASSaGE, click the icon at the top-left of the program (shown below) and select the 'Load Data' option:
 
 
 ![](./Images/PassageIcon.png)\
@@ -91,12 +94,12 @@ There is one more window to go through before you have your data in. Here, you w
 ![](./Images/PASSaGE_ImportData_Coords.png)\
 
 
-Now you have a single dataset in PASSaGE. You can follow the same steps for the other datasets. The datasets will be listed in the Data Monitor window.  You can view the points in this dataset by going to the 'Draw' tab and clicking the 'Draw Points' icon. Because it is such a narrow transect relative to the length of it, the points may look like they are simply in a straight line unless you maximize the window to enlarge the plot.
+Now you have a single dataset in PASSaGE. You can follow the same steps for the other datasets. The datasets will be listed in the Data Monitor window.  You can view the points in this dataset by going to the 'Draw' tab and clicking the 'Draw Points' icon. Because the transect is so narrow relative to its length, the points may look like they are simply in a straight line unless you maximize the window to enlarge the plot.
 
 
 # Setting up Quadrats in PASSaGE
 
-We established our 'transects' in R, but for these analyses we still need to set up quadrats - square or rectanuglar areas that will serve as sample units for calculating different types of quadrat variance. Our goal in this step is to set up quadrats and get information about our data associated with each quadrat (e.g., number of trees).  We will do this using the 'Grid Data' tool in the 'Create' tab of PASSaGE. 
+We established our 'transect' in R, but for these analyses we still need to set up quadrats - square or rectanuglar areas that will serve as sample units for calculating different types of quadrat variance. Our goal in this step is to set up quadrats and get information about our data associated with each quadrat (e.g., number of trees).  We will do this using the 'Grid Data' tool in the 'Create' tab of PASSaGE. 
 
 
 ![](./Images/Passage_GridDataIcon.png)\
@@ -119,23 +122,21 @@ In the window that appears, you will have to specify a few things (see the follo
 
 After everything is set as desired, click "OK". You will then see the newly created datasets in the Data Monitor. In the example above, the 'quru2011' is a grid, which is similar to a Raster layer in GIS - you can use the 'Draw Surface' tool (in the 'Draw' tab) to visualize this. The 'quru2011_Coords'data is the center coordinates of each quadrat. 
 
-Note that the Output window you will see text describing everything that you have done to this point. You can also save everything you've done by clicking the icon on at the upper-left of the program and selecting 'Save Workspace'. This will save all files as '\*.pfd' files, and a '\*.pfw', which, if you load in the future, will automatically bring in the respective .pfd files.
+In the Output window you will see text describing everything that you have done to this point. You can also save everything you've done by clicking the icon on at the upper-left of the program and selecting 'Save Workspace'. This will save all files as '\*.pfd' files, and a '\*.pfw', which, if you load in the future, will automatically bring in the respective .pfd files.
 
 # Quadrat Variance Analyses
 
-Now that we have the quadrats set up with counts for our given datasets, we can run quadrat variance analyses. Click on the 'Analysis' tab (not 'Analysis 2'), then click on the 'QuadVar' icon, and select 'Quadrat Variance Methods'.
+Now that we have the quadrats set up with counts for our datasets, we can run quadrat variance analyses. Click on the 'Analysis' tab (not 'Analysis 2'), then click on the 'QuadVar' icon, and select 'Quadrat Variance Methods'.
 
 
 ![](./Images/Passage_QuadVar.png)\
 
 
 
-There are a few things you'll want to specify here - though I describe some of them briefly for this lab, I suggest looking at the Help - if nothing else, take a quick look to see the kind of useful details it gives.
-
-You set things up as illustrated in the following image. 
-
+There are a few things you'll want to specify here - they are briefly described below, but I suggest looking at the Help - if nothing else, take a quick look to see the kind of useful details it gives. For these analyses and data you can set things up as illustrated in the following image (and described  below).
 
 ![](./Images/Passage_QuadVarWindow.png)\
+
 
   1) The 'Analysis Dimensions' will be 'Transect'. 
   2) The Data Matrixis the data that you want to analyze - in this case 'quru2011', which is the count of  *Quercus rubrum* by quadrat in 2011.
@@ -167,12 +168,13 @@ After clicking "OK" to run the analysis, a results figure will appear, which you
 
 6) Select any of these datasets and any of these quadrat variance techniques, and create a new grid (i.e. quadrats) - keep the x-dimensions set to 20, but change the y-dimensions to 5. This will create wide, short quadrats. What effect, if any, does this have on your result? Specify which dataset you changed and which quadrant variance methods you used.
 
+7) Though quadrat variance techniques have the benefit of requiring much less data than a complete census, there are likely some downsides. Describe a potential shortcoming of these techniques in a sentence or two.
+
 ## Working with your data in R:
 
-7) Import your data into R - show that you've done this by copying and pasting either the 'head' or 'structure' of your dataset.
+8) Import your data into R - show that you've done this by copying and pasting either the 'head' or 'structure' of your dataset. If you have a question you are actually interested in answering, describe it briefly here.
 
-8) Make a histogram of a continuous variable that you have.
+9) Make a histogram of a continuous variable that you have.
 
-9) Plot two variables against one another, as you've done for previous assignments. If you only have one continuous variable and the other is a factor variable, present boxplots - one for each group.
+10) Plot two variables against one another, as you've done for previous assignments. If you only have one continuous variable and the other is a factor variable, present boxplots - one for each group.
 
-10) If you have a question you are looking to answer with these data, describe it here in a sentence or two.
