@@ -10,7 +10,7 @@ output: pdf_document
 
 **Due Date: Thursday, 12 February 2015**
 
-**This assignment is worth 20 Points, with 2 points per question.**
+**Answer the 10 questions at end of document, worth 20 points total. The first 6 questions are focused on quadrat variance analyses; the other 4 involve workign with your own data in R.**
 
 # Introduction
 
@@ -18,7 +18,7 @@ In this lab, we will take be starting with the same dataset we used last week - 
 
 Though the dataset is a complete census, and can be analyzed with Ripley's K analysis as we did last week, it is rare to have such a dataset, due to the constraints in collecting data (e.g., funding, person-power, time, etc.). Thus, we will take subsets of the data that represent transects, and analyze those with quadrat variance analyses - a form of contiguous units analyses.
 
-This lab will use [R](http://www.r-project.org/) for setting up the data, and [PASSaGE 2](http://www.passagesoftware.net/) for the analyses, which you can download for free at [http://www.passagesoftware.net/](http://www.passagesoftware.net/). There is a paper describing the software from Methods in Ecology and Evolution: [Rosenberg, M.S., and C.D. Anderson (2011) PASSaGE: Pattern Analysis, Spatial Statistics and Geographic Exegesis. Version 2. *Methods in Ecology and Evolution* 2(3):229-232.](http://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00081.x/full). 
+This lab will use [R](http://www.r-project.org/) for setting up the data, and [PASSaGE 2](http://www.passagesoftware.net/) for the analyses, which you can download for free at [http://www.passagesoftware.net/](http://www.passagesoftware.net/). There is a paper describing the software from Methods in Ecology and Evolution: [Rosenberg, M.S., and C.D. Anderson (2011) PASSaGE: Pattern Analysis, Spatial Statistics and Geographic Exegesis. Version 2. *Methods in Ecology and Evolution* 2(3):229-232.](http://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00081.x/full). There are lots of techniques available in this program, so browse around and check out what it can do.
 
 Note that the documentation for PASSaGE, available on the software website, has very good explanations and citations for the methods employed. It may be helpful to look at that information in addition to lecture notes and reading materials.
 
@@ -123,6 +123,56 @@ Note that the Output window you will see text describing everything that you hav
 
 # Quadrat Variance Analyses
 
+Now that we have the quadrats set up with counts for our given datasets, we can run quadrat variance analyses. Click on the 'Analysis' tab (not 'Analysis 2'), then click on the 'QuadVar' icon, and select 'Quadrat Variance Methods'.
+
+
+![](./Images/Passage_QuadVar.png)\
 
 
 
+There are a few things you'll want to specify here - though I describe some of them briefly for this lab, I suggest looking at the Help - if nothing else, take a quick look to see the kind of useful details it gives.
+
+You set things up as illustrated in the following image. 
+
+
+![](./Images/Passage_QuadVarWindow.png)\
+
+  1) The 'Analysis Dimensions' will be 'Transect'. 
+  2) The Data Matrixis the data that you want to analyze - in this case 'quru2011', which is the count of  *Quercus rubrum* by quadrat in 2011.
+  3) Select the method you want to use - for the questions below, you'll want to use PQV, TTLQV, and 3TLQV.
+  4) Set the 'Maximum Scale (%)' to 50 - this will have the analysis use block sizes and distances for the respecive analyses of up to 1/2 the number of quadrats. (For three-term methods (e.g., 3TLQV), the maximum available will be 33%). It may be easier to adjust this with the slider bar under 'Scale'.
+  5) Set the 'Scaling Factor' to 20. This effectively specifies that the quadrats are 20 units long, and thus when the results are presented, it will based on the native units (feet), rather than the number of quadrats.
+  
+
+
+After clicking "OK" to run the analysis, a results figure will appear, which you can right-click on to save, and copy. You can adjust the formatting by right-clicking and selecting 'Format'.
+
+***To run quadrat covariance analysis, use the 'Quadrat Covariance Methods' when you click the 'QuadVar' icon, then select the two datasets you want to compare and set the other options as appropriate, following the previous examples.***
+
+# Assignment Questions
+
+## Quadrat Variance questions:
+
+*Feel free to include result plots, or simple plots of the data, and annotate them with any explanatory notes you feel necessary. If it aids in your interpretation, check the appropriate boxes to run the randomization tests.*
+
+1) Run TTLQV, 3TLQV, and PQV for *Quercus rubrum* for 1969 for our 'transect'. Which analyses, if any, show a clear pattern for this species in this year? If there is a pattern, at what scale (in feet)?
+
+1) Run TTLQV, 3TLQV, and PQV for *Acer rubrum* for 1969 for our 'transect'. Which analyses, if any, show a clear pattern for this species in this year? If there is a pattern, at what scale (in feet)?
+
+3) Does the 3TLQV seem to make a difference vs. TTLQV for either of these datasets?
+
+4) Run quadrat covariance analyses for *Acer rubrum* and *Quercus rubrum* for 1969. Does there appear to be a clear relationship (association or dissociation) among the two focal species? Remember - positive covariance indicates the species are associated with one-another and negative coveriance indicates the species tend to be separated from one-another.
+
+5) Run quadrat covariance analyses for *Acer rubrum* and *Quercus rubrum* for 2011. Did the general relationships between these two species change from 1969-2011? If so, in what way?
+
+6) Select any of these datasets and any of these quadrat variance techniques, and create a new grid (i.e. quadrats) - keep the x-dimensions set to 20, but change the y-dimensions to 5. This will create wide, short quadrats. What effect, if any, does this have on your result? Specify which dataset you changed and which quadrant variance methods you used.
+
+## Working with your data in R:
+
+7) Import your data into R - show that you've done this by copying and pasting either the 'head' or 'structure' of your dataset.
+
+8) Make a histogram of a continuous variable that you have.
+
+9) Plot two variables against one another, as you've done for previous assignments. If you only have one continuous variable and the other is a factor variable, present boxplots - one for each group.
+
+10) If you have a question you are looking to answer with these data, describe it here in a sentence or two.
