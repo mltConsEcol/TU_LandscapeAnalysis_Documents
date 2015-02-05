@@ -32,10 +32,6 @@ You can download the dataset and store locally to load it into R, as you did in 
 HTrees <- read.csv("http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-02-tree.csv")
 ```
 
-```{r, include=FALSE}
-setwd('D:/TregliaFiles')
-```
-
 To simulate a transect through part of the study area, we will only consider trees in a small strip, 20 feet wide,from x-coordinates 20 to 40, running North/South throughout the study area. We'll consider two common tree species, *Acer rubrum* and *Quercus rubrum*, and two focal years - 1969 (when the area was first censused) and 2011 (the most recent census).
 
 We will subset the data individually for each species and each year - we only need the coorinates of the trees, so we will use the 'select' argument in the subset funtion to specify these columns:
@@ -59,7 +55,7 @@ quruTransect2011 <- subset(HTrees, xsite >20 & xsite <= 40 & species=='QURU' & c
 
 To use the data in PASSaGE, we will need to export them - we'll export them as .csv files using the 'write.csv' function. These files will be written to your current working directory. You can look at the help for this function to see the arguments available, but for now, we just need the object names and desired filenames as follows:
 
-```{r}
+```{r, eval=FALSE}
 write.csv(acruTransect1969, "acruTransect1969.csv")
 write.csv(quruTransect1969, "quruTransect1969.csv")
 write.csv(acruTransect2011, "acruTransect2011.csv")
