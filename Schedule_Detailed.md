@@ -94,7 +94,9 @@ date:
 	
 * Agenda:
 	* Discuss Reading Material
-	* Work on Assignment 4
+	* Work on [Assignment 4](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab4_QuadratVarianceAnalysis.Rmd)
+		* Getting YOUR data into R
+		* Quadrat Variance Analyses - Setting up sample data in R and Analysis in [PASSaGE](http://www.passagesoftware.net/)
 
 
 ### Week 5: Fragstats 1 - Describing Landscape-Scale Pattern
@@ -103,19 +105,19 @@ date:
 
 * Agenda
 	* Complete Population Data: Raster Datasets
-	* An introduction to Fragstats
+	* An Introduction to [Fragstats](http://www.umass.edu/landeco/research/fragstats/fragstats.html)
 	* Landscape Metrics: Lacunarity and Contagion
 
 #### Day 10
-***Assignment 4 Due***
+***[Assignment 4 Due (PDF available on Harvey)](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab4_QuadratVarianceAnalysis.Rmd)***
 
 * Readings:
-	* [McIntyre, N.E. and J.A. Wiens. 2000. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
+	* [McIntyre, N.E. and J.A. Wiens. 2000. A novel use of the lacunarity index to discern landscape function. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
 * Agenda
 	* Discuss Reading Material
 	* Work on Assignment 5
-		* Preparing Data For Fragstats and Working with the Software
-		* Calculating Landscape Metrics
+		* Preparing Data For Fragstats in GIS/R and Working with  Fragstats
+		* Calculating Landscape Metrics in Fragstats
 
 
 ### Week 6: Fragstats 2 - Analyzing Patches
