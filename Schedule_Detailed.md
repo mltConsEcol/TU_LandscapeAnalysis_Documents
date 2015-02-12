@@ -99,14 +99,14 @@ date:
 		* Quadrat Variance Analyses - Setting up sample data in R and Analysis in [PASSaGE](http://www.passagesoftware.net/)
 
 
-### Week 5: Fragstats 1 - Describing Landscape-Scale Pattern
+### Week 5: Landscape Metrics 1 - Describing Landscape and Patch Patterns for Categorical and Continuous Rasters
 
 #### Day 9
 
 * Agenda
 	* Complete Population Data: Raster Datasets
 	* An Introduction to [Fragstats](http://www.umass.edu/landeco/research/fragstats/fragstats.html)
-	* Landscape Metrics: Lacunarity and Contagion
+	* Landscape and Class Metrics
 
 #### Day 10
 ***[Assignment 4 Due (PDF available on Harvey)](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab4_QuadratVarianceAnalysis.Rmd)***
@@ -115,27 +115,26 @@ date:
 	* [McIntyre, N.E. and J.A. Wiens. 2000. A novel use of the lacunarity index to discern landscape function. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
 * Agenda
 	* Discuss Reading Material
-	* Work on Assignment 5
-		* Preparing Data For Fragstats in GIS/R and Working with  Fragstats
-		* Calculating Landscape Metrics in Fragstats
+	* Patch Metrics
+	* Surface Metrics
 
 
-### Week 6: Fragstats 2 - Analyzing Patches
+### Week 6: Landscape Metrics 2 - Quantifying Landscape and Patch Patterns using QGIS and R
 
 #### Day 11
 
 * Agenda
-	* Patches vs. Landscapes: What do patch metrics describe?
-	* Applications of Patch Metrics in Ecology
+	* Work on Assignment 5 (Part 1)
 
 #### Day 12
-***Assignment 5 Due: Fragstats 1 Lab and Hand-Calculations of Landscape Pattern***
 
 * Reading
-	* 
+	* [Fahrig, L. 2013. Rethinking patch size and isolation effects: the habitat amount hypothesis. Journal of Biogeography 40:1649-1663.](http://onlinelibrary.wiley.com/doi/10.1111/jbi.12130/abstract)
+		* As Supplemental Reading (Not Required), Check out: [Hanski, I. 2015. Habitat fragmentation and species richness. Journal of Biogeography](http://onlinelibrary.wiley.com/doi/10.1111/jbi.12478/full)
 * Agenda
 	* Discuss Reading Material
-	* Landscape Patch Lab
+	* Work on Assignment 5 (Part 2)
+
 
 
 	
@@ -148,7 +147,7 @@ date:
 	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 14
-***Assignment 6 Due***
+***Assignment 5 Due (Landscape Metrics)***
 
 * Readings:
 	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
@@ -168,7 +167,7 @@ date:
 	* Interpolation Methods
 
 #### Day 16
-***Assignment 7 Due***
+***Assignment 6 Due***
 
 * Readings
 	* [Yao et al. 2013. Comparison of Four Spatial Interpolation Methods for Estimating Soil Moisture in a Complex Terrain Catchment. *PLoS ONE* 8, e54660](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0054660#pone-0054660-g008)
@@ -186,7 +185,7 @@ date:
  	* Spatial Regression, Spatial PCA
 
 #### Day 18 (March 12)
-***Assignment 8 Due: Interpolation Exercise***
+***Assignment 7 Due: Interpolation Exercise***
 ***Project Proposal Due***
 
 * Readings:
@@ -204,8 +203,7 @@ date:
 #### Day 19
 
 #### Day 20
-***Assignment 9 Due***
-
+***Assignment 8 Due***
 
 
 
@@ -214,7 +212,7 @@ date:
 #### Day 21
 
 #### Day 22
-***Assignment 10 Due***
+***Assignment 9 Due***
 
 
 ### Week 12: Integrating Techniques - Landscape Connectivity
@@ -222,7 +220,7 @@ date:
 #### Day 23
 
 #### Day 24
-***Assignment 11 Due:***
+***Assignment 10 Due:***
 
 
 ### Week 13: Project Status Updates/Sort Out Problems
@@ -230,7 +228,7 @@ date:
 #### Day 25
 
 #### Day 26
-***Assignment 12 Due:***
+***Assignment 11 Due:***
 
 * Work on Projects
 
