@@ -66,10 +66,23 @@ The two areas are nearby, and your results should look like this:
 ![](./Images/CatoosaClaremore.png)\
 
 
+##Load Data Into FRAGSTATS
+Now that we have a couple of landscapes to analyze, we can import them to FRAGSTATS.  Open FRAGSTATS on your computer - you should be able to find it in your Start Menu. When the program opens up, the screen will appear blank; click the 'New' icon at the top ![](./Images/Fragstats_New.png)\ and the screen below should appear.
+
+![](./Images/Fragstats_InputLayersHome.png)\
 
 
-* Clip out two areas
-* Load into Fragstats
+Click the 'Add layer...' button. Then, chose the file type you will import (GeoTIFF grid for these data), and browse to your dataset. In this case we have no 'Background value', but if you wanted to consider one of your classes as a background, you could indicate that class number in that box.  The rest of the information should be filled in automatically.  For the Catoosa area, this window should look like the image below.
+
+![](./Images/Fragstats_InputDataset.png)\
+
+
+*Note the 'Cell Size' is identified as '30.00'. FRAGSTATS assumes this is in meters, and all area & perimeter calculations will be based on this cell size. This is correct, and can be confirmed via the metadata and checked by measuring pixels while zoomed in within QGIS. If your layer is in projected coordinates (i.e., Lat/Long), it is wise to reproject to a meter-based coordinate reference system prior to analysis.*
+
+For this lab, we will only import one other file - the 'Class Descriptors' file.  You can download it from the Harvey website under Week 6 lab material,or at [this link](
+
+
+
 * View Class file
 * View weights file
 * Run Analyses on 2 landscapes
