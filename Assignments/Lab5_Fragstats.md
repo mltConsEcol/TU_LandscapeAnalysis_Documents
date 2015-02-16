@@ -31,12 +31,12 @@ Then, go to the Processing Toolbox, to SAGA, and find "Grid-Tools"; then, double
 
 In the window that pops up, you will designate the settings for this operation. These below settings will work for this lab - in the future, you can adjust these settings according to your own needs. After setting up all of the options, click 'Run'.
 	
-	* Under 'Grid', chose the appropriate layer (NLCD2011_LC_N36W093).
-	* For 'Method', choose 'Range'.
-	* Set the minimum and maximum values for the range option as 21 and 24, respectively. This tells the operation that you want to reclassify values from 21 through 24 to a new value.
-	* For 'new value (for range)', set the value to 20, and leave the 'operator (for range)' set to the default ('[0]<=').
-	* Un-check the boxes for 'replace no data values' and 'replace other values'.
-	* Designate a 'Reclassified grid' for your output file - saving it as a .tif file generally works well.
+* Under 'Grid', chose the appropriate layer (NLCD2011_LC_N36W093).
+* For 'Method', choose 'Range'.
+* Set the minimum and maximum values for the range option as 21 and 24, respectively. This tells the operation that you want to reclassify values from 21 through 24 to a new value.
+* For 'new value (for range)', set the value to 20, and leave the 'operator (for range)' set to the default ('[0]<=').
+* Un-check the boxes for 'replace no data values' and 'replace other values'.
+* Designate a 'Reclassified grid' for your output file - saving it as a .tif file generally works well.
 	
 ![](./Images/QGIS_Processing_ReclassSAGAFull.png)\
 
