@@ -6,15 +6,21 @@ author: "Instructor: Michael Treglia"
 
 ***Due Date: Thursday, 26 February 2015***
 
+***There will be 10 questions for Part 1 (given on Tuesday) and 10 for Part 2 (given on Thursday), for a total of 20 points***
+
 PLEASE WRITE YOUR NAME ON ALL WORK
 
 #Part 1: Analyzing Categorical Rasters using FRAGSTATS
+
+###Questions: Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation (available as a PDF at [http://www.umass.edu/landeco/research/fragstats/documents/fragstats.help.4.2.pdf](http://www.umass.edu/landeco/research/fragstats/documents/fragstats.help.4.2.pdf)
+
+1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore areas - which do you think has a higher value for Contagion?
 
 ##Introduction
 
 This assignment involves a few steps, which involve doing some pre-processing of categorical raster datasets, and loading them into and analyzing them in [FRAGSTATS](http://www.umass.edu/landeco/research/fragstats/fragstats.html).  Though this exercise covers some basics of preparing data for, and analyzing them within FRAGSTATS, more a comprehensive tutorial is available from the program developers at [http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#tutorials](http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#tutorials).
 
-We will use data from the [2011 National Land Cover Dataset (NLCD)](http://www.mrlc.gov/nlcd2011.php), for a couple of areas near Tulsa, OK. The NLCD is available at 30 meter resolution, for the entire United States; multiple layers are available for this, including categorical land cover data, percent canopy cover and percent impervious pavement per pixel. These data are available for download via both the [Multi-Resolution Land Characteristics Consortium (MRLC)](http://www.mrlc.gov/) and [The National Map Viewer and Download Platform](http://viewer.nationalmap.gov/viewer/).
+We will use data from the [2011 National Land Cover Dataset (NLCD)](http://www.mrlc.gov/nlcd2011.php), for a couple of areas near Tulsa, OK. The NLCD is available at 30 meter resolution, for the entire United States; multiple layers are available for this, including categorical land cover data, percent canopy cover and percent impervious pavement per pixel. These data are available for download via both the [Multi-Resolution Land Characteristics Consortium (MRLC)](http://www.mrlc.gov/) and [The National Map Viewer and Download Platform](http://viewer.nationalmap.gov/viewer/). You can store and work with these data in the directory of your choice - on lab computers, your University of Tusla personal directory might make the most sense.
 
 For this lab, we will start with a 3 x 3 degree tile of the categorical NLCD layer for north-eastern Oklahoma, which includes part of Tulsa. I have made this available on the Harvey website for the course (in the Week 6 Lab folder) and at [this](LINK) link, but it can also be downloaded from the sources noted above. Before we get into doing actual analyses, we will go through a few pre-processing steps, often necessary in setting up the analyses we are going to go through. There are lots of different tools that can be used for these operations, but we'll use QGIS (version 2.6.1).
 
@@ -79,16 +85,26 @@ Click the 'Add layer...' button. Then, chose the file type you will import (GeoT
 
 *Note the 'Cell Size' is identified as '30.00'. FRAGSTATS assumes this is in meters, and all area & perimeter calculations will be based on this cell size. This is correct, and can be confirmed via the metadata and checked by measuring pixels while zoomed in within QGIS. If your layer is in projected coordinates (i.e., Lat/Long), it is wise to reproject to a meter-based coordinate reference system prior to analysis.*
 
-For this lab, we will only import one other file - the 'Class Descriptors' file.  You can download it from the Harvey website under Week 6 lab material,or at [this link](
+You can import the NLCD for the Claremore area too.
+
+For this lab, we will only import one other file - the 'Class Descriptors' file, 'NLCDClasses.fcd'.  You can download it from the Harvey website under Week 6 lab material, or you can view it at [this link](https://raw.githubusercontent.com/mltConsEcol/TU_LandscapeAnalysis_Documents/master/Assignments/Misc/NLCDClasses.fcd). If you are simply viewing this online, you can copy and paste it into a text file (e.g., with Notepad on Windows), and save it as 'NLCDClasses.fcd'. If you downloaded the file from Harvey, open it with Notepad and explore it - this file simply tells FRAGSTATS which names correspond to the numeric land cover codes. I set this up for you, with the land cover classes that might be in these areas (and with the Developed classes all categorized as a single class), but you can easily create a similar file or adjust this for your own purposes.
+
+One last thing that we will set is the edge depth, required for computing Core Area metrics. We will set a fixed edge depth for all land cover classes; check the box for 'Use fixed edge depth', click the '...' icon, and for now set the value to 30. 
+
+If you wanted to use different edge depths for different land cover classes, you could use a file, similar to the Class Descriptors file; similarly, you can use files to specify similarity and contrast between different classes. This is described in detail in the [tutorial material available from the FRAGSTATS developers](http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#tutorials).
+
+At this point the left portion of the screen, with the 'Input Layers' tab, should look similar to this: 
+
+![](./Images/Fragstats_InputLayers_SimpleFilled.png)\
+
+
+##Run Analyses FRAGSTATS
+
+
+##Extra 
 
 
 
-* View Class file
-* View weights file
-* Run Analyses on 2 landscapes
-* Compare Results
-
-For more,check out the Tutorial for Fragastats
 
 #Part 2
 
