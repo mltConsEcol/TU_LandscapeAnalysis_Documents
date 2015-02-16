@@ -21,7 +21,7 @@ For this lab, we will start with a 3 x 3 degree tile of the categorical NLCD lay
 ##Reclassify Raster
 The 2011 NLCD has 20 specific potential land cover types, 15 of which occur in our focal tile. Each class is assigned a class number, as seen in the legend for this layer, available online at [http://www.mrlc.gov/nlcd11_leg.php](http://www.mrlc.gov/nlcd11_leg.php). If you use the 'inspect' tool of QGIS, you will see that each pixel has a numeric value, corresponding to legend in the previous link. The land cover classes are also grouped coarsely, as indicated by the 10s place of the ID number (e.g., all numbers in the 20s indicate varying levels of development).  Sometimes this classification scheme might not meet our needs - for example, we want to consider all classes of development as the same. To deal with this, we will reclassify the raster, using a similar process as we used in the first lab of the semester.
 
-Import the NLCD layer into QGIS as you would any other raster layer - the resulting layer should look something like the image below - look at the legend in the link above to discern different land cover classes. According to the metadata (in a .html file that comes in the folder with this dataset), the data are in an Albers Equal Area projection; if you import some Google or Bing (or other)imagery and ensure that on the fly projection is enabled, that layer should appear in northeastern Oklahoma. The horizontal units for this projection layer are meters, which is important to know for later steps.
+Import the NLCD layer into QGIS as you would any other raster layer - the resulting layer should look something like the image below - look at the legend in the link above to discern different land cover classes. According to the metadata (in a .html file that comes in the folder with this dataset), the data are in an Albers Equal Area projection; if you import some Google or Bing (or other)imagery and ensure that on the fly projection is enabled, that layer should appear in northeastern Oklahoma. The horizontal units for this projection layer are meters, which is important to know for later steps. You can also set the CRS for this layer to the standard EPSG code, 5070. (This won't change the projection, but will designate the corresponding EPSG code).
 
 ![](./Images/NLCD_36_93.png)\
 
@@ -30,13 +30,12 @@ Then, go to the Processing Toolbox, to SAGA, and find "Grid-Tools"; then, double
 ![](./Images/QGIS_Processing_ReclassSAGA.png)\
 
 In the window that pops up, you will designate the settings for this operation. These below settings will work for this lab - in the future, you can adjust these settings according to your own needs. After setting up all of the options, click 'Run'.
-	
-* Under 'Grid', chose the appropriate layer (NLCD2011_LC_N36W093).
-* For 'Method', choose 'Range'.
-* Set the minimum and maximum values for the range option as 21 and 24, respectively. This tells the operation that you want to reclassify values from 21 through 24 to a new value.
-* For 'new value (for range)', set the value to 20, and leave the 'operator (for range)' set to the default ('[0]<=').
-* Un-check the boxes for 'replace no data values' and 'replace other values'.
-* Designate a 'Reclassified grid' for your output file - saving it as a .tif file generally works well.
+	* Under 'Grid', chose the appropriate layer (NLCD2011_LC_N36W093).
+	* For 'Method', choose 'Range'.
+	* Set the minimum and maximum values for the range option as 21 and 24, respectively. This tells the operation that you want to reclassify values from 21 through 24 to a new value.
+	* For 'new value (for range)', set the value to 20, and leave the 'operator (for range)' set to the default ('[0]<=').
+	* Un-check the boxes for 'replace no data values' and 'replace other values'.
+	* Designate a 'Reclassified grid' for your output file - saving it as a .tif file generally works well.
 	
 ![](./Images/QGIS_Processing_ReclassSAGAFull.png)\
 
@@ -48,7 +47,23 @@ After this operation, your newly reclassified layer will appear in QGIS in gray-
 ##Clipping Areas for Analysis
 Now that we have the desired land cover classes for this analysis, we can focus on extracting a couple of areas for analysis. Again, there are numerous ways to do this - what is shown here is probably among the simplest and easiest, albeit we will be ignoring bordering pixels. 
 
-We will use the Raster Clipper tool in QGIS to extract two focal areas for this analysis. We will foc
+We will use the Raster Clipper tool in QGIS to extract two focal areas for this analysis: an area near Catoosa, OK that we have highlighted during lab, and a nearby area of Claremore, OK.  The corresponding extents will be as follows:
+	* **Catoosa Area** Lower Left: x = 46455, y = 1458705; Upper Right: x = 56145, y = 1465005
+	* **Claremore Area** Lower Left: x = 30075, y = 1469655; Upper Right: x = 39765, y = 1475955
+
+For each area, go to the Raster menu at the top of the QGIS window, mouse over 'Extraction' and click 'Clipper'. 
+
+![](./Images/Raster_Extraction_Clipper.png)\
+
+In the window that opens, you can select the layer you want to clip (the reclassified NLCD layer), designate the output file, set the 'Clipping mode' to 'Extent', and fill in the coordinates. I typically set the 'No data value' to -9999, to avoid any confusion of my focal area includes locations without data. This is not the case for this area, but can be good practice. The image below is the setup for the Catoosa area; *you will also need to do this for the Claremore area (designated above)*.
+
+![](./Images/Raster_Clipper_Window.png)\
+
+The two areas are nearby, and your results should look like this: 
+
+![](./Images/CatoosaClaremore.png)\
+
+
 
 
 * Clip out two areas
