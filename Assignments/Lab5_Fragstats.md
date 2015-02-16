@@ -8,17 +8,20 @@ author: "Instructor: Michael Treglia"
 
 ***Due Date: Thursday, 26 February 2015***
 
+
 **PLEASE WRITE YOUR NAME ON ALL WORK**
 
-**There will be 10 questions for Part 1 (given on Tuesday) and 10 for Part 2 (given on Thursday), for a total of 20 points**
+
+*There will be 10 questions for Part 1 (provided on Tuesday) and 10 for Part 2 (given on Thursday), for a total of 20 points. All answers are due on the date specified above.*
 
 
 #Part 1: Analyzing Categorical Rasters using FRAGSTATS
 
-###Questions: Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation.
-
+###Part 1 Questions - Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation. Be sure to include your name with your answers.
 
 1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore areas - which do you think has a higher value for Contagion?
+
+
 
 ##Introduction
 
