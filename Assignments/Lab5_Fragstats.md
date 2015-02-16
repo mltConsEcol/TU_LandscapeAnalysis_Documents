@@ -1,18 +1,22 @@
 ---
 title: "Lab 5: Quantifying and Characterizing Landscape Patterns"
-date: Landscape Analysis and Modeling, The University of Tulsa, Spring 2015
+date: "Landscape Analysis and Modeling, The University of Tulsa, Spring 2015"
 author: "Instructor: Michael Treglia"
 ---
 
+
+
 ***Due Date: Thursday, 26 February 2015***
 
-***There will be 10 questions for Part 1 (given on Tuesday) and 10 for Part 2 (given on Thursday), for a total of 20 points***
+**PLEASE WRITE YOUR NAME ON ALL WORK**
 
-PLEASE WRITE YOUR NAME ON ALL WORK
+**There will be 10 questions for Part 1 (given on Tuesday) and 10 for Part 2 (given on Thursday), for a total of 20 points**
+
 
 #Part 1: Analyzing Categorical Rasters using FRAGSTATS
 
-###Questions: Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation (available as a PDF at [http://www.umass.edu/landeco/research/fragstats/documents/fragstats.help.4.2.pdf](http://www.umass.edu/landeco/research/fragstats/documents/fragstats.help.4.2.pdf)
+###Questions: Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation.
+
 
 1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore areas - which do you think has a higher value for Contagion?
 
@@ -73,7 +77,7 @@ The two areas are nearby, and your results should look like this:
 
 
 ##Load Data Into FRAGSTATS
-Now that we have a couple of landscapes to analyze, we can import them to FRAGSTATS.  Open FRAGSTATS on your computer - you should be able to find it in your Start Menu. When the program opens up, the screen will appear blank; click the 'New' icon at the top ![](./Images/Fragstats_New.png)\ and the screen below should appear.
+Now that we have a couple of landscapes to analyze, we can import them to FRAGSTATS.  Open FRAGSTATS on your computer - you should be able to find it in your Start Menu. When the program opens up, the screen will appear blank; click the 'New' icon at the top and the screen below should appear ![](./Images/Fragstats_New.png)\.
 
 ![](./Images/Fragstats_InputLayersHome.png)\
 
@@ -83,7 +87,7 @@ Click the 'Add layer...' button. Then, chose the file type you will import (GeoT
 ![](./Images/Fragstats_InputDataset.png)\
 
 
-*Note the 'Cell Size' is identified as '30.00'. FRAGSTATS assumes this is in meters, and all area & perimeter calculations will be based on this cell size. This is correct, and can be confirmed via the metadata and checked by measuring pixels while zoomed in within QGIS. If your layer is in projected coordinates (i.e., Lat/Long), it is wise to reproject to a meter-based coordinate reference system prior to analysis.*
+*Note the 'Cell Size' is identified as '30.00'. FRAGSTATS assumes this is in meters, and all area and perimeter calculations will be based on this cell size. This is correct, and can be confirmed via the metadata and checked by measuring pixels while zoomed in within QGIS. If your layer is in projected coordinates (i.e., Lat/Long), it is wise to reproject to a meter-based coordinate reference system prior to analysis.*
 
 You can import the NLCD for the Claremore area too.
 
@@ -98,14 +102,3 @@ At this point the left portion of the screen, with the 'Input Layers' tab, shoul
 ![](./Images/Fragstats_InputLayers_SimpleFilled.png)\
 
 
-##Run Analyses FRAGSTATS
-
-
-##Extra 
-
-
-
-
-#Part 2
-
-Surface Metrics - working with Pct Canopy and 
