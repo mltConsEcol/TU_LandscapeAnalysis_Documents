@@ -30,13 +30,14 @@ Then, go to the Processing Toolbox, to SAGA, and find "Grid-Tools"; then, double
 ![](./Images/QGIS_Processing_ReclassSAGA.png)\
 
 In the window that pops up, you will designate the settings for this operation. These below settings will work for this lab - in the future, you can adjust these settings according to your own needs. After setting up all of the options, click 'Run'.
-	* Under 'Grid', chose the appropriate layer (NLCD2011_LC_N36W093).
-	* For 'Method', choose 'Range'.
-	* Set the minimum and maximum values for the range option as 21 and 24, respectively. This tells the operation that you want to reclassify values from 21 through 24 to a new value.
-	* For 'new value (for range)', set the value to 20, and leave the 'operator (for range)' set to the default ('[0]<=').
-	* Un-check the boxes for 'replace no data values' and 'replace other values'.
-	* Designate a 'Reclassified grid' for your output file - saving it as a .tif file generally works well.
-	
+
+* Under 'Grid', chose the appropriate layer (NLCD2011_LC_N36W093).
+* For 'Method', choose 'Range'.
+* Set the minimum and maximum values for the range option as 21 and 24, respectively. This tells the operation that you want to reclassify values from 21 through 24 to a new value.
+* For 'new value (for range)', set the value to 20, and leave the 'operator (for range)' set to the default ('[0]<=').
+* Un-check the boxes for 'replace no data values' and 'replace other values'.
+* Designate a 'Reclassified grid' for your output file - saving it as a .tif file generally works well.
+
 ![](./Images/QGIS_Processing_ReclassSAGAFull.png)\
 
 After this operation, your newly reclassified layer will appear in QGIS in gray-scale colors. In the list of layers in QGIS you can simply right click on the original NLCD, select 'Copy Style', and then right click on the new layer and select 'Paste Style' - this will apply the original color palette to this new layer.  Note, the areas classified as 'Developed', now designated as class 20, will appear black - that is because there was previously no class number 20 - you can go to the style settings (in the layer properties) and designate a color for class 20. The result may look something like the image below (in which I've set the color for class 20 to be a bright red).
@@ -48,8 +49,9 @@ After this operation, your newly reclassified layer will appear in QGIS in gray-
 Now that we have the desired land cover classes for this analysis, we can focus on extracting a couple of areas for analysis. Again, there are numerous ways to do this - what is shown here is probably among the simplest and easiest, albeit we will be ignoring bordering pixels. 
 
 We will use the Raster Clipper tool in QGIS to extract two focal areas for this analysis: an area near Catoosa, OK that we have highlighted during lab, and a nearby area of Claremore, OK.  The corresponding extents will be as follows:
-	* **Catoosa Area** Lower Left: x = 46455, y = 1458705; Upper Right: x = 56145, y = 1465005
-	* **Claremore Area** Lower Left: x = 30075, y = 1469655; Upper Right: x = 39765, y = 1475955
+
+* **Catoosa Area** Lower Left: x = 46455, y = 1458705; Upper Right: x = 56145, y = 1465005
+* **Claremore Area** Lower Left: x = 30075, y = 1469655; Upper Right: x = 39765, y = 1475955
 
 For each area, go to the Raster menu at the top of the QGIS window, mouse over 'Extraction' and click 'Clipper'. 
 
