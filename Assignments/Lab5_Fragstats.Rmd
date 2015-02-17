@@ -1,7 +1,8 @@
 ---
-title: "Lab 5: Quantifying and Characterizing Landscape Patterns"
+title: 'Lab 5: Quantifying and Characterizing Landscape Patterns'
+author: 'Instructor: Michael Treglia'
 date: "Landscape Analysis and Modeling, The University of Tulsa, Spring 2015"
-author: "Instructor: Michael Treglia"
+output: pdf_document
 ---
 
 
@@ -9,22 +10,47 @@ author: "Instructor: Michael Treglia"
 ***Due Date: Thursday, 26 February 2015***
 
 
-*There will be 10 questions for Part 1 (provided on Tuesday) and 10 for Part 2 (provided on Thursday), for a total of 20 points. All answers are due on the date specified above. PLEASE WRITE YOUR NAME ON ALL WORK*
+*There will be 10 questions for Part 1 (provided on Tuesday) and additional questions for Part 2 (provided on Thursday), for a total of 20 points. All answers are due on the date specified above. PLEASE WRITE YOUR NAME ON ALL WORK*
 
 
 #Part 1: Analyzing Categorical Rasters using FRAGSTATS
 
 ###Part 1 Questions - Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation. Be sure to include your name with your answers. Unless otherwise noted, use the 8 cell rule for defining patches.
 
-1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore areas - which do you think has a higher value for Contagion? Justify your answer.
+1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore.
+  a) Which do you think has a higher value for Contagion? Justify your answer.
+  b) which do you think has higher Shannon's Evenness? Justify your answer
+  
+2) In each landscape, which land cover class do you expect has the largest Related Circumscribing Circle (CIRCLE)? Why?
 
-2) Run FRAGSTATS for Catoosa and Claremore with the 8 cell patch rule - which landscape actually does have higher contagion values?
+For the next questions run FRAGSTATS for Catoosa and Claremore with the 8 cell patch rule. You can simply chose all analyses of interest (look through the questions, identify the analyses you need with the the 8 cell rule, check the appropriate boxes in FRAGSTATS, and Run the program.
 
-2) Run FRAGSTATS for both Catoosa and Claremore using both the 8 cell patch rule and the 4 cell patch rule. How many patches are identified in each of the landscapes with based on each of those rules? (The Number of Patches calculation will be under Landscape Metrics - the Aggregation Tab - Subdivision section).
+3)
+    a) which landscape actually does have a higher contagion value? (What are the values?)
+    b) which landscape has a higher Shannon's Evenness values? (What are the values?)
 
-3) In the Claremore landscape, which land cover class has the highest mean radius of gyration? (Use the Class metrics -> Area-Edge tab -> Radius of Gyration. Does the answer differ when considering the weighted mean vs the non-weighted mean?
+4) In the Claremore landscape, which land cover class has the highest mean radius of gyration? (Use the Class metrics -> Area-Edge tab -> Radius of Gyration. Does the answer differ when considering the weighted mean vs the non-weighted mean?
 
-4) Carry out a moving window analysis of patch type richness for Catoosa (this is a landscape metric), with a square window and radius of 60; Present your result - it can simply be a screen-shot from QGIS if you want. What area appears to have the highest patch type richness? What is the maximum richness found within a window?
+5) What land cover class has the highest average (*not weighted average*) Fractal Dimension Index (FRAC) in each landscape?
+
+6) In each landscape, what is the land cover type of the patch with the largest value for Related Circumscribing Circle(CIRCLE)?  (You can import the results into R and use the 'order' function - see this website for help [http://www.statmethods.net/management/sorting.html](http://www.statmethods.net/management/sorting.html)).
+
+7) For the Catoosa landscape and only the developed land cover, compute the average and area-weighted average Core Area of patches (a class metric) with the edge depth set to 30.
+
+The next questions involve computing separate analyses from those listed above. It may be easiest to run individual analyses to answer for each question.
+
+8) For the Catoosa landscape and only the developed land cover, compute the average and area-weighted average Core Area of patches (a class metric) with the edge depth set to 60.
+  a) How does changing the edge depth affect these core area metrics?
+
+
+9) Carry out a moving window analysis of patch type richness for Catoosa (this is a landscape metric), with a square window and radius of 60; Present your result - it can simply be a screen-shot from QGIS if you want. 
+  a) What area appears to have the highest patch type richness? (e.g., Northwest, Northeast, Center?)
+  b) What is the maximum richness found for the specified window size across the landscape?
+
+
+10) Run FRAGSTATS for both Catoosa and Claremore using both the 8 cell patch rule and the 4 cell patch rule (you will need to run the analyses separately for the 8 cell and 4 cell rule). How many patches are identified in each of the landscapes based on each of those rules? (The Number of Patches calculation will be under Landscape Metrics - the Aggregation Tab - Subdivision section).
+
+
 
 
 
@@ -43,7 +69,9 @@ Import the NLCD layer into QGIS as you would any other raster layer - the result
 
 ![](./Images/NLCD_36_93.png)\
 
-Then, go to the Processing Toolbox, to SAGA, and find "Grid-Tools"; then, double click "Reclassify grid values"
+
+* Then, go to the Processing Toolbox, to SAGA, and find "Grid-Tools"; then, double click "Reclassify grid values"
+
 
 ![](./Images/QGIS_Processing_ReclassSAGA.png)\
 
@@ -89,6 +117,7 @@ Now that we have a couple of landscapes to analyze, we can import them to FRAGST
 
 ![](./Images/Fragstats_New.png)\
 
+
 ![](./Images/Fragstats_InputLayersHome.png)\
 
 
@@ -125,10 +154,12 @@ In the Analysis Parameters pane (on the left),  you can also select to carry out
 
 ##Viewing Results
 As aforementioned, you can view FRAGSTATS results directly within the software. When you run analyses with the option to automatically save results, the results are saved as comma delimited files, albeit the extension (i.e., suffix for the file names) will read '.patch', '.class', or '.land', corresponding to results for patch, class, and landscape metrics. These can be opened in a text editor like Notepad, and they can be imported into R using the simple 'read.csv()' command as illustrated below.
-	
-	* CatoosaClaremorePatches <- read.csv("CatoosaClaremore1.patch")
-	* CatoosaClaremoreClass <- read.csv("CatoosaClaremore1.class")
-	* CatoosaClaremoreLand <- read.csv("CatoosaClaremore1.land")
+
+```{r, eval=FALSE}
+CatoosaClaremorePatches <- read.csv("CatoosaClaremore1.patch")
+CatoosaClaremoreClass <- read.csv("CatoosaClaremore1.class")
+CatoosaClaremoreLand <- read.csv("CatoosaClaremore1.land")
+```
 
 There is also  an R package available for download that aggregates landscape and class metrics into a single data frame for analysis. The package is available for download at [
 http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#Rfrag](
@@ -137,10 +168,15 @@ http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.ht
 
 To install the package in R, open R, and use the 'Packages' menu at the top of the screen to navigate to 'Install package(s) from local zip file' - then browse your computer to your download location and select the appropriate file (Rfrag_1.0.zip). Load the packages as you would any other:
 
-	* library(Rfrag)
-	
+```{r, eval=FALSE}
+library(Rfrag)
+```
+
 There is currently only one function: 'frag.combine'. You can use the help for this function to see the specific arguments, and here is an example of its usage:
 
-	* example <- frag.combine(path='D:/',inland = 'CatoosaClaremore1.land',  inclass = 'CatoosaClaremore1.class')
-	
+```{r, eval=FALSE}
+example <- frag.combine(path='D:/',inland = 'CatoosaClaremore1.land',
+    inclass = 'CatoosaClaremore1.class')
+```	
+
 You can compare this to the original files - the result of this function is a table where each row represents an individual landscape (in this case, Catoosa and Claremore landscapes), and columns represent the landscape metrics, followed by the metrics for each class. This can make it easy to compare characteristics of multiple landscapes by simply comparing entries for respective columns across multiple rows.
