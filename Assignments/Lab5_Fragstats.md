@@ -9,17 +9,22 @@ author: "Instructor: Michael Treglia"
 ***Due Date: Thursday, 26 February 2015***
 
 
-**PLEASE WRITE YOUR NAME ON ALL WORK**
-
-
-*There will be 10 questions for Part 1 (provided on Tuesday) and 10 for Part 2 (given on Thursday), for a total of 20 points. All answers are due on the date specified above.*
+*There will be 10 questions for Part 1 (provided on Tuesday) and 10 for Part 2 (provided on Thursday), for a total of 20 points. All answers are due on the date specified above. PLEASE WRITE YOUR NAME ON ALL WORK*
 
 
 #Part 1: Analyzing Categorical Rasters using FRAGSTATS
 
-###Part 1 Questions - Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation. Be sure to include your name with your answers.
+###Part 1 Questions - Answer the following questions as you go through this lab. Feel free to use any materials from lecture, the internet, and FRAGSTATS documentation. Be sure to include your name with your answers. Unless otherwise noted, use the 8 cell rule for defining patches.
 
-1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore areas - which do you think has a higher value for Contagion?
+1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore areas - which do you think has a higher value for Contagion? Justify your answer.
+
+2) Run FRAGSTATS for Catoosa and Claremore with the 8 cell patch rule - which landscape actually does have higher contagion values?
+
+2) Run FRAGSTATS for both Catoosa and Claremore using both the 8 cell patch rule and the 4 cell patch rule. How many patches are identified in each of the landscapes with based on each of those rules? (The Number of Patches calculation will be under Landscape Metrics - the Aggregation Tab - Subdivision section).
+
+3) In the Claremore landscape, which land cover class has the highest mean radius of gyration? (Use the Class metrics -> Area-Edge tab -> Radius of Gyration. Does the answer differ when considering the weighted mean vs the non-weighted mean?
+
+4) Carry out a moving window analysis of patch type richness for Catoosa (this is a landscape metric), with a square window and radius of 60; Present your result - it can simply be a screen-shot from QGIS if you want. What area appears to have the highest patch type richness? What is the maximum richness found within a window?
 
 
 
@@ -53,9 +58,9 @@ In the window that pops up, you will designate the settings for this operation. 
 
 ![](./Images/QGIS_Processing_ReclassSAGAFull.png)\
 
-After this operation, your newly reclassified layer will appear in QGIS in gray-scale colors. In the list of layers in QGIS you can simply right click on the original NLCD, select 'Copy Style', and then right click on the new layer and select 'Paste Style' - this will apply the original color palette to this new layer.  Note, the areas classified as 'Developed', now designated as class 20, will appear black - that is because there was previously no class number 20 - you can go to the style settings (in the layer properties) and designate a color for class 20. The result may look something like the image below (in which I've set the color for class 20 to be a bright red).
+After this operation, your newly reclassified layer will appear in QGIS in gray-scale colors. In the list of layers in QGIS you can simply right click on the original NLCD, select 'Copy Style', and then right click on the new layer and select 'Paste Style' - this will apply the original color palette to this new layer.  Note, the areas classified as 'Developed', now designated as class 20, will appear black - that is because there was previously no class number 20 - you can go to the style settings (in the layer properties) and designate a color for class 20.
 
-![](./Images/NLCD_36_93_Reclass.png)\
+#![](./Images/NLCD_36_93_Reclass.png)\
 
 
 ##Clipping Areas for Analysis
@@ -80,7 +85,9 @@ The two areas are nearby, and your results should look like this:
 
 
 ##Load Data Into FRAGSTATS
-Now that we have a couple of landscapes to analyze, we can import them to FRAGSTATS.  Open FRAGSTATS on your computer - you should be able to find it in your Start Menu. When the program opens up, the screen will appear blank; click the 'New' icon at the top and the screen below should appear ![](./Images/Fragstats_New.png)\.
+Now that we have a couple of landscapes to analyze, we can import them to FRAGSTATS.  Open FRAGSTATS on your computer - you should be able to find it in your Start Menu. When the program opens up, the screen will appear blank; click the 'New' icon at the top and the screen below should appear.
+
+![](./Images/Fragstats_New.png)\
 
 ![](./Images/Fragstats_InputLayersHome.png)\
 
@@ -105,3 +112,33 @@ At this point the left portion of the screen, with the 'Input Layers' tab, shoul
 ![](./Images/Fragstats_InputLayers_SimpleFilled.png)\
 
 
+##Analysis in FRAGSTATS
+Now that we have data imported to FRAGSTATS, we can get on to some analyses. In the pane on the left, use the tabs at the top switch to 'Analysis Parameters'.  There are lots of things to adjust. For now we will leave the box checked for 'Use 8 cell neighborhood rule'. We will also save the results - check the box for 'Automatically save results', and browse to designate a results file. I will name mine 'CatoosaClaremore1', and subsequent analyses can be named in a logical way of your choosing. There are various sampling strategies that can be chosen, in which only specified parts of the landscape are analyzed. We will leave the Sampling Strategy set to the default (No Sampling), and we will check the boxes for Patch Metrics, Class Metrics, Landscape Metrics, and Generate Patch ID file. You can browse through the Patch Metrics, Class Metrics, and Landscape Metrics tabs in the middle of the screen to see what analyses are available. We discussed many of the metrics in class, and you can read further about the details in the FRAGSTATS Documentation.
+
+Notice that a lot of metrics can be calculated at all of the three scales - Patch metrics apply to individual patches; Class metrics describe the arrangement of specific land cover types within the landscape; and Landscape metrics describe the relationship of all land cover types, and the arrangement of all types with respect to all other types. For patch characteristics, we selected he option to generate a 'Patch ID' file -  this is a raster, where each pixel is assigned a value that identified what patch number it is associated with.
+
+After you have the analyses you wish to run selected, simply click the 'Run' icon at the top of the screen. The results can be accessed from within FRAGSTATS by clicking the 'Results' icon near the center of the screen. ![](./Images/Fragstats_ResultsIcon.png)\
+
+In the Analysis Parameters pane (on the left),  you can also select to carry out Moving Window Analyses. These create new rasters for each class and landscape metric selected (which can be imported into GIS software just like any other raster). For class metrics, it will create a separate result raster for each metric of each class, so be aware the results can add up quickly.
+
+##Viewing Results
+As aforementioned, you can view FRAGSTATS results directly within the software. When you run analyses with the option to automatically save results, the results are saved as comma delimited files, albeit the extension (i.e., suffix for the file names) will read '.patch', '.class', or '.land', corresponding to results for patch, class, and landscape metrics. These can be opened in a text editor like Notepad, and they can be imported into R using the simple 'read.csv()' command as illustrated below.
+	
+	* CatoosaClaremorePatches <- read.csv("CatoosaClaremore1.patch")
+	* CatoosaClaremoreClass <- read.csv("CatoosaClaremore1.class")
+	* CatoosaClaremoreLand <- read.csv("CatoosaClaremore1.land")
+
+There is also  an R package available for download that aggregates landscape and class metrics into a single data frame for analysis. The package is available for download at [
+http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#Rfrag](
+http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#Rfrag
+). 
+
+To install the package in R, open R, and use the 'Packages' menu at the top of the screen to navigate to 'Install package(s) from local zip file' - then browse your computer to your download location and select the appropriate file (Rfrag_1.0.zip). Load the packages as you would any other:
+
+	* library(Rfrag)
+	
+There is currently only one function: 'frag.combine'. You can use the help for this function to see the specific arguments, and here is an example of its usage:
+
+	* example <- frag.combine(path='D:/',inland = 'CatoosaClaremore1.land',  inclass = 'CatoosaClaremore1.class')
+	
+You can compare this to the original files - the result of this function is a table where each row represents an individual landscape (in this case, Catoosa and Claremore landscapes), and columns represent the landscape metrics, followed by the metrics for each class. This can make it easy to compare characteristics of multiple landscapes by simply comparing entries for respective columns across multiple rows.
