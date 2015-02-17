@@ -19,7 +19,7 @@ output: pdf_document
 
 1) Before running any formal analysis in FRAGSTATS, look at the landscapes for Catoosa and Claremore.
   a) Which do you think has a higher value for Contagion? Justify your answer.
-  b) which do you think has higher Shannon's Evenness? Justify your answer
+  b) Which do you think has higher Shannon's Evenness? Justify your answer
   
 2) In each landscape, which land cover class do you expect has the largest Related Circumscribing Circle (CIRCLE)? Why?
 
@@ -40,12 +40,12 @@ For the next questions run FRAGSTATS for Catoosa and Claremore with the 8 cell p
 The next questions involve computing separate analyses from those listed above. It may be easiest to run individual analyses to answer for each question.
 
 8) For the Catoosa landscape and only the developed land cover, compute the average and area-weighted average Core Area of patches (a class metric) with the edge depth set to 60.
-  a) How does changing the edge depth affect these core area metrics?
+    a) How does changing the edge depth affect these core area metrics?
 
 
-9) Carry out a moving window analysis of patch type richness for Catoosa (this is a landscape metric), with a square window and radius of 60; Present your result - it can simply be a screen-shot from QGIS if you want. 
-  a) What area appears to have the highest patch type richness? (e.g., Northwest, Northeast, Center?)
-  b) What is the maximum richness found for the specified window size across the landscape?
+9) Carry out a moving window analysis of patch type richness for Catoosa (this is a landscape metric), with a square window and radius of 60; Present your result - it can simply be a screen-shot from QGIS if you want.
+    a) What area appears to have the highest patch type richness? (e.g., Northwest, Northeast, Center?)
+    b) What is the maximum richness found for the specified window size across the landscape?
 
 
 10) Run FRAGSTATS for both Catoosa and Claremore using both the 8 cell patch rule and the 4 cell patch rule (you will need to run the analyses separately for the 8 cell and 4 cell rule). How many patches are identified in each of the landscapes based on each of those rules? (The Number of Patches calculation will be under Landscape Metrics - the Aggregation Tab - Subdivision section).
@@ -56,11 +56,11 @@ The next questions involve computing separate analyses from those listed above. 
 
 ##Introduction
 
-This assignment involves a few steps, which involve doing some pre-processing of categorical raster datasets, and loading them into and analyzing them in [FRAGSTATS](http://www.umass.edu/landeco/research/fragstats/fragstats.html).  Though this exercise covers some basics of preparing data for, and analyzing them within FRAGSTATS, more a comprehensive tutorial is available from the program developers at [http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#tutorials](http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#tutorials).
+This assignment involves a few steps, which involve doing some pre-processing of categorical raster datasets, and loading them into and analyzing them in [FRAGSTATS](http://www.umass.edu/landeco/research/fragstats/fragstats.html).  Though this exercise covers some basics of preparing data for, and analyzing them within FRAGSTATS, more a comprehensive tutorial is available from the program developers at [http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#tutorials](http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#tutorials). FRAGSTATS is available for download and installation on Windows computers at this link: [http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#FRAGSTATS](http://www.umass.edu/landeco/research/fragstats/downloads/fragstats_downloads.html#FRAGSTATS). After downloading it, simply un-zip the folder, and run the .exe file.
 
 We will use data from the [2011 National Land Cover Dataset (NLCD)](http://www.mrlc.gov/nlcd2011.php), for a couple of areas near Tulsa, OK. The NLCD is available at 30 meter resolution, for the entire United States; multiple layers are available for this, including categorical land cover data, percent canopy cover and percent impervious pavement per pixel. These data are available for download via both the [Multi-Resolution Land Characteristics Consortium (MRLC)](http://www.mrlc.gov/) and [The National Map Viewer and Download Platform](http://viewer.nationalmap.gov/viewer/). You can store and work with these data in the directory of your choice - on lab computers, your University of Tusla personal directory might make the most sense.
 
-For this lab, we will start with a 3 x 3 degree tile of the categorical NLCD layer for north-eastern Oklahoma, which includes part of Tulsa. I have made this available on the Harvey website for the course (in the Week 6 Lab folder) and also may be downloaded by clicking [this link](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Misc/NLCD2011_LC_N36W093.zip?raw=true), but it can also be downloaded from the sources noted above. Before we get into doing actual analyses, we will go through a few pre-processing steps, often necessary in setting up the analyses we are going to go through. There are lots of different tools that can be used for these operations, but we'll use QGIS (version 2.6.1).
+For this lab, we will start with a 3 x 3 degree tile of the categorical NLCD layer for north-eastern Oklahoma, which includes part of Tulsa. I have made this available on the Harvey website for the course (in the Week 6 Lab folder) and also may be downloaded by clicking [this link](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Misc/NLCD2011_LC_N36W093.zip?raw=true), but it can also be downloaded from the sources noted above. Before we get into doing actual analyses, we will go through a few pre-processing steps, often necessary in setting up the analyses we are going to go through. There are lots of different tools that can be used for these operations, but we'll use [QGIS](http://www.qgis.org) (version 2.6.1). We will also use [R](http://cran.r-project.org/) to manage result files.
 
 ##Reclassify Raster
 The 2011 NLCD has 20 specific potential land cover types, 15 of which occur in our focal tile. Each class is assigned a class number, as seen in the legend for this layer, available online at [http://www.mrlc.gov/nlcd11_leg.php](http://www.mrlc.gov/nlcd11_leg.php). If you use the 'inspect' tool of QGIS, you will see that each pixel has a numeric value, corresponding to legend in the previous link. The land cover classes are also grouped coarsely, as indicated by the 10s place of the ID number (e.g., all numbers in the 20s indicate varying levels of development).  Sometimes this classification scheme might not meet our needs - for example, we want to consider all classes of development as the same. To deal with this, we will reclassify the raster, using a similar process as we used in the first lab of the semester.
@@ -70,7 +70,7 @@ Import the NLCD layer into QGIS as you would any other raster layer - the result
 ![](./Images/NLCD_36_93.png)\
 
 
-* Then, go to the Processing Toolbox, to SAGA, and find "Grid-Tools"; then, double click "Reclassify grid values"
+Then, go to the Processing Toolbox, to SAGA, and find "Grid-Tools"; then, double click "Reclassify grid values". If the processing toolbox is not visible, click the "Processing" menu at the top of the QGIS screen, and click "Toolbox".  This may open in the "Simplified Interface", showing only a couple of toos - if this is the case, look to the bottom of the Processing Toolbox pane (typically appears on the right side) - there will be a drop-down menu where you can choose either "Advanced Interface" or "Simplified Interface" - choose the Advanced Interface.
 
 
 ![](./Images/QGIS_Processing_ReclassSAGA.png)\
