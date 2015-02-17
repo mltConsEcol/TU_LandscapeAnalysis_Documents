@@ -124,7 +124,7 @@ date:
 #### Day 11
 
 * Agenda
-	* Work on Assignment 5 (Part 1)
+	* Work on [Assignment 5, Part 1 -  Analyzing Categorical Rasters using FRAGSTATS](./Assignments/Lab5_Fragstats.md#part-1-analyzing-categorical-rasters-using-fragstats)
 
 #### Day 12
 
