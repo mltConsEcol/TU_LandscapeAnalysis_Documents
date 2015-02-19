@@ -186,7 +186,7 @@ date:
 
 #### Day 18 (March 12)
 ***Assignment 7 Due: Interpolation Exercise***
-***Project Proposal Due***
+***Project Proposal Due: Look on Harvey or [Click Here](./Assignments/ProjectProposalGuidelines.md) for the guidelines***
 
 * Readings:
 	* [Guillot, G., and F. Rousset. 2013. Dismantling the Mantel tests. *Methods in Ecology and Evolution* 4:336-344.](http://onlinelibrary.wiley.com/doi/10.1111/2041-210x.12018/abstract)
