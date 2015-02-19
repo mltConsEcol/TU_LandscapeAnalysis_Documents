@@ -94,7 +94,7 @@ date:
 	
 * Agenda:
 	* Discuss Reading Material
-	* Work on [Assignment 4](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab4_QuadratVarianceAnalysis.Rmd)
+	* Work on [Assignment 4](./Assignments/Lab4_QuadratVarianceAnalysis.Rmd)
 		* Getting YOUR data into R
 		* Quadrat Variance Analyses - Setting up sample data in R and Analysis in [PASSaGE](http://www.passagesoftware.net/)
 
@@ -109,7 +109,7 @@ date:
 	* Landscape and Class Metrics
 
 #### Day 10
-***[Assignment 4 Due (PDF available on Harvey)](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab4_QuadratVarianceAnalysis.Rmd)***
+***[Assignment 4 Due (PDF available on Harvey)](./Assignments/Lab4_QuadratVarianceAnalysis.Rmd)***
 
 * Readings:
 	* [McIntyre, N.E. and J.A. Wiens. 2000. A novel use of the lacunarity index to discern landscape function. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
@@ -124,7 +124,7 @@ date:
 #### Day 11
 
 * Agenda
-	* Work on [Assignment 5, Part 1 -  Analyzing Categorical Rasters using FRAGSTATS](./Assignments/Lab5_Fragstats.md#part-1-analyzing-categorical-rasters-using-fragstats)
+	* Work on [Assignment 5, Part 1 -  Analyzing Categorical Rasters using FRAGSTATS](./Assignments/Lab5_LandscapeMetrics_Pt1Pt2.Rmd#part-1-analyzing-categorical-rasters-using-fragstats)
 
 #### Day 12
 
@@ -133,7 +133,7 @@ date:
 		* As Supplemental Reading (Not Required), Check out: [Hanski, I. 2015. Habitat fragmentation and species richness. Journal of Biogeography](http://onlinelibrary.wiley.com/doi/10.1111/jbi.12478/full)
 * Agenda
 	* Discuss Reading Material
-	* Work on Assignment 5 (Part 2)
+	* Work on [Assignment 5 (Part 2)](./Assignments/Lab5_LandscapeMetrics_Pt1Pt2.Rmd#part-2-calculating-some-surface-metrics).
 
 
 
@@ -147,7 +147,7 @@ date:
 	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
 
 #### Day 14
-***Assignment 5 Due (Landscape Metrics)***
+***[Assignment 5](./Assignments/Lab5_LandscapeMetrics_Pt1Pt2.Rmd) Due***
 
 * Readings:
 	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
