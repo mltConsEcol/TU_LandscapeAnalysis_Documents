@@ -154,7 +154,7 @@ date:
 ](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
 * Agenda: 
 	* Discuss Reading Material
-	* Lab exercise: Measuring, Visualizing, and Testing for Spatial Autocorrelation in QGIS & R
+	* Lab 6: [Join Count and Autocorrelation Analyses in R](./Assignment/Lab6_Autocorrelation.Rmd)
 
 
 ### Week 8: Interpolation
@@ -167,7 +167,7 @@ date:
 	* Interpolation Methods
 
 #### Day 16
-***Assignment 6 Due***
+***Assignment 6 Due: [Join Count and Autocorrelation Analyses in R]((./Assignment/Lab6_Autocorrelation.Rmd))***
 
 * Readings
 	* [Yao et al. 2013. Comparison of Four Spatial Interpolation Methods for Estimating Soil Moisture in a Complex Terrain Catchment. *PLoS ONE* 8, e54660](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0054660#pone-0054660-g008)
