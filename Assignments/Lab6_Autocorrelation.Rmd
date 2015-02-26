@@ -5,7 +5,7 @@ date: "Material for Lab 5 of Landscape Analysis and Modeling, Spring 2015"
 output: pdf_document
 ---
 
-*This document, with active hyperlinks, is available online at:*
+*This document, with active hyperlinks, is available online at:[https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab6_Autocorrelation.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab6_Autocorrelation.Rmd)*
 
 **Due Date: Thursday, 5 March 2015**
 
@@ -13,7 +13,7 @@ output: pdf_document
 
 #Questions
 
-1) Convert the point data to rasters for *Acer rubrum*, *Pinus strobus*, and *Prunus serotina* as explained below (in the section 'Creating Cells of Presence/Absence'), and plot them. Based on the plots, for which species do you expect to find significant aggregation? For which species do you expect to find significant dispersion? Justify your answers.
+1) Convert the point data to rasters of presence/absence for *Acer rubrum*, *Pinus strobus*, and *Prunus serotina* as explained below (in the section 'Creating Cells of Presence/Absence'), and plot them. Based on the plots, for which species do you expect to find significant aggregation? For which species do you expect to find significant dispersion? Justify your answers.
 
 2) Calculate the join count statistics for each species using the 'rook' type of joins. Which are actually significantly associated and significantly dissasssociated? (Remember, the alternative hypothesis 'greater' tests for significant association (the number of like joins is significantly greater than expected by random chance); the alternative hypothesis 'less' tests for the dissociation.)
 
@@ -21,11 +21,11 @@ output: pdf_document
 
 4) Create and show plots for Moran's *I* and Geary's *c* for *Acer rubrum*. Does this species show significant autocorrelation? If so, at what distances? To speed processing, I recommend using a sample of only ~300 points.
 
-5) 4) Create and show plots for Moran's *I* and Geary's *c* for *Pinus strobus*. Does this species show significant autocorrelation? If so, at what distances?
+5) Create and show plots for Moran's *I* and Geary's *c* for *Pinus strobus*. Does this species show significant autocorrelation? If so, at what distances?
 
 6) There will likely be significant autocorrelation in at least one of these datasets (if not, just think about this hypothetically) - given autocorrelation at specific scales and the assumption of independent samples for statistical tests, how could you adjust your sampling scheme to avoid problems with autocorrelation?
 
-7) Calculate Local Moran's *I* for a raster of the number of trees for *Acer rubrum*. Look at plots of those results and plots of the original data - are there distinct 'hotspots' of tree of this species? Circle them on your answer sheet (you can copy/paste the a result figure into Word and use drawing tools there to simply draw a circle around them). Hotspots are local areas that have higher number of trees within a cluster of a few pixels.
+7) Calculate Local Moran's *I* for a raster of the number of trees for *Acer rubrum*. Look at plots of those results and plots of the original data - are there distinct 'hotspots' of tree of this species? Circle them on your answer sheet (you can copy/paste the a result figure into Word and use drawing tools there to simply draw a circle around them). Hotspots are local areas that have higher number of trees within a cluster of a few pixels, and are indicated with higher values for the local indices.
 
 8) Do the same as for question 7, but this time for *Pinus strobus*.
 
@@ -33,7 +33,6 @@ output: pdf_document
 
 10) Autocorrelation poses a problem in statistical analyses because close samples may not be independent of one another, violating assumptions of statistical tests. Explain two potential causes of autocorrelation. It might help to provide potential reasons for autocorrelation in a sample dataset (the tree dataset we use here would be fine).
 
-and *Pinus strobus*
 
 #Introduction
 
