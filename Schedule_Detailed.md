@@ -157,42 +157,45 @@ date:
 	* Lab 6: [Join Count and Autocorrelation Analyses in R](./Assignment/Lab6_Autocorrelation.Rmd)
 
 
-### Week 8: Interpolation
+### Week 8: Multivariate Relationships
 
 #### Day 15
 
 * Agenda:
-	* What is Interpolation?
-	* When might we use Interpolation in Ecology?
-	* Interpolation Methods
+	* Geostatistics and Variograms
+	* Mantel Tests and Partial Mantel Tests
+		* Pitfalls of Mantel Tests
+	* Spatial Regression Techniques
 
 #### Day 16
 ***Assignment 6 Due: [Join Count and Autocorrelation Analyses in R]((./Assignment/Lab6_Autocorrelation.Rmd))***
 
 * Readings
-	* [Yao et al. 2013. Comparison of Four Spatial Interpolation Methods for Estimating Soil Moisture in a Complex Terrain Catchment. *PLoS ONE* 8, e54660](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0054660#pone-0054660-g008)
+	* [Perez, S. I., et al. 2010. Alternatives to the partial Mantel test in the study of environmental factors shaping human morphological variation. *Journal of Human Evolution* 59:698-703.](http://www.sciencedirect.com/science/article/pii/S0047248410001612)
 * Agenda:
-	* Spatial Interpolation Lab
+	* Discuss reading assignment 
+	* Analyzing Multivariate Spatial Data Lab
 
 
 
-### Week 9: Multivariate Relationships (Mantel Tests and Alternatives)
+### Week 9: Species Distribution Modeling (i.e., Environmental Niche Modeling)
 
 #### Day 17 (March 10)
 
 * Agenda:
-	* What are Mantel Tests and what are they used for, and why are they problematic?
- 	* Spatial Regression, Spatial PCA
+	* What is Species Distribution Modeling
+ 	* Various Techniques for Species Distribution Modeling
+	* Intricacies of Species Distribution Modeling
 
 #### Day 18 (March 12)
-***Assignment 7 Due: Interpolation Exercise***
+***Assignment 7 Due: Multivariate Spatial Data Lab***
 ***Project Proposal Due: Look on Harvey or [Click Here](./Assignments/ProjectProposalGuidelines.md) for the guidelines***
 
 * Readings:
-	* [Guillot, G., and F. Rousset. 2013. Dismantling the Mantel tests. *Methods in Ecology and Evolution* 4:336-344.](http://onlinelibrary.wiley.com/doi/10.1111/2041-210x.12018/abstract)
+	* 
 * Agenda
 	* Discuss Reading Material
-	* Spatial Regression in R
+	* Species Distribution Modeling
 
 
 ### ***Spring Break - Have Fun!*** 	
