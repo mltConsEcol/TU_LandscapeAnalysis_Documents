@@ -153,7 +153,7 @@ date:
 ](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
 * Agenda: 
 	* Discuss Reading Material
-	* Lab 6: [Join Count and Autocorrelation Analyses in R](./Assignment/Lab6_Autocorrelation.Rmd)
+	* Lab 6: [Join Count and Autocorrelation Analyses in R](./Assignments/Lab6_Autocorrelation.Rmd)
 
 
 ### Week 8: Multivariate Relationships
@@ -167,7 +167,7 @@ date:
 	* Spatial Regression Techniques
 
 #### Day 16
-***Assignment 6 Due: [Join Count and Autocorrelation Analyses in R]((./Assignment/Lab6_Autocorrelation.Rmd))***
+***Assignment 6 Due: [Join Count and Autocorrelation Analyses in R]((./Assignments/Lab6_Autocorrelation.Rmd))***
 
 * Readings
 	* [Perez, S. I., et al. 2010. Alternatives to the partial Mantel test in the study of environmental factors shaping human morphological variation. *Journal of Human Evolution* 59:698-703.](http://www.sciencedirect.com/science/article/pii/S0047248410001612)
