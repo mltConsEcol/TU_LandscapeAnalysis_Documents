@@ -4,7 +4,6 @@ author: "Michael Treglia"
 date: 
 ---
 
-test 
 ## BIOL 4383/6383-02 Detailed Schedule
 
 ### Week 1: Intro to Landscape Ecology and GIS
