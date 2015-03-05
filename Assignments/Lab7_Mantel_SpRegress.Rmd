@@ -79,7 +79,8 @@ Boreality$Bor<-sqrt(1000*(Boreality$nBor+1)/(Boreality$nTot))
 ```
 
 
-#Running Mantel Tests
+
+# Running Mantel Tests
 
 Though we have discussed the problems with Mantel tests in lecture, and they are well documented in the literature (e.g., [Guillot and Rousset 2014](http://onlinelibrary.wiley.com/doi/10.1111/2041-210x.12018/abstract)), you may wish to explore the analyses with data.
 
@@ -107,7 +108,7 @@ mantel(wet.dist~geog.dist)
 mantel(bor.dist~wet.dist)
 ```
 
-The output for each will look something like what is pasted below (the result from 'mantel(bor.dist~geog.dist)'. The 'mantelr' value is the calculated mantel correlation between the two matrices; the first two p-values are for one-way tests (testing wither r is <= 0 or >= 0, respectively), while the third is for a two-way test (testing whether r is significantly different from expected in either direction) - generally I suggest focusing on that third one (pval3), as . The 'llim.2.5%' and 'ulim.97.5%' show the 95% confidence interval for the Mantel's r based on bootstrap resampling. This effectively provides an estimate of the potential values for r for a population, given that we typically only have a sample of data. These results show there is small but significant correlation (Mantel's r = 0.047, p=0.001) between the boreality values and the geographic distance between samples.
+The output for each will look something like what is pasted below (the result is from 'mantel(bor.dist~geog.dist)'. The 'mantelr' value is the calculated mantel correlation between the two matrices; the first two p-values are for one-way tests (testing wither r is <= 0 or >= 0, respectively), while the third is for a two-way test (testing whether r is significantly different from expected in either direction) - generally I suggest focusing on that third one (pval3), as . The 'llim.2.5%' and 'ulim.97.5%' show the 95% confidence interval for the Mantel's r based on bootstrap resampling. This effectively provides an estimate of the potential values for r for a population, given that we typically only have a sample of data. These results show there is small but significant correlation (Mantel's r = 0.047, p=0.001) between the boreality values and the geographic distance between samples.
 
       mantelr      pval1      pval2      pval3  llim.2.5% ulim.97.5% 
     0.08336013 0.00100000 1.00000000 0.00100000 0.06979311 0.09794219 
@@ -173,7 +174,6 @@ Though the above variogram assumes isotropy, you can explore the variogram in di
 
 ```{r, eval=FALSE}
 plot(variogram(lm.resids ~ 1, lm.resids.spdf, alpha = c(0, 45, 90,135) ))
-plot(Vario2)
 ```
 
 ##Correcting for Spatial Autocorrelation: Generalized Least Squares
@@ -208,7 +208,7 @@ help(corClasses)
 #show specifications for 'corSpher' option
 help(corSpher)
 ```
-max(geog.dist)
+
 It is not always clear which correlation structure is best to use, so you can run the model multiple ways and compare results based on fit metrics. These models are fit using maximum-likelihood estimators (MLEs), which is an iterative procedure. A good description of this is found at website for the statistical software, [STATA](http://www.stata.com/): [http://www.stata.com/support/faqs/statistics/convergence-of-maximum-likelihood-estimators/](http://www.stata.com/support/faqs/statistics/convergence-of-maximum-likelihood-estimators/). Sometimes models will not converge with an MLE,and other estimators could be attempted or more iterations could be used; for now, if a model fails to converge, simply leave it out and move on. 
 
 Note: These models will take a minute or two to run, especially on older/slower computers.
@@ -224,9 +224,9 @@ B1Exp <- gls(f1,correlation=corExp(form=~x+y,nugget=T),data=Boreality)
 
 With the models run, we can select the best fit a few different ways. One of the most common ways is to use Information Theoretic metrics, like Akaike's Information Criterion (AIC) and Bayes' Information Criterion (BIC), which are metrics of how likely a model is given the data; since adding parameters to models will generally increase fit to the data, they penalize models with more parameters (e.g., variables or terms) in attempt to identify the most parsimonious model. The lower the AIC and BIC values, the better and more parsimonious the model; models with fit differences > 7 are considered to be considerably different, while models with fit differences < 2 are usually considered to be about equivalent. 
 
-It is important to keep in mind that for these metrics, models should have the same dependent variable and be based on the same sample of data.  A great reference for this material is [*Model Selection and Multimodel Inference: A Practical Information-Theoretic Approach*](http://www.springer.com/us/book/9780387953649) by Kenneth P. Burnham and David R. Anderson. Google around for other resources too, and check this paper: [*Aho, K., D. Derryberry, and T. Peterson. 2014. Model selection for ecologists: the worldviews of AIC and BIC. Ecology 95:631-636.](http://www.esajournals.org/doi/abs/10.1890/13-1452.1).
+It is important to keep in mind that for these metrics, models should have the same dependent variable and be based on the same sample of data.  A great reference for this material is [*Model Selection and Multimodel Inference: A Practical Information-Theoretic Approach*](http://www.springer.com/us/book/9780387953649) by Kenneth P. Burnham and David R. Anderson. Google around for other resources too, and check this paper: [Aho, K., D. Derryberry, and T. Peterson. 2014. Model selection for ecologists: the worldviews of AIC and BIC. *Ecology* 95:631-636.](http://www.esajournals.org/doi/abs/10.1890/13-1452.1).
 
-In this exercise we will only evaluate AIC values, and select the model with the lowest as our best fit. You can obtain this using the 'AIC' function. on all of the models you wish to compare
+In this exercise we will only evaluate AIC values, and select the model with the lowest as our best fit. You can obtain this using the 'AIC' function on all of the models you wish to compare. (remove any that failed to run because of convergence issues).
 
 ```{r, eval=FALSE}
 AIC(B1.gls,B1Sph,B1Lin,B1Rat, B1Gau, B1Exp)
