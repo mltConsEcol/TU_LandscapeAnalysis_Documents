@@ -5,7 +5,7 @@ date: "Material for Lab 7 of Landscape Analysis and Modeling, Spring 2015"
 output: pdf_document
 ---
 
-*This document, with active hyperlinks, is available online at:[]()*
+*This document, with active hyperlinks, is available online at:[https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab7_Mantel_SpRegress.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab7_Mantel_SpRegress.Rmd)*
 
 **Due Date: Thursday, 12 March 2015**
 
@@ -56,6 +56,7 @@ The packages we will use in this lab are:
   * [gstat](http://cran.r-project.org/web/packages/gstat/index.html)
   * [nlme](http://cran.r-project.org/web/packages/nlme/index.html)
   * [sp](http://cran.r-project.org/web/packages/sp/index.html)
+  * [pgirmess](http://cran.r-project.org/web/packages/pgirmess/index.html)
 
 (See previous lab materials for instructions on installing and loading packages in R.)
 
@@ -65,17 +66,10 @@ The packages we will use in this lab are:
 
 As per usual, it often helpful to set your working directory appropriately and load any required packages. Then, you can import the dataset (you will have to have the data downloaded and un-zipped from the website linked above.) To open these data, you will use the 'read.table' function in R. Previously we have used the 'read.csv' function, which is a special case of read.table, for comma-separated values files. The Boreality dataset is stored in a tab-delimited format. While there are lots of arguments available for read.table, the only additional one you'll need to use after the filename is 'header=TRUE', indicating that the first row of information is the column names. We'll name the imported data 'Boreality'.
 
-```{r, include=FALSE}
-Boreality <- read.table("D:/TregliaFiles/Documents/Dropbox/Teaching/TU_AdvancedGIS_Modeling/TU_LandscapeAnalysis_Documents/Assignments/Misc/Boreality.txt", header=TRUE)
-library(ecodist)
-library(gstat)
-library(nlme)
-library(sp)
-```
 
 
-```{r, eval=FALSE}
-Boreality <- read.table("Boreality.txt", header=TRUE)
+```{r}
+Boreality <- read.table("./Boreality.txt", header=TRUE)
 ```
 
 To calculate the Boreality value we'll use for analyses, run the following line, creating a new variable, 'Bor'.
