@@ -152,7 +152,7 @@ bubble(resids.spdf,"resids",col=c("black","grey"),
        ylab="Y-coordinates")
 ```
 
-![](./Images/Lab7_ResidBubblePlot.PNG)\
+![](./Images/Lab7_ResidBubblePlot.png)\
 
 As you can see, there appears to be clustering of high and low residual values. 
 
@@ -166,7 +166,7 @@ lm.residVario <- variogram(lm.resids ~ 1, lm.resids.spdf)
 plot(lm.residVario)
 ```
 
-![](./Images/Lab7_lmResidVar.PNG)\
+![](./Images/Lab7_lmResidVar.png)\
 
 You can see there seems to be an increasing semivariance with increasing distance up to ~500-1000 units.
 
@@ -198,7 +198,7 @@ B1.gls<-gls(f1, data = Boreality)
 plot(Variogram(B1.gls,form=~x+y,robust=TRUE,maxDist=2000, resType="pearson"))
 ```
 
-![](./Images/Lab7_b1glsVario.PNG)\
+![](./Images/Lab7_b1glsVario.png)\
 
 To add the spatial correlation structures, we can use add the 'correlation' argument to the nlme function. Herein, we can define the type of variogram model to use, indicate whether to use a nugget. To view the options, you can look up help for 'corClasses', and specifications for each option you can use help for each too. The main ones used for spatial autocorrelation are: corExp, corGaus, corLin, corRatio, and corSpher.
 
