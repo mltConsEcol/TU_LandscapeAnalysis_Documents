@@ -188,6 +188,7 @@ date:
 
 #### Day 18 (March 12)
 ***Assignment 7 Due: [Mantel Tests and Spatial Regression Lab](./Assignments/Lab7_Mantel_SpRegress.Rmd)***
+
 ***Project Proposal Due: Look on Harvey or [Click Here](./Assignments/ProjectProposalGuidelines.md) for the guidelines***
 
 * Readings:
