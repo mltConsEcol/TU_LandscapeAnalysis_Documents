@@ -167,13 +167,13 @@ date:
 	* Spatial Regression Techniques
 
 #### Day 16
-***Assignment 6 Due: [Join Count and Autocorrelation Analyses in R]((./Assignments/Lab6_Autocorrelation.Rmd))***
+***Assignment 6 Due: [Join Count and Autocorrelation Analyses in R](./Assignments/Lab6_Autocorrelation.Rmd)***
 
 * Readings
 	* [Perez, S. I., et al. 2010. Alternatives to the partial Mantel test in the study of environmental factors shaping human morphological variation. *Journal of Human Evolution* 59:698-703.](http://www.sciencedirect.com/science/article/pii/S0047248410001612)
 * Agenda:
 	* Discuss reading assignment 
-	* Analyzing Multivariate Spatial Data Lab
+	* [Mantel Tests and Spatial Regression Lab](./Assignments/Lab7_Mantel_SpRegress.Rmd)
 
 
 
@@ -183,38 +183,39 @@ date:
 
 * Agenda:
 	* What is Species Distribution Modeling
- 	* Various Techniques for Species Distribution Modeling
-	* Intricacies of Species Distribution Modeling
+ 	* Data and Considerations for Species Distribution Modeling
+	* Various Techniques for Species Distribution Modeling
 
 #### Day 18 (March 12)
-***Assignment 7 Due: Multivariate Spatial Data Lab***
+***Assignment 7 Due: [Mantel Tests and Spatial Regression Lab](./Assignments/Lab7_Mantel_SpRegress.Rmd)***
 ***Project Proposal Due: Look on Harvey or [Click Here](./Assignments/ProjectProposalGuidelines.md) for the guidelines***
 
 * Readings:
-	* 
+	* [Kearney, M. R., B. A. Wintle, and W. P. Porter. 2010. Correlative and mechanistic models of species distribution provide congruent forecasts under climate change. *Conservation Letters* 3:203-213.](http://onlinelibrary.wiley.com/doi/10.1111/j.1755-263X.2010.00097.x/abstract)
 * Agenda
 	* Discuss Reading Material
-	* Species Distribution Modeling
+	* Fit of Species Distribution Models
+	* Challenge with Species Distribution Models
 
 
-### ***Spring Break - Have Fun!*** 	
+### ***Spring Break - Have Fun! (And start getting data together for projects!)*** 	
 
 
-### Week 10: Animal Movement
+### Week 10: Species Distribution Modeling - Lab
 
 #### Day 19
 
 #### Day 20
-***Assignment 8 Due***
 
 
 
-### Week 11: Distribution Modeling (Environmental Niche Modeling)
+
+### Week 11: Animal Movement
 
 #### Day 21
 
 #### Day 22
-***Assignment 9 Due***
+***Assignment 8 Due: Species Distribution Modeling***
 
 
 ### Week 12: Integrating Techniques - Landscape Connectivity

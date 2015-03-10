@@ -147,7 +147,7 @@ lm.resids.spdf<-data.frame(lm.resids,Boreality$x,Boreality$y)
 coordinates(lm.resids.spdf)<-c("Boreality.x","Boreality.y")
 
 #Create bubble plot (sp package)
-bubble(resids.spdf,"resids",col=c("black","grey"),
+bubble(lm.resids.spdf,"lm.resids",col=c("black","grey"),
        main="Residuals",xlab="X-coordinates",
        ylab="Y-coordinates")
 ```
