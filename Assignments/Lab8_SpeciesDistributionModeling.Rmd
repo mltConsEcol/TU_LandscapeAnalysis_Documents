@@ -5,36 +5,9 @@ date: "Material for Lab 8 of Landscape Analysis and Modeling, Spring 2015"
 output: pdf_document
 ---
 
-*This document, with active hyperlinks, is available online at:[]()*
+*This document, with active hyperlinks, is available online at:[https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab8_SpeciesDistributionModeling.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab8_SpeciesDistributionModeling.Rmd)*
 
-**Due Date: Thursday, 2 April 2015**
-
-***PLEASE WRITE YOUR NAME ON YOUR ANSWER DOCUMENT***
-
-#Questions
-
-1) 
-
-2) 
-
-3) 
-
-4) 
-
-5) 
-
-6) 
-
-7) 
-  
-    a) 
-    b) 
-    
-8) 
-
-9) 
-
-10) 
+***Questions Associated with this Lab will be given on Thursday (Due next Thursday, 2 April 2015); For now, just work through this material - look at the figures that are being created and think about what is going on.***
 
 
 
@@ -50,11 +23,15 @@ R packages you will need for this lab are:
 * rgdal
 * biomod2
 
+There are lots of other R packages available for species distribution modeling, and as you work on your individual projects for the class, we can look at packages that might be better or easier for using specific techinques.
+
+
 ```{r, include=FALSE}
 library(raster)
 library(biomod2)
 library(rgdal)
 ```
+
 #Data Sources
 Most data necessary for species distribution models are publically available. Some datasets of endangered species may be somewhat restricted to prevent unwanted disturbance or collection, though collaboration with appropriate agencies can facilitate getting the necessary data. For this lab, I have made most datasets available for download via the Harvey webpage for the class, though you will need to download the species locality data for yourself.
 
@@ -318,6 +295,6 @@ plot(LeastBellVireo.projections, str.grep="RF")
 ![](./Images/Lab8_RF_Projections_LBV.png)\
 
 
-As much material as this is, there's even a lot more to species distribution modeling
+As much material as we've covered so far, there's even a lot more to species distribution modeling... the field is constantly expanding!
 
 
