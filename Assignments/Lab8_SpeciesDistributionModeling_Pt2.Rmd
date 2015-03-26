@@ -68,9 +68,6 @@ We will import and process the data the same way we did on Thursday - here is th
 
 ```{r, tidy=TRUE, eval=FALSE}
 #Set working directory with 'setwd(...)'
-#[[[remove this line: setwd("D:/TregliaFiles/Documents/Dropbox/Teaching/TU_AdvancedGIS_Modeling/")]]]
-#[[[remove this line: setwd("C:/Users/Ameiva/Documents/MyDocs/Dropbox/Teaching/TU_AdvancedGIS_Modeling/")]]]
-
 
 bell <- read.table("M_ater_obscurus.txt", sep="\t", header=TRUE, fill=TRUE, quote="")
 bell <- bell[,c("decimallongitude", "decimallatitude")] 
