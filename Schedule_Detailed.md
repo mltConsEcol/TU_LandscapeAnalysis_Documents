@@ -234,7 +234,7 @@ date:
 	* Resource Selection
 
 #### Day 22
-***Assignment 8 Due: Species Distribution Modeling ([Part 1](./Assignments/Lab8_SpeciesDistributionModeling.Rmd)) and [Part 2](./Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd))***
+***Assignment 8 Due: Species Distribution Modeling ([Part 1](./Assignments/Lab8_SpeciesDistributionModeling.Rmd) and [Part 2](./Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd))***
 
 *Readings:
 	* [Brehme, C. S., et al. 2013. Permeability of roads to movement of scrubland lizards and small mammals. *Conservation Biology* 27:710-720](http://onlinelibrary.wiley.com/doi/10.1111/cobi.12081/full).
