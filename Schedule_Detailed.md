@@ -206,19 +206,43 @@ date:
 
 #### Day 19
 
+* Agenda:
+	*[Part 1 of Lab](./Assignments/Lab8_SpeciesDistributionModeling.Rmd): 
+		*Importing and Preparing Data, and Getting it into [BioMod2](http://cran.r-project.org/web/packages/biomod2/index.html) (R package)
+		* Running Some Models and Viewing/InterpretingOutput
+
+
 #### Day 20
 
-
+* Readings:
+	* [Broennimann, O., et al. 2012. Measuring ecological niche overlap from occurrence and spatial environmental data. *Global Ecology and Biogeography* 21:481-497.](http://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00698.x/abstract)
+* Agenda
+	* Discuss Reading Material
+	* [Part 2 of Lab](./Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd)
+		* Dealing with Correlated Variables
+		* Biased Sampling for Pseudo-Absence Points
+		* Importing Output Raster
 
 
 ### Week 11: Animal Movement
 
 #### Day 21
 
+* Agenda
+	* Quantifying Home Ranges
+	* Analyzing Animal Movements
+	* Resource Selection
+
 #### Day 22
-***Assignment 8 Due: Species Distribution Modeling***
+***Assignment 8 Due: Species Distribution Modeling ([Part 1](./Assignments/Lab8_SpeciesDistributionModeling.Rmd)) and [Part 2](./Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd))***
 
+*Readings:
+	* [Brehme, C. S., et al. 2013. Permeability of roads to movement of scrubland lizards and small mammals. *Conservation Biology* 27:710-720](http://onlinelibrary.wiley.com/doi/10.1111/cobi.12081/full).
+*Agenda
+	* Discuss Reading Material
+	* Lab 9: Analyzing Animal Movement Data
 
+	
 ### Week 12: Integrating Techniques - Landscape Connectivity
 
 #### Day 23
