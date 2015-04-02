@@ -15,13 +15,13 @@ output: pdf_document
 
 1) Calculate the 50% Minimum Convex Polygon. Which individuals have the largest and smallest home range by this metric? Was it the same as for the 95% Minimum Convex Polygon (presented in the lab hand-out)?
 
-2) Look at the points for a single individual on a map (you can do this in R or QGIS). Do you think the 95% Minimum Convex Polygon adequately descrbies the home range? Or do you think it characterizes it too broadly or too small? (Describe why)
+2) Look at the points for a single individual on a map (you can do this in R or QGIS). Do you think the 95% Minimum Convex Polygon adequately descrbies the home range? Or do you think it characterizes it too broadly or too small? (Describe why) You can provide plots of the data and home ranges if that helps your point (but is not necessary).
 
-3) Now look at a 95% Kernel Density Estimate with h="href" of the zebras' home ranges. Does this fit better or worse than the Minimum ConVex Polygon (justify your answer)
+3) Now look at a 95% Kernel Density Estimate with h="href" of the zebras' home ranges. Does this fit better or worse than the Minimum ConVex Polygon (justify your answer). You can provide plots of the data and home ranges if that helps your point (but is not necessary).
 
-4) With Kernel Density Estimates, vary the bandwidth among 50, 500, 5000, and 50,000. Based on looking at the rasters, what happens to the home range as you increase the bandwidth? What value appears to be the most over-smoothed? [For the largest values, it may take a couple of minutes - just be patient.]
+4) With Kernel Density Estimates, vary the bandwidth among 50, 500, 5000, and 50,000. Based on looking at the rasters, what happens to the home range as you increase the bandwidth? What value appears to be the most over-smoothed? [For the largest values, it may take a couple of minutes to process - just be patient.]
 
-5) As you did for questions 2 and 3, look at home range estimate based on the 95% probbaility surface of the Brownian Bridge Movement Model. How does this appear to fit compared to the others? Explain your answer.
+5) As you did for questions 2 and 3, look at home range estimates based on the 95% probbaility surface of the Brownian Bridge Movement Model. How does this appear to fit compared to the others? Explain your answer. You can provide plots of the data and home ranges if that helps your point (but is not necessary).
 
 6) Given the migration pattern that is discernable, you could develop multiple home range estimates for different times of year. How might this inform conservation or management of this species (or any widely-ranging species in general?)
 

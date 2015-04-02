@@ -60,3 +60,29 @@ test2 <- liker(zeb.traj, sig2=100, rangesig1=c(1,50))
 zeb.bb <- kernelbb(zeb.traj, sig1 = c(5.3, 5.0, 4.9, 6.2, 5.6, 5.9, 4.8), sig2 = 10)
 image(zeb.bb)
 windows()
+
+zeb.bb <- kernelbb(zeb.traj, sig1 = c(5.45, 5.16, 5.16, 6.35, 5.76,6.05, 4.95), sig2 = 5)
+
+##This next line (commented out) works on the first individual (denoted by the [1]); a list of individuals could be specified using as '[c(1,3,5)]'
+#zeb.bb.1 <- kernelbb(zeb.traj[1], sig1 = 5.45, sig2 = 5)
+
+##Again, you can plot the modeled home range as with the Kernel Density Estimates.
+#image(zeb.bb)
+
+#And you can make it into it's own raster object, to write it to an external file, etc.
+z3743BB <- (raster(as(zeb.bb[1], "SpatialPixelsDataFrame")))
+
+#Plot the individual raster
+plot(z3743BB)
+
+#Extract the points for only individual Z3743
+z3743 <- zebra.spdf[zebra.spdf$individual.local.identifier=="Z3743",]
+
+#Plot those points on the raster
+plot(z3743, add=TRUE, cex=0.01)
+
+#Get boundaries of 95% probability surface for a home range estimate
+zebBB.95 <- getverticeshr(zeb.bb, 95, unout="km2")
+
+#Plot the bounds for the first individual (Z3743)
+plot(zebBB.95, border="red", lwd=2, add=TRUE)
