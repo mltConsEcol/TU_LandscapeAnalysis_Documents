@@ -47,7 +47,7 @@ In the first part of this lab, we got some practice in simply developing some sp
 
 It is helpful to be able to develop these models on your own, or at least work with parts of the data to do things in particular ways.  For example, it is good practice to evaluate correlation between predictor variables. Additionally, when we have presence-only species datasets, we might want to select pseudo-absences with the same bias as our occurrence data.
 
-We will be working with the sdame datasets as in [part 1](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd) of the lab.
+We will be working with the sdame datasets as in [part 1](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab8_SpeciesDistributionModeling.Rmd) of the lab.
 
 In this lab we'll need the following packages:
 
