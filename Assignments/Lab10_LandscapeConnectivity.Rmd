@@ -13,32 +13,47 @@ output: pdf_document
 
 #Questions
 
-1) Give an example of when you might use a graph theory approach to analyze landscape connectivity. For what types of species would this approach be most relevant?
+1) Give an example of when you might use a graph theory approach to analyze landscape connectivity. For what types of species or habitats would this approach seem most relevant or appropriate?
 
 2) Look at the output from Circuitscape (see below). Circle or highlight the locations that appear most isolated.
 
-3) 
+3) Look at the output from the least cost path surface. Do the same areas seem to be isolated?
 
-4) 
+4) Which connectivity surface is easier to interpret? Why do you think this is?
 
-5) 
+5) For managing connectivity of a landscape for native species, which surface might be more informative?
 
-    a) 
-    b) 
+6) What factors might limit connectivity across a landscape for real organisms?
 
-6) 
+7) If these data were for a species of toad with limited dispersal, what could be misleading about these connectivity surfaces? 
 
-7) 
+8) How could you resolve potential issues in question 6?
 
-8) 
+9) For what types of organisms could these connectivity surfaces be realistic representations? (Look at the visual patterns and expanse that would need to be traveled).
 
-9) 
+10) If you had unlimited resources, how would you parameterize your resistance surface for a wind-dispersed plant species and a large mammal? (i.e., what technologies/methods would you use to estimate the permeability of pixels for your focal species)?
 
-    a) 
-    b) 
 
-10)  
 
 
 ![](./Images/Lab10_Circuitscape.png)\
 
+Circuitscape Output: Lighter shades indicate higher degrees of connectivity, based on a "current flow"" model.
+
+The image above was constructed by running Circuitscape with the point data and resistance surface from the [data files](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab10_DataForClass.zip?raw=true) for this lab, available at: [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab10_DataForClass.zip?raw=true](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab10_DataForClass.zip?raw=true) 
+After Running Circuitscape Model, you can import the data into R, take the average of all resistance surfaces, and have a surface showing connectivity among all points.
+
+```{r, eval=FALSE, tidy=TRUE}
+library(raster)
+
+#Set working directory to wherever you have the Circuitscape Output stored
+
+#Import rasters
+output <- stack(list.files(pattern="*.asc$", full.names=TRUE))
+
+#Create layer of averages among all output layers
+output.avg <- calc(output, fun=mean)
+
+#Write to a new raster
+> writeRaster(output.avg, "CircuitscapeCurrentOutput.tif")
+```
