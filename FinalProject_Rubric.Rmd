@@ -1,0 +1,101 @@
+---
+title: "Rubric for Final Projects"
+author: "Landscape Analysis and Modeling (BIOL 4383/6383-02)"
+date: "Projects Due: 28 April 2015"
+output: pdf_document
+---
+
+
+## Final Paper (30% of Final Grade; graded out of 30 points)
+
+The final paper should be in the format of a scientific paper, complete with the following sections: 
+  
+  * Abstract
+  * Introduction
+  * Methods
+  * Results
+  * Discussion (and/or Conclusion)
+  * Literature Cited
+  * Tables and Figures.
+  
+There is no minimum page limit, though papers may not be longer than 30 pages (excluding figures and tables, double-spaced with standard font sizes).
+
+### Abstract (2 points)
+
+The abstract should succinctly summarize the paper, stating: 
+
+  1) the problem/objective you are focusing on;
+  2) the general methods and data you used;
+  3) a brief statement of important results; 
+  4) and how the results fit into a broader context. 
+  
+Keep the abstract to 300 words or less. Each of the elements listed above and the word count is worth 0.4 points. Do not cite any literature in the abstract.
+
+### Introduction (4 points)
+
+The introduction should (in the order of your choosing):
+
+  1) Clearly state your objectives (1 point);
+  2) Give background into why your objectives are important (1 point);
+  3) Cite relevant literature about the study topic, including similar studies that have been done (1 point);
+  4) Provide background about your focal taxa and study area (1 point).
+
+### Methods (6 points)
+
+The methods should include enough detail to allow others to replicate your study in the future. Specific details you should include are:
+
+  * What data you are using (with references for publically available datasets; feel free to look at published papers for examples); 
+  * What techniques you are using (with references to the techniques);
+  * Any relevant details about model comparison (e.g., using AIC), model evaluation (e.g., using AUC TSS, etc.), etc.
+
+### Results (6 points)
+
+The results should generally follow the order of your methods, with regards to the techniques you use. You may reference figures and tables, without duplicating information. Information highlighted in the figures and tables will be considered as part of the results (see below for guidelines on tables and figures). In the results, be sure to include detailed information about:
+
+  * What models fit best (show comparison of models based on relevant statistics)?
+  * What were general relationships between dependent and independent variables?
+  * What are the results that directly get at your objective? Indicate if there is a clear answer.
+
+### Discussion/Conclusion (5 points)
+
+The discussion should include (in the order of your choosing):
+  
+  1) A brief restatement of your general results;
+  2) Explanation of how your results fit into the existing literature;
+  3) Potential shortcomings of your study - how could they be addressed;
+  4) Broader impact of results - how does your study inform our understanding of the natural world, or guide conservation/management efforts?;
+  5) How can future studies improve on your or methods?
+
+
+### Literature Cited (3 points)
+
+The literature cited should be comprehensive with regard to your paper. This section will be graded on content and style:
+  
+  1) All literature referenced in the text should have an entry in this section (1 point);
+  2) All entries should be full - be sure that every entry has all required information to find it, as you would see in a scientific paper (1 point);
+  3) All entries should be formatted in the same way, following a standard format of your choosing (use Endnote or something of the like if you prefer, but make sure things are consistent.
+
+
+### Figures and Tables (4 points total)
+
+* You must include at least a map of your study area, with all of the required elements of a map (e.g., legend, north arrow, grid lines, inset) (2 points).
+* You should include any other relevant figures and tables, clearly displaying the information. Together, all of these will be worth 2 points.
+
+
+## Final Presentation
+***(10% of Final Grade; graded out of 10 points; for undergraduates this will be scaled to 40% of final grade)***
+
+The final presentation should include the same details as above in terms of the Introduction, Methods, Results, and Discussion/Conclusion, and References cited (for undergraduate presentations). Points will also be allocated for presentation quality - use figures to illustrate points, and avoid simply reading your slides, and keep it on time. Point allocation is indicated below, as ([Graduate]/[Undergraduate]):
+
+* Introduction (1/1)
+* Methods (3/3)
+* Results (3/2)
+* Discussion/Conclusion (2/2)
+* Literature Cited (0/1)
+* Presentation Quality (E.g, use of figures; not reading slides) (1/1)
+
+For undergraduate presentations, selected citations should provided on slides, and a literature cited section should be provided at the end.
+
+Students should e-mail a PDF or PPT file of the presentation to the instructor the day of their presentation, before midnight.
+
+Presentations should be 13 minutes, with 2 minutes for questions. Presentations will be cut off at 15 minutes.
