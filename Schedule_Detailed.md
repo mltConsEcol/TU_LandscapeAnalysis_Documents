@@ -240,7 +240,7 @@ date:
 	* [Brehme, C. S., et al. 2013. Permeability of roads to movement of scrubland lizards and small mammals. *Conservation Biology* 27:710-720.](http://onlinelibrary.wiley.com/doi/10.1111/cobi.12081/full)
 * Agenda:
 	* Discuss Reading Material
-	* Lab 9: Analyzing Animal Movement Data
+	* [Lab 9: Analyzing Animal Movement Data](./Assignments/Lab9_AnimalMovement.Rmd)
 
 	
 ### Week 12: Integrating Techniques - Landscape Connectivity
@@ -248,7 +248,7 @@ date:
 #### Day 23
 
 #### Day 24
-***Assignment 10 Due:***
+***[Assignment 9 Due](./Assignments/Lab9_AnimalMovement.Rmd)***
 
 
 ### Week 13: Project Status Updates/Sort Out Problems
@@ -256,7 +256,6 @@ date:
 #### Day 25
 
 #### Day 26
-***Assignment 11 Due:***
 
 * Work on Projects
 
