@@ -86,7 +86,7 @@ Students are expected to attend class regularly, and to arrive on time. Skipping
 ## General Schedule:
 
 | Week	 |Dates	|	 Topic |
-|:---------:|:-------------|:-------------|
+|:---------:|:-------------:|:-------------:|
 |1 |Jan. 12-14	|Intro to Landscape Ecology and GIS |
 |2 |Jan. 19-21	|Some Basics of Spatial Data; Intro to R|
 |3 |Jan. 26-28	|Nearest Neighbor Analyses; Ripley's K|
