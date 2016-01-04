@@ -85,23 +85,23 @@ Students are expected to attend class regularly, and to arrive on time. Skipping
 
 ## General Schedule:
 
-| Week	 | Topic |
-|:---------:|:-------------|
-|1 |Intro to Landscape Ecology and GIS |
-|2 |Some Basics of Spatial Data; Intro to R|
-|3 |Nearest Neighbor Analyses; Ripley's K|
-|4 |Working with Complete Sample Data|
-|5 |Quantifying Landscape Configuration: Lecture|
-|6 |Quantifying Landscape Configuration: Lab|
-|7 |Testing for Spatial Autocorrelation|
-|8 |Multivariate Spatial Relationships|
-|9 |Species Distribution Models: Lecture|
-|(March 14-18) |Spring Break|
-|10|Species Distribution Models: Lab|
-|11|Animal Movement|
-|12|Landscape Connectivity|
-|13|Focus on Projects|
-|14|Future of Landscape Ecology; Presentations|
+| Week	 |Dates	|	 Topic |
+|:---------:|:-------------|:-------------|
+|1 |Jan. 12-14	|Intro to Landscape Ecology and GIS |
+|2 |Jan. 19-21	|Some Basics of Spatial Data; Intro to R|
+|3 |Jan. 26-28	|Nearest Neighbor Analyses; Ripley's K|
+|4 |Feb. 2-4	|Working with Complete Sample Data|
+|5 |Feb. 9-11	|Quantifying Landscape Configuration: Lecture|
+|6 |Feb 16-18	|Quantifying Landscape Configuration: Lab|
+|7 |Feb. 23-25	|Testing for Spatial Autocorrelation|
+|8 |Mar. 1-3	|Multivariate Spatial Relationships|
+|9 |Mar. 8-10	|Species Distribution Models: Lecture|
+|NA |Mar. 14-18 |Spring Break|
+|10|Mar. 22-24	|Species Distribution Models: Lab|
+|11|Mar 29-31	|Animal Movement|
+|12|Apr. 5-7	|Landscape Connectivity|
+|13|Apr. 12-14	|Focus on Projects|
+|14|Apr. 19-21	|Future of Landscape Ecology; Presentations|
 
 
 ## Additional Information:
