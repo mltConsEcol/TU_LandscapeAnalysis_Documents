@@ -7,11 +7,17 @@ date:
 ## BIOL 4383/6383-03 Detailed Schedule
 
 ### Schedule: Click Lines to View Information for Specific Weeks
-[Week: 1  Dates: Jan. 12-14	Topic: Intro to Landscape Ecology and GIS](#week-01)
-Week: 2  Dates: Jan. 19-21	Topic: Some Basics of Spatial Data; Intro to R
+
+	*[Week: 1  Dates: Jan. 12-14	Topic: Intro to Landscape Ecology and GIS](#week-01)
+
+	* Week: 2  Dates: Jan. 19-21	Topic: Some Basics of Spatial Data; Intro to R
+
 Week: 3  Dates: Jan. 26-28	Topic: Nearest Neighbor Analyses; Ripley's K
+
 Week: 4  Dates: Feb. 2-4	Topic: Working with Complete Sample Data
+
 Week: 5  Dates: Feb. 9-11	Topic: Quantifying Landscape Configuration: Lecture
+
 Week: 6  Dates: Feb 16-18	Topic: Quantifying Landscape Configuration: Lab
 Week: 7  Dates: Feb. 23-25	Topic: Testing for Spatial Autocorrelation
 Week: 8  Dates: Mar. 1-3	Topic: Multivariate Spatial Relationships
@@ -24,8 +30,6 @@ Week: 13 Dates: Apr. 12-14	Topic: Focus on Projects
 Week: 14 Dates: Apr. 19-21	Topic: Future of Landscape Ecology; Presentations|
  
 ### Week 1: Intro to Landscape Ecology and GIS<a id="week-01"></a>
-
-### Chapter 1 
 
 #### Day 1
 
