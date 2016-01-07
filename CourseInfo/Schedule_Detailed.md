@@ -8,7 +8,7 @@ date:
 
 ### Schedule: Click Lines to View Information for Specific Weeks
 
-*[Week: 1  Dates: Jan. 12-14	Topic: Intro to Landscape Ecology and GIS](#week-01)
+*	[Week: 1  Dates: Jan. 12-14	Topic: Intro to Landscape Ecology and GIS](#week-01)
 
 * Week: 2  Dates: Jan. 19-21	Topic: Some Basics of Spatial Data; Intro to R
 
