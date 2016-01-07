@@ -6,11 +6,11 @@ date:
 
 ## BIOL 4383/6383-03 Detailed Schedule
 
-[Week 1: TEST][]
+<a name=Week 1: TEST></a>
 
 ### Week 1: Intro to Landscape Ecology and GIS
 
-##Week1: TEST
+[Week1: TEST](#Week1: TEST)
 
 #### Day 1
 
