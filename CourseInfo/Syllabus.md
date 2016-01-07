@@ -109,7 +109,7 @@ Students are expected to attend class regularly, and to arrive on time. Skipping
 
 #### Website:
 
-A website with a detailed, week-by-week schedule and PDFs of labs/assignments will be maintained at [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents). Electronic lecture materials and readings will be shared via e-mail and the university Harvey system.
+A website with a detailed, week-by-week schedule of labs/assignments will be maintained at [http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/). Electronic lecture materials and readings will be shared via e-mail and the university Harvey system.
 
 #### Communication:
 
