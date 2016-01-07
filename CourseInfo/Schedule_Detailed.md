@@ -8,11 +8,11 @@ date:
 
 ### Schedule: Click Lines to View Information for Specific Weeks
 
-*	[Week: 1  Dates: Jan. 12-14	Topic: Intro to Landscape Ecology and GIS](#week-01)
+* [Week: 1  Dates: Jan. 12-14	Topic: Intro to Landscape Ecology and GIS](#week-01)
 
 * Week: 2  Dates: Jan. 19-21	Topic: Some Basics of Spatial Data; Intro to R
 
-Week: 3  Dates: Jan. 26-28	Topic: Nearest Neighbor Analyses; Ripley's K
+*  Week: 3  Dates: Jan. 26-28	Topic: Nearest Neighbor Analyses; Ripley's K
 
 Week: 4  Dates: Feb. 2-4	Topic: Working with Complete Sample Data
 
