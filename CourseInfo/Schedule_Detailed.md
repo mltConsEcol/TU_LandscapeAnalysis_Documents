@@ -4,41 +4,50 @@ author: "Michael Treglia"
 date: 
 ---
 
-## BIOL 4383/6383-03 Detailed Schedule
+## Detailed Schedule
 
-### Schedule: Click Lines to View Information for Specific Weeks
+#### Click below or scroll down to view weekly details. Empty days will be updated throughout the semester.
 
-* [Week: 1  Dates: Jan. 12-14	Topic: Intro to Landscape Ecology and GIS](#week-01)
+* [Week: 1 - Jan. 12-14;	Topic: Intro to Landscape Ecology and GIS](#week-01)
 
-* Week: 2  Dates: Jan. 19-21	Topic: Some Basics of Spatial Data; Intro to R
-
-*  Week: 3  Dates: Jan. 26-28	Topic: Nearest Neighbor Analyses; Ripley's K
-
-Week: 4  Dates: Feb. 2-4	Topic: Working with Complete Sample Data
-
-Week: 5  Dates: Feb. 9-11	Topic: Quantifying Landscape Configuration: Lecture
-
-Week: 6  Dates: Feb 16-18	Topic: Quantifying Landscape Configuration: Lab
-Week: 7  Dates: Feb. 23-25	Topic: Testing for Spatial Autocorrelation
-Week: 8  Dates: Mar. 1-3	Topic: Multivariate Spatial Relationships
-Week: 9  Dates: Mar. 8-10	Topic: Species Distribution Models: Lecture
-Week: NA Dates: Mar. 14-18  Topic: Spring Break
-Week: 10 Dates: Mar. 22-24	Topic: Species Distribution Models: Lab
-Week: 11 Dates: Mar 29-31	Topic: Animal Movement
-Week: 12 Dates: Apr. 5-7	Topic: Landscape Connectivity
-Week: 13 Dates: Apr. 12-14	Topic: Focus on Projects
-Week: 14 Dates: Apr. 19-21	Topic: Future of Landscape Ecology; Presentations|
+* [Week: 2 - Jan. 19-21;	Topic: Some Basics of Spatial Data; Intro to R](#week-02)
+  
+* [Week: 3 - Jan. 26-28;	Topic: Nearest Neighbor Analyses; Ripley's K](#week-03)
+  
+* [Week: 4 - Feb. 2-4;	Topic: Working with Complete Sample Data](#week-04)
+  
+* [Week: 5 - Feb. 9-11;	Topic: Quantifying Landscape Configuration: Lecture](#week-05)
+  
+* [Week: 6 - Feb 16-18;	Topic: Quantifying Landscape Configuration: Lab](#week-06)
+  
+* [Week: 7 - Feb. 23-25;	Topic: Testing for Spatial Autocorrelation](#week-07)
+  
+* [Week: 8 - Mar. 1-3;	Topic: Multivariate Spatial Relationships](#week-08)
+  
+* [Week: 9 - Mar. 8-10;	Topic: Species Distribution Models: Lecture](#week-09)
+  
+* Spring Break - Dates: Mar. 14-18
+  
+* [Week: 10  - Dates: Mar. 22-24	Topic: Species Distribution Models: Lab](#week-10)
+  
+* [Week: 11 - Mar 29-31	Topic: Animal Movement](#week-11)
+  
+* [Week: 12 - Apr. 5-7	Topic: Landscape Connectivity](#week-12)
+  
+* [Week: 13 - Apr. 12-14	Topic: Focus on Projects](#week-13)
+  
+* [Week: 14 - Apr. 19-21	Topic: Future of Landscape Ecology; Presentations](#week-14)
  
 ### Week 1: Intro to Landscape Ecology and GIS<a id="week-01"></a>
 
-#### Day 1
+#### Jan. 12, 2016
 
 * Agenda: 
 	* Introductions
 	* Logistics
 	* Lecture: Introduction to Landscape Ecology and GIS
 
-#### Day 2
+#### Jan. 14, 2016
 
 * Readings:
 	* [Wiens, J.A., 1989. Spatial scaling in ecology. *Functional Ecology* 3, 385-397.](http://www.jstor.org/stable/2389612)
@@ -48,257 +57,108 @@ Week: 14 Dates: Apr. 19-21	Topic: Future of Landscape Ecology; Presentations|
 	* Exploring QGIS
 
 
-### Week 2: Some Basics of Spatial Data; Intro to R 
+### Week 2: Some Basics of Spatial Data; Intro to R<a id="week-02"></a>
 
-#### Day 3
-***Assignment 1 Due: Work through [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/) and turn in the final map (hardcopy or e-mail)***
+#### Jan. 19, 2016
 
 * Agenda:
-	* Some Basic Stats
-		* Covariance & Correlation
-	* Things to be Aware of with Spatial Data
-		* Stationarity
-		* Spatial Dependence and Autocorrelation
-	* Accessing GIS Data
+	* Lecture
+		* Some Basic Stats
+			* Covariance & Correlation
+		* Things to be Aware of with Spatial Data
+			* Stationarity
+			* Spatial Dependence and Autocorrelation
+		* Accessing GIS Data
 	
-#### Day 4
+#### Jan. 21, 2016
 
-* Readings
-	* [Foster et al. 2003. The importance of land-use legacies to ecology and conservation. Bioscience. 53:77-88.](http://bioscience.oxfordjournals.org/content/53/1/77.short)
-* Agenda
-	* Discuss Reading Material
-	* [Work on Assignment 2](./Assignments/Assignment2.md)
-		* Download GIS Data and Make Your Own Map - see info on getting data [here](./Assignments/AccessingGISData.md) or in the PDF document available on Harvey.
-		* Introduction to R - answer the questions throughout the [Getting Familiar with R](./Assignments/Lab2_IntroToR.Rmd) document, also available as a PDF on Harvey.
+### Week 3: Nearest Neighbor Analyses; Ripley's K <a id="week-03"></a>
+
+#### Jan. 26, 2016
+
+#### Jan. 28, 2016
 
 
-### Week 3: Nearest Neighbor Analyses; Ripley's K
+### Week 4: Working with Complete Sample Data<a id="week-04"></a>
 
-#### Day 5
-
-* Agenda
-	* Complete Population Data: Vector Datasets
-	* Nearest Neighbor Analyses
-	* Ripley's K
-
-#### Day 6
-***[Assignment 2 Due: Making a Map, and Intro to R](./Assignments/Assignment2.md)***
-
-* Readings:
-	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
-* Agenda:
-	* Discuss Reading Material
-	* Work on [Assignment 3](./Assignments/Lab3_Import_Regress_RipleysK.Rmd)
-		* Working with Scripts in R
-		* Getting Data into R
-		* Basics of Simple Linear Regression
-		* Introducing R Packages
-		* Ripley's K analyses in QGIS and R
+#### Feb. 2, 2016
 
 
-### Week 4: Other Techniques for Complete Sample Data
-
-#### Day 7
-
-* Agenda
-	* Some notes about R and RStudio
-	* Quadrat Variance Methods
-
-#### Day 8
-
-***[Assignment 3 Due: Answer Questions in Scripts, Importing Data, Simple Linear Regression, and Ripley's K in R](./Assignments/Lab3_Import_Regress_RipleysK.Rmd) (PDF available on Harvey)***
+#### Feb. 4, 2016
 
 
-* Readings:
-	* [Kelly, M., et al. 2008. Spatial pattern dynamics of oak mortality and associated disease symptoms in a California hardwood forest affected by sudden oak death. Journal of Forest Research 13:312-319.](http://link.springer.com/article/10.1007/s10310-008-0083-7)
-	
-* Agenda:
-	* Discuss Reading Material
-	* Work on [Assignment 4](./Assignments/Lab4_QuadratVarianceAnalysis.Rmd)
-		* Getting YOUR data into R
-		* Quadrat Variance Analyses - Setting up sample data in R and Analysis in [PASSaGE](http://www.passagesoftware.net/)
+### Week 5: Quantifying Landscape Configuration: Lecture<a id="week-05"></a>
+
+#### Feb. 9, 2016
+
+#### Feb. 11, 2016
 
 
-### Week 5: Landscape Metrics 1 - Describing Landscape and Patch Patterns for Categorical and Continuous Rasters
+### Week 6: Quantifying Landscape Configuration: Lab<a id="week-06"></a>
 
-#### Day 9
+#### Feb. 16, 2016
 
-* Agenda
-	* Complete Population Data: Raster Datasets
-	* An Introduction to [Fragstats](http://www.umass.edu/landeco/research/fragstats/fragstats.html)
-	* Landscape and Class Metrics
-
-#### Day 10
-***[Assignment 4 Due (PDF available on Harvey)](./Assignments/Lab4_QuadratVarianceAnalysis.Rmd)***
-
-* Readings:
-	* [McIntyre, N.E. and J.A. Wiens. 2000. A novel use of the lacunarity index to discern landscape function. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
-* Agenda
-	* Discuss Reading Material
-	* Patch Metrics
-	* Surface Metrics
-
-
-### Week 6: Landscape Metrics 2 - Quantifying Landscape and Patch Patterns using QGIS and R
-
-#### Day 11
-
-* Agenda
-	* Work on [Assignment 5, Part 1 -  Analyzing Categorical Rasters using FRAGSTATS](./Assignments/Lab5_LandscapeMetrics_Pt1Pt2.Rmd#part-1-analyzing-categorical-rasters-using-fragstats)
-
-#### Day 12
-
-* Reading
-	* [Fahrig, L. 2013. Rethinking patch size and isolation effects: the habitat amount hypothesis. Journal of Biogeography 40:1649-1663.](http://onlinelibrary.wiley.com/doi/10.1111/jbi.12130/abstract)
-		* As Supplemental Reading (Not Required), Check out: [Hanski, I. 2015. Habitat fragmentation and species richness. Journal of Biogeography](http://onlinelibrary.wiley.com/doi/10.1111/jbi.12478/full)
-* Agenda
-	* Discuss Reading Material
-	* Work on [Assignment 5 (Part 2)](./Assignments/Lab5_LandscapeMetrics_Pt1Pt2.Rmd#part-2-calculating-some-surface-metrics).
-
-
+#### Feb. 18, 2016
 
 	
-### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
+### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)<a id="week-07"></a>
 
-#### Day 13
+#### Feb. 23, 2016
 
-* Agenda:
-	* Measuring and Visualizing Spatial Autocorrelation
-	* Tests for Spatial Autocorrelation (Moran's *i* and Geary's *c*)
-
-#### Day 14
-***[Assignment 5](./Assignments/Lab5_LandscapeMetrics_Pt1Pt2.Rmd) Due***
-
-* Readings:
-	* [Bone, C., et al. 2013. A GIS-based risk rating of forest insect outbreaks using aerial overview surveys and the local Moran's I statistic. *Applied Geography* 40:161-170.
-](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
-* Agenda: 
-	* Discuss Reading Material
-	* Lab 6: [Join Count and Autocorrelation Analyses in R](./Assignments/Lab6_Autocorrelation.Rmd)
-
-
-### Week 8: Multivariate Relationships
-
-#### Day 15
-
-* Agenda:
-	* Geostatistics and Variograms
-	* Mantel Tests and Partial Mantel Tests
-		* Pitfalls of Mantel Tests
-	* Spatial Regression Techniques
-
-#### Day 16
-***Assignment 6 Due: [Join Count and Autocorrelation Analyses in R](./Assignments/Lab6_Autocorrelation.Rmd)***
-
-* Readings
-	* [Perez, S. I., et al. 2010. Alternatives to the partial Mantel test in the study of environmental factors shaping human morphological variation. *Journal of Human Evolution* 59:698-703.](http://www.sciencedirect.com/science/article/pii/S0047248410001612)
-* Agenda:
-	* Discuss reading assignment 
-	* [Mantel Tests and Spatial Regression Lab](./Assignments/Lab7_Mantel_SpRegress.Rmd)
+#### Feb. 25, 2016
 
 
 
-### Week 9: Species Distribution Modeling (i.e., Environmental Niche Modeling)
+### Week 8: Multivariate Spatial Relationships<a id="week-08"></a>
 
-#### Day 17 (March 10)
+#### Mar. 1, 2016
 
-* Agenda:
-	* What is Species Distribution Modeling
- 	* Data and Considerations for Species Distribution Modeling
-	* Various Techniques for Species Distribution Modeling
+#### Mar. 3, 2016
 
-#### Day 18 (March 12)
-***Assignment 7 Due: [Mantel Tests and Spatial Regression Lab](./Assignments/Lab7_Mantel_SpRegress.Rmd)***
 
-***Project Proposal Due: Look on Harvey or [Click Here](./Assignments/ProjectProposalGuidelines.md) for the guidelines***
+### Week 9: Species Distribution Models: Lecture<a id="week-09"></a>
 
-* Readings:
-	* [Kearney, M. R., B. A. Wintle, and W. P. Porter. 2010. Correlative and mechanistic models of species distribution provide congruent forecasts under climate change. *Conservation Letters* 3:203-213.](http://onlinelibrary.wiley.com/doi/10.1111/j.1755-263X.2010.00097.x/abstract)
-* Agenda
-	* Discuss Reading Material
-	* Fit of Species Distribution Models
-	* Challenge with Species Distribution Models
+#### Mar. 8, 2016
+
+
+#### Mar. 10, 2016
 
 
 ### ***Spring Break - Have Fun! (And start getting data together for projects!)*** 	
 
 
-### Week 10: Species Distribution Modeling - Lab
+### Week 10: Species Distribution Models: Lab<a id="week-10"></a>
 
-#### Day 19
+#### Mar. 22, 2016
 
-* Agenda:
-	*[Part 1 of Lab](./Assignments/Lab8_SpeciesDistributionModeling.Rmd): 
-		*Importing and Preparing Data, and Getting it into [BioMod2](http://cran.r-project.org/web/packages/biomod2/index.html) (R package)
-		* Running Some Models and Viewing/InterpretingOutput
+#### Mar. 24, 2016
 
 
-#### Day 20
+### Week 11: Animal Movement<a id="week-11"></a>
 
-* Readings:
-	* [Broennimann, O., et al. 2012. Measuring ecological niche overlap from occurrence and spatial environmental data. *Global Ecology and Biogeography* 21:481-497.](http://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00698.x/abstract)
-* Agenda
-	* Discuss Reading Material
-	* [Part 2 of Lab](./Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd)
-		* Dealing with Correlated Variables
-		* Biased Sampling for Pseudo-Absence Points
-		* Importing Output Raster
+#### Mar. 29, 2016
 
 
-### Week 11: Animal Movement
-
-#### Day 21
-
-* Agenda:
-	* Quantifying Home Ranges
-	* Analyzing Animal Movements
-	* Resource Selection
-
-#### Day 22
-***Assignment 8 Due: Species Distribution Modeling ([Part 1](./Assignments/Lab8_SpeciesDistributionModeling.Rmd) and [Part 2](./Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd))***
-
-* Readings:
-	* [Brehme, C. S., et al. 2013. Permeability of roads to movement of scrubland lizards and small mammals. *Conservation Biology* 27:710-720.](http://onlinelibrary.wiley.com/doi/10.1111/cobi.12081/full)
-* Agenda:
-	* Discuss Reading Material
-	* [Lab 9: Analyzing Animal Movement Data](./Assignments/Lab9_AnimalMovement.Rmd)
+#### Mar. 31, 2016
 
 	
-### Week 12: Integrating Techniques - Landscape Connectivity
+### Week 12: Landscape Connectivity<a id="week-12"></a>
 
-#### Day 23
+#### Apr. 5, 2015
 
-#### Day 24
-***[Assignment 9 Due](./Assignments/Lab9_AnimalMovement.Rmd)***
-
-
-### Week 13: Project Status Updates/Sort Out Problems
-
-#### Day 25
-
-#### Day 26
-
-* Work on Projects
-
-### Week 14: Future Directions of Landscape Ecology
-
-#### Day 25
-
-* Reading:
-	*
-* Agenda
-	* Discuss Papers
-	* Short Lecture on Future Directions of Landscape Ecology
-	* Hash out Any Lingering Problems on Projects
-
-#### Day 26
-
-* Agenda
-	* Work on Projects
-
-#### Day 27
-
-* ***Final Presentations***
+#### Apr. 7, 2015
 
 
-* ***Final Paper Due***
+### Week 13: Project Status Updates/Sort Out Problems<a id="week-13"></a>
+
+#### Apr. 12, 2015
+
+#### Apr. 14, 2015
+
+
+### Week 14: Future of Landscape Ecology; Presentations<a id="week-14"></a>
+
+#### Apr. 19, 2015
+
+#### Apr. 21, 2015
+
