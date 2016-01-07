@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Landscape Analysis and Modeling by mltConsEcol</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Landscape Analysis and Modeling</h1>
+          <h2>Materials for Landscape Analysis and Modeling course at the University of Tulsa</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h3>
+<h1 id="syllabus-for-landscape-analysis-and-modeling">Syllabus</h1>
+<h3 id="biol-43836383-03-spring-2016">BIOL 4383/6383-03 (Spring 2016)</h3>
+<h2 id="instructor-dr.-michael-l.-treglia">Instructor: Dr. Michael L. Treglia</h2>
+<p><em>Office: N224 Oliphant Hall</em></p>
+<p><em>E-mail: <script type="text/javascript">
+<!--
+h='&#x75;&#116;&#x75;&#108;&#x73;&#x61;&#46;&#x65;&#100;&#x75;';a='&#64;';n='&#x6d;&#x69;&#x6b;&#x65;&#x2d;&#116;&#114;&#x65;&#x67;&#108;&#x69;&#x61;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x6d;&#x69;&#x6b;&#x65;&#x2d;&#116;&#114;&#x65;&#x67;&#108;&#x69;&#x61;&#32;&#x61;&#116;&#32;&#x75;&#116;&#x75;&#108;&#x73;&#x61;&#32;&#100;&#x6f;&#116;&#32;&#x65;&#100;&#x75;</noscript></em></p>
+<h2 id="meeting-time-and-location">Meeting Time and Location:</h2>
+<p>Keplinger L2 (Computer Lab)</p>
+<p>Tuesday/Thursday 11:00-12:15 (<em>Extra time will be available on Thursdays for lab assignments</em>)</p>
+<p>Office Hours: By Appointment</p>
+<h2 id="course-description">Course Description:</h2>
+<p>Information about spatial relationships across landscapes can provide critical insight into patterns and processes observed in ecology and evolutionary biology. Specific analytical techniques can be used detect such relationships, and can help control for spatial biases in data, which may obscure effects of other variables. Results of these analyses can inform future research, and guide tasks including biodiversity conservation and pest management, among others.</p>
+<p>This course will focus on quantifying and controlling for spatial relationships in data, using spatial interpolation techniques to estimate environmental variables at unmeasured points, and modeling habitat and connectivity across landscapes. The main tools we will use are free and open source, including the statistical package, R, and the GIS software, QGIS. Though examples given in the class will focus on ecology and evolutionary biology, most analytical techniques covered can easily be applied to other fields of study, and students will be encouraged to use their own data (or available datasets from their field of study) for assignments throughout the semester.</p>
+<h2 id="grading">Grading:</h2>
+<p>Assignment of letter grades will be based on a typical A, B, C, D, F scheme:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Percentage of Total Points</th>
+<th align="center">Letter Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">â‰¥90</td>
+<td align="center">A</td>
+</tr>
+<tr class="even">
+<td align="center">â‰¥80, &lt;90</td>
+<td align="center">B</td>
+</tr>
+<tr class="odd">
+<td align="center">&gt70, &lt;80</td>
+<td align="center">C</td>
+</tr>
+<tr class="even">
+<td align="center">â‰¥60, &lt;70</td>
+<td align="center">D</td>
+</tr>
+<tr class="odd">
+<td align="center">&lt;60</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+<p>Percentages for grades will be calculated as per the table below (followed by descriptions of graded elements):</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Item</th>
+<th align="center">Due Date*</th>
+<th align="center">Percent of Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Participation &amp; Paper Discussion</td>
+<td align="center">N/A</td>
+<td align="center">10</td>
+</tr>
+<tr class="even">
+<td align="center">Assignments</td>
+<td align="center">See Below</td>
+<td align="center">25</td>
+</tr>
+<tr class="odd">
+<td align="center">Take Home Exam 1</td>
+<td align="center">February 18</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="center">Project Proposal</td>
+<td align="center">March 22</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="center">Final Presentation**</td>
+<td align="center">April 21</td>
+<td align="center">10</td>
+</tr>
+<tr class="even">
+<td align="center">Final Paper**</td>
+<td align="center">April 21</td>
+<td align="center">15</td>
+</tr>
+<tr class="odd">
+<td align="center">Take Home Exam 2</td>
+<td align="center">April 28</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="center"><strong><em>Total</em></strong></td>
+<td align="center"></td>
+<td align="center"><strong><em>100</em></strong></td>
+</tr>
+</tbody>
+</table>
+<p>*All items turned in after the due-date will be penalized 5 percent per day late, unless a valid excuse is provided</p>
+<p>**Undergraduates enrolled in the course will only be required to complete one of these times (for 25% of the total grade)</p>
+<h4 id="participationdiscussion">Participation/Discussion:</h4>
+<p>Students will be expected to participate in and lead classroom discussions throughout the course, and to answer questions when appropriate. Just &quot;laying low&quot; in the class will result in deduction of points.</p>
+<h4 id="assignments-due-throughout-the-semester">Assignments (Due throughout the semester):</h4>
+<p>Assignments will be given approximately weekly, and will generally consist of completing the work from Thursday labs. Occasionally, assignments may also include some additional work, such as by-hand calculations, designed to reinforce understanding of the course material.</p>
+<h4 id="take-home-exams-due-february-18-and-april-28">Take Home Exams (Due February 18 and April 28):</h4>
+<p>Students will have approximately a week to work on take-home exams. The exams are designed to assess students' comprehension of the course material, and important concepts conveyed in the class. More details will be provided in class.</p>
+<h4 id="project-proposal-due-march-22">Project Proposal (Due March 22):</h4>
+<p>The project proposal should be a 1-2 page document of what you intend to do for your final project. For the project, you may use data from your own research if applicable, or you can mine the literature for existing datasets that fit your research interests. Further details about the project will be discussed in class. In the proposal you should describe the following (in the order you see appropriate): 1) your research question; 2) some of the relevant literature (e.g., previous studies on the focal topic); 3) general methods you propose to use; and 4) anticipated results or relevant preliminary observations of your dataset. This proposal may draw on material from class, but should also include <em>at least</em> 5 citations from the scientific literature.</p>
+<h4 id="final-paper-due-april-21">Final Paper (Due April 21):</h4>
+<p>The final paper should describe your completed project in the form of a scientific paper, complete with the following sections: Abstract; Introduction; Methods; Results; Discussion; Conclusion; Literature Cited; Tables; and Figures. As a guideline, the paper should be ~15-25 pages; there is no minimum page limit, but the paper may not be longer than 30 pages (double-spaced and standard font sizes). Details and guidelines for the final paper, along with a rubric, will be provided in class.</p>
+<h4 id="final-presentation-april-21">Final Presentation (April 21):</h4>
+<p>The final presentation should cover the details of your final project, and should effectively be a summary of your paper. This presentation should be in the format of a 15 minute conference presentation (with 5 minutes following for questions). Specific details and a grading rubric will be provided in class.</p>
+<h4 id="attendance-policy">Attendance Policy:</h4>
+<p>Students are expected to attend class regularly, and to arrive on time. Skipping class or arriving late without excuse will directly contribute to loss of points for Participation and Reading Quizzes (if absent on days of quizzes), and it may make it more difficult to complete assignments. If students must miss class for any reasons, I encourage them to contact me and get notes from classmates.</p>
+<h2 id="general-schedule">General Schedule:</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Week</th>
+<th align="center">Dates</th>
+<th align="center">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">Jan. 12-14</td>
+<td align="center">Intro to Landscape Ecology and GIS</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">Jan. 19-21</td>
+<td align="center">Some Basics of Spatial Data; Intro to R</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">Jan. 26-28</td>
+<td align="center">Nearest Neighbor Analyses; Ripley's K</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">Feb. 2-4</td>
+<td align="center">Working with Complete Sample Data</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="center">Feb. 9-11</td>
+<td align="center">Quantifying Landscape Configuration: Lecture</td>
+</tr>
+<tr class="even">
+<td align="center">6</td>
+<td align="center">Feb 16-18</td>
+<td align="center">Quantifying Landscape Configuration: Lab</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="center">Feb. 23-25</td>
+<td align="center">Testing for Spatial Autocorrelation</td>
+</tr>
+<tr class="even">
+<td align="center">8</td>
+<td align="center">Mar. 1-3</td>
+<td align="center">Multivariate Spatial Relationships</td>
+</tr>
+<tr class="odd">
+<td align="center">9</td>
+<td align="center">Mar. 8-10</td>
+<td align="center">Species Distribution Models: Lecture</td>
+</tr>
+<tr class="even">
+<td align="center">NA</td>
+<td align="center">Mar. 14-18</td>
+<td align="center">Spring Break</td>
+</tr>
+<tr class="odd">
+<td align="center">10</td>
+<td align="center">Mar. 22-24</td>
+<td align="center">Species Distribution Models: Lab</td>
+</tr>
+<tr class="even">
+<td align="center">11</td>
+<td align="center">Mar 29-31</td>
+<td align="center">Animal Movement</td>
+</tr>
+<tr class="odd">
+<td align="center">12</td>
+<td align="center">Apr. 5-7</td>
+<td align="center">Landscape Connectivity</td>
+</tr>
+<tr class="even">
+<td align="center">13</td>
+<td align="center">Apr. 12-14</td>
+<td align="center">Focus on Projects</td>
+</tr>
+<tr class="odd">
+<td align="center">14</td>
+<td align="center">Apr. 19-21</td>
+<td align="center">Future of Landscape Ecology; Presentations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-information">Additional Information:</h2>
+<h4 id="website">Website:</h4>
+<p>A website with a detailed, week-by-week schedule and PDFs of labs/assignments will be maintained at <a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents" class="uri">https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents</a>. Electronic lecture materials and readings will be shared via e-mail and the university Harvey system.</p>
+<h4 id="communication">Communication:</h4>
+<p>E-mail will be used as the primary means of communication for this course, and it is the best way for students to contact the instructor outside of class. Students are expected to check their e-mail regularly throughout the semester for updates and course information.</p>
+<h4 id="textbook">Textbook:</h4>
+<p>No textbook is required for the course. Assigned readings from book chapters and the peer reviewed literature will be provided, along with optional supplemental materials.</p>
+<h4 id="computers-and-software">Computers and Software:</h4>
+<p>Keplinger L2, where class will meet, has capable computers and will have all necessary software installed. The computer lab is generally open when no classes are scheduled there, thus students may use those computers for assignments and projects. All software that will be used in the class is free and open source, and may be installed on student's personal computers as well - instructions will be provided during class. If additional resources are needed, students should meet with the instructor to find solutions as necessary.</p>
+<h4 id="academic-honesty-and-academic-support">Academic Honesty and Academic Support:</h4>
+<p>Students are expected to adhere to all University of Tulsa policies regarding academic honesty. All work turned in should be that of the individual students, though working together to get through specific problems is strongly encouraged. Plagiarism will not be tolerated in any assignments. Students should see the instructor with about specific problems with the course. If students are facing general academic difficulties (e.g., time management, poor study skills), they should consider taking advantage of services from the Center for Student Academic Support. Students with disabilities should also contact the Center for Student Academic Support to self-identify their needs to facilitate their rights under the Americans with Disabilities Act.</p>
+        </section>
+
+        <footer>
+          Landscape Analysis and Modeling is maintained by <a href="https://github.com/mltConsEcol">mltConsEcol</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+                  <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("6888715");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+      </div>
+    </div>
+  </body>
+</html>
