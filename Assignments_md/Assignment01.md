@@ -12,11 +12,8 @@ author: "Instructor: Michael Treglia"
 
 GIS is a powerful tool for analysis and visualization of spatial data. This assignment is designed to get students familiar with one popular open-source tool, [QGIS](http://qgis.org/). 
 
-<<<<<<< HEAD
-For this assignment, go through the tutorial provided in class and available at [http://mltconsecol.github.io/QGIS-Tutorial/](http://mltconsecol.github.io/QGIS-Tutorial/), with the available sample data, and produce a final map, similar to the one at the end of the tutorial. Some steps in the tutorial are not necessary to produce the map, but highlight useful tools in QGIS, and illustrate valuable geospatial operations. 
-=======
 For this assignment, go through the tutorial provided in class and available at [http://mltconsecol.github.io/QGIS-Tutorial/](http://mltconsecol.github.io/QGIS-Tutorial/), with the available sample data, and produce a final map, similar to the one at the end of the tutorial. Some steps in the tutorial are not necessary to produce the map, but highlight useful tools in QGIS, and illustrate valuable geospatial operations (e.g., the Spatial Join and the Zonal Statistics). 
->>>>>>> master
+
 
 #### The final map should have the following elements:
 
@@ -28,8 +25,4 @@ For this assignment, go through the tutorial provided in class and available at 
 * Scale Bar; and
 * Legend.
 
-<<<<<<< HEAD
-Students may work together to solve problems and figureo ut workflows, but everybody should turn in their own maps. **Please put your name on your final map.**
-=======
 Students should work together to solve problems and figure out workflows, but everybody should turn in their own maps. **Please put your name on your final map.**
->>>>>>> master
