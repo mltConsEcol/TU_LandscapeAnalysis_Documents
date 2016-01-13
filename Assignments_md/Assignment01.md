@@ -6,7 +6,7 @@ author: "Instructor: Michael Treglia"
 
 *Due: 21 Jan 2016; worth 10 points*
 
-*Note: This material is available online at [http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments/Assignment01.html](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments/Assignment01.html)
+*Note: This material is available online at [http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment01.html](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment01.html)
 
 ### Getting to Know GIS/QGIS
 
