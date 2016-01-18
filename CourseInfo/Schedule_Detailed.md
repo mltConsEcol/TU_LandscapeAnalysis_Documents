@@ -72,6 +72,17 @@ date:
 	
 #### Jan. 21, 2016
 
+*Due: [Assignment 1](./Assignments_web/Assignment01.html)*
+
+* Readings
+	* [Foster et al. 2003. The importance of land-use legacies to ecology and conservation. Bioscience. 53:77-88.](http://bioscience.oxfordjournals.org/content/53/1/77.short)
+* Agenda
+	* Discuss Reading Material
+	* Work on [Assignment 2]./Assignments_web/Assignment02.html)
+		* Download GIS Data and Make Your Own Map - see info on getting data 
+		* Introduction to R - answer the questions throughout the document
+
+
 ### Week 3: Nearest Neighbor Analyses; Ripley's K <a id="week-03"></a>
 
 #### Jan. 26, 2016
