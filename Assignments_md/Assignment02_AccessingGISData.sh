@@ -1,1 +1,1 @@
-pandoc ./AccessingGISData.md -o AccessingGISData.pdf --latex-engine=xelatex -V geometry:vmargin=1in -V geometry:hmargin=1in -V mainfont=Georgia -V fontsize=12pt
+pandoc ./Assignment02_AccessingGISData.md -o ../Assignments_web/Assignment02_AccessingGISData.pdf --latex-engine=xelatex -V geometry:vmargin=1in -V geometry:hmargin=1in -V mainfont=Georgia -V fontsize=12pt
