@@ -1,7 +1,7 @@
 ---
 title: "Getting Familiar with R"
 author: "Michael L. Treglia"
-date: "Material for Lab 2 of Landscape Analysis and Modeling, Spring 2015"
+date: "Material for Lab 2 of Landscape Analysis and Modeling, Spring 2016"
 output: html_document
 ---
 

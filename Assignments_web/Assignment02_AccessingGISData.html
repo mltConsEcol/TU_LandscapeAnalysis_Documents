@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Landscape Analysis and Modeling by mltConsEcol</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Landscape Analysis and Modeling</h1>
+        <p>Materials for Landscape Analysis and Modeling course at the University of Tulsa</p>
+
+		<p class="view"><a href="../index.html">Homepage</a></p>
+
+		<p class="view">Syllabus - <a href="../CourseInfo/LandscapeAnalysis_Syllabus.pdf">PDF</a> or <a href="./Syllabus.html">Web</a></p>
+		
+		<p class="view"><a href="../Schedule.html">Schedule</a></p>
+		
+		<p class="view"><a href="../AtAGlance.html">Assignments & Due Dates at a Glance</a></p>
+
+		<p class="view"><a href="../TutorialsAndExercises.html">Tutorials & Exercises</a></p>
+
+		
+		<br />
+		<br />
+		
+        <p class="view"><a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents">View the Project on GitHub <small>mltConsEcol/TU_LandscapeAnalysis_Documents</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Instructor: Michael Treglia" />
+  <title>Finding, Downloading, and Working With GIS Data in QGIS for (mostly) the United States</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Finding, Downloading, and Working With GIS Data in QGIS for (mostly) the United States</h1>
+<h2 class="author">Instructor: Michael Treglia</h2>
+<h3 class="date">Landscape Analysis and Modeling, The University of Tulsa, Spring 2016</h3>
+</div>
+<p>*Note: This material is available online with active hyperlinks at <a href="http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment02_AccessingGISData.html" class="uri">http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment02_AccessingGISData.html</a></p>
+<h1 id="accessing-ecologically-relevant-gis-datasets">Accessing Ecologically-relevant GIS Datasets</h1>
+<p>Though many studies use various spatial/GIS datasets, finding and working with them can be a bit of a mystery to a GIS newcomer. This document is designed to point users in the right direction to get started, with a focus on the United States (though some datasets discussed here are also available for other parts of the world). The resources listed below are not necessarily mutually-exclusive to one-another (i.e, you can often find some of the same datasets at multiple places), though some datasets may only be available from individual sources. Detailed instructions on downloading the data are given for the first source to familiarize users with data downloads, but they should explore the other websites to try and figure out how to access the data there - unfortunately every website is a bit different. Typically the projection information is provided and will be read by your GIS software, but if it is not, you may need to look into metadata that comes with the files. This document is meant to get users started, and is thus not to serve as a comprehensive manual for accessing every data source available. Remember - Google is your friend. If it helps, start at these websites to look for datasets you need; if you can't find them, they may exist, but that might require some web-searches. Also, internet Q&amp;A outlets like <a href="http://gis.stackexchange.com/">GIS Stack Exchange</a> are invaluable when you really get stuck.</p>
+<h2 id="the-national-map">The National Map</h2>
+<p><a href="http://nationalmap.gov/">The National Map</a> is kind of a one-stop-shopping location for lots of datasets that are distributed by the U.S. Government. These include vector layers of political boundaries, hydrologic data including stream networks and watershed boundaries from the <a href="http://nhd.usgs.gov/">National Hydrography Dataset</a>, and roads. These layers are typically available for download as shapefiles or geodatabase files. Raster datasets that are available include elevation (digital elevation models [DEMs]) from the <a href="http://ned.usgs.gov/">National Elevation Dataset</a>, land cover classifications from the <a href="http://www.mrlc.gov/">National Land Cover Database</a>, and aerial imagery.</p>
+<p>The National Map has lots of ways to view and download data, with semi-regular improvements. You should take some time and explore <a href="http://nationalmap.gov/">The National Map website</a> for yourself, but a good way to see what is available is through the Data Download and Visualization Services - The National Map Download Platform - <a href="http://viewer.nationalmap.gov/basic/" class="uri">http://viewer.nationalmap.gov/basic/</a> (pictured below).</p>
+<p><img src="../Assignment_Images/TNM_DownloadPlatform.PNG" alt="The National Map Viewer" /><br /> On the left hand panel, you will see a list of existing maps and types of data that might be avaialble for areas of the United States. The <em>Map</em> categories are provided as PDFs or GeoPDFs, and are ready to print or use in the field. The <em>Data</em> categories are GIS files, that can be brought into QGIS (or other GIS software) for manipulation, analysis, and visualization. In the map area, you can use the icons and your mouse scroll-wheel to zoom in/out, and click and drag to pan the map area in view. If you hold the mouse over specific icons in the map area, text will appear to define what these icons do.</p>
+<p>Upon clicking on a check-box in the left pane, that section will expand, with subsequent checkboxes for different data types and file formats. For each data type, you can click the &quot;Show Availability&quot; link, which will shade the map view to indicate areas for which the specified data are available. Below is what it looks like when showing the availability for 1 arc-second Digital Elevation Models (DEM), which have ~90 m pixels.</p>
+<p><img src="../Assignment_Images/TNM_DEM_Availabiltiy_US.PNG" alt="The National Map Viewer - DEM Data Availability" /><br /></p>
+<h3 id="downloading-data-from-the-national-map">Downloading Data from The National Map</h3>
+<p>If you check one of the boxes of a specific data type, and select a format, you can click the &quot;Find Products&quot; button to see what is available for an area (by default, the viewable map area). A new tab will open, showing the avaialble Products (you can click on the 'Datasets' tab to return to the original view with dataset options. Large datasets such as Digital Elevation Models are 'tiled' for download (i.e., broken into lots of smaller pieces that can be 'mosaiced' back together). Thus, if you look at the available products for the continental U.S. for the 1 arc-second DEM, we will see hundreds or thousands of available data products. For such broad-scale projects, it is worth considering lower-resolution data (with large pixels) and exploring alternative, albeit often less user-friendly download options.</p>
+<p>For this exercise, we will just download data for the Tulsa County. You can zoom into the area around Tulsa (or use the Address/Place Search). Then, in the top-right of the map, click the 'layers' icon <img src="../Assignment_Images/TNM_Download_LayersIcon.PNG" alt="The National Map Viewer - DEM Data Availability" />. This will show the desired resolution of boundaries available for display and selection directly on the map. U.S. State/Territory and County or Equivalent options should be fairly intuitive, though the 'HU' areas may not be. 'HU' stands for Hydrologic Unit, which is associated with the National Hydrography Dataset. You can click the 'County or Equivalent', and you will then see the county boundaries depicted on the map. Clicking in the area of Tulsa County should select that area, indicated by an outline in a light-blue color.</p>
+<p><img src="../Assignment_Images/TNM_TulsaCountySelect.PNG" alt="TNM Tulsa County Select" /><br /> Using the options at the top (e.g., Box/Point, Current Extent, etc), you can change the area that the website will focus on for data availability queries and downloads.</p>
+<p>Now, we will do a query for Boundaries from the National Boundary Dataset (looking for Shapefiles) and Elevation Products from the 3DEP program (looking for IMG files), as in the image below. Once the appropriate options are selected, click the 'Find Products' button.</p>
+<p><img src="../Assignment_Images/TNM_TulsaCountyDataQuery.PNG" alt="TNM Tulsa Data Query" /><br /> The results will then appear - you will see three results for the Boundaries data all you need is the dataset for Oklahoma. Click the <img src="../Assignment_Images/TNM_AddToCart.PNG" alt="TNM Add To Cart" /> to add it to your list of desired downloads. Note you can click the appropriate icons to view the Footprint of the data, view the metadata, and even direclty download it immediately. Note, this product will have state boundaries, as well as smaller jurisdictions such as Counties. The layers will have shapes included for adjacent areas in other states, but we can remove these in various ways using GIS tools.</p>
+<p>For the Elevation Products, viewing the Footprints and Thumbnails reveal that each of the tiles only covers a portion of Tulsa County. Thus, we need to add all four of the tiles to the cart. We can then click the 'View Cart' button, and in the next page, either click individual download links, or use the 'Open Downlaod Manager' link at the top of the screen. The download manager relies on Java, which opens up another small program, but is convenient if you are downloading lots of layers. You can go back to the dataset search and products selection windows as needed using the tabs near the top of the page.</p>
+<p><img src="../Assignment_Images/TNM_Download.PNG" alt="TNM Download" /><br /> Upon clicking the Download links, downloads will begin. If given the option to open the files or save them, choose the option to save the datasets.</p>
+<p><em>Note that the different datasets have certain naming conventions. For example, the title for the 1 arc-second Digital Elevation Models is something along the lines of this: &quot;USGS NED n36w097 1 arc-second 2013 1 x 1 degree IMG&quot;. 'USGS NED' indicates these data are part of the USGS National Elevation Dataset. The 'n36w097' indicates the upper left corner is at 36 degrees latitude, -97 degrees longitude. '1 arc-second 2013' indicates the resolution (pixel size) and year of the data, the '1 x 1 degree' indicates the size of the tile, and the 'IMG' indicates the format.</em></p>
+<h2 id="usda-gis-resources">USDA GIS Resources</h2>
+<p>The <a href="http://datagateway.nrcs.usda.gov/">USDA Geospatial Gateway</a> also has a wide variety of data available for download, including soil data, and high resolution aerial imagery. To get started, go to the <a href="http://datagateway.nrcs.usda.gov/">website</a> and click the green &quot;Get Data&quot; button (towards the upper-right).</p>
+<p>From there, you'll need to select the desired State/County of interest, and the datasets you need. see the panes on the left of the screen that describe each step, as in the example below). Note, this website has available Climate data from PRISM, further described below.</p>
+<p><img src="../Assignment_Images/USDA_OrderForm.PNG" alt="USDA Order Form" /><br /></p>
+<h2 id="state-gis-resources-for-oklahoma">State GIS Resources (for Oklahoma)</h2>
+<p>Most states have their own repositories for GIS data. Typically when I'm trying to find such a repository, I do a Google search for something along the lines of these phrases: &quot;[Insert State Name] GIS Data&quot;; &quot;[Insert State Name] GIS Repository&quot;; &quot;[Insert State Name] GIS Warehouse&quot;; or &quot;[Insert State Name] GIS Clearinghouse&quot;. Here are also a couple of websites that list some resources available by state:</p>
+<ul>
+<li><a href="http://guides.tulsalibrary.org/content.php?pid=557423&amp;sid=4599537">Tulsa City-County Library GIS resources</a></li>
+<li><a href="http://serc.carleton.edu/NAGTWorkshops/gis/state_resources.html">Carleton College webpage from theNational Association of Geoscience Teachers</a></li>
+</ul>
+<p>For Oklahoma, a couple of particular websites that can be useful are:</p>
+<ul>
+<li><a href="http://ogi.state.ok.us/ogi/search.aspx">The OKMaps Website</a></li>
+<li><a href="http://geo.ou.edu/DataFrame.htm">Center for Spatial Analysis at the University of Oklahoma</a></li>
+</ul>
+<h2 id="climate-data">Climate Data</h2>
+<p>Climate data are typically recorded at individual weather stations, though in ecological studies, it is typically useful to have summaries of climate conditions for entire landscapes, describing characteristics of temperature and precipitation regimes. Thus, multiple organizations have interpolated the data from weather stations, to estimate conditions for large areas. There are two main sources I frequently go to, listed below. Browse the respective website for information on downloading the data. If you need information from a specific weather station, you can search the resources from the <a href="http://www.ncdc.noaa.gov/data-access/land-based-station-data">NOAA National Climatic Data Center</a>. Other sources may be available from state-wide monitoring networks (e.g., <a href="https://www.mesonet.org/">Mesonet for Oklahoma</a> and other organizations.</p>
+<ul>
+<li><a href="http://www.prism.oregonstate.edu/">PRISM Climate Group at Oregon State</a>
+<ul>
+<li>Has 800 meter pixel data for the continental United States</li>
+<li>Lots of information, including 30 year normals for monthly and annual precipitation, maximum temperature, and minimum temperature.</li>
+<li>Also has elevation layers, historical data, and recent data for individual months</li>
+</ul></li>
+<li><a href="http://www.worldclim.org/">WorldClim Global Climate Data</a>
+<ul>
+<li>Global Dataset of 30 second resolution (~800-1,000 meter resolution); Coarser resolutions are available (which are smaller file size)</li>
+<li>Monthly and annual minimum, maximum, and mean temperature and precipitation</li>
+<li>Also contains &quot;Bioclim&quot; layers - described <a href="http://www.worldclim.org/bioclim">here</a>
+<ul>
+<li>These layers are derived from monthly precipitation and temperature data, to describe the climate in biologically meaningful ways.</li>
+</ul></li>
+<li>Datasets include current conditions (based on 50 year average), projected future conditions under various climate change scenarios, and historical conditions.</li>
+</ul></li>
+</ul>
+<h2 id="potential-workflow-needs-for-downloaded-data">Potential Workflow Needs for Downloaded Data</h2>
+<h3 id="uncompressing-data">Uncompressing Data</h3>
+<p>GIS datasets tend to be fairly large, thus they often come in compressed formats. For files compressed into a '.zip' file, you can simply use the utility that came with your operating system (in Windows, you could just right-click on the .zip file, and select &quot;Extract All&quot;.</p>
+<p>Another compressed format you may encounter is or 'tar.gz', for which special software is generally required. <a href="http://www.7-zip.org/">7zip</a> is a free, powerful tool for dealing with compressed files in Windows. If you check out the <a href="http://www.7-zip.org/download.html">download</a> page, there are some options listed for Mac and Linux systems (scroll to the bottom). For Windows machines, simply download and run the appropriate installer (32 bit or 64 bit, depending on your system; version 15.14 is the current standard version.</p>
+<p>After installing 7-zip, you should see options to work with files in 7-zip when you right-click on them (as shown below; if not, you can find 7-zip in your programs, open the software, browse to your appropriate .tar.gz file, and use the extract functions as described hereafter). In the example below, the compressed file is 'builtupp_usa.shp_nt00899.tar.gz', and we start by extracting it to a the current directory.</p>
+<p><img src="../Assignment_Images/7zip_RightClick.png" alt="7zip Right Click" /><br /></p>
+<p>The resulting file will end in '.tar' Now you need to do one more de-compression step - right click on the .tar file, select 7-zip, and 'Extract to &quot;[Filename]&quot;'. This should create a new folder, with all of the files that were in the compressed folder.</p>
+<h3 id="dealing-with-esri-geodatabases-in-qgis-tested-with-version-2.12.2">Dealing with ESRI Geodatabases in QGIS (tested with version 2.12.2)</h3>
+<p>Some GIS data may only be available in a format developed by the company that makes ArcGIS (ESRI), called ESRI Geodatabases (ESRI .GDB files). Typically they are used for vector datasets. There are some extra steps in importing these into QGIS:</p>
+<ul>
+<li><p><img src="../Assignment_Images/QGIS_AddVectorLayer.PNG" alt="AddVectorLayer" />  Click on the &quot;Add Vector Layer&quot; icon.</p></li>
+<li><p>In the window that pops up, choose the source-type as &quot;Directory&quot;, leave the Encoding set to the default, and change the source to &quot;OpenFileGDB&quot; (see the example window below).</p></li>
+<li><p>Then, click &quot;Browse&quot;, find and select folder ending in '.gdb', where the data are stored (in the example given here, it is the state boundary dataset for Arkansas, downloaded from The National Map), and click &quot;Open&quot;.</p></li>
+</ul>
+<p><img src="../Assignment_Images/QGIS_AddVector_GDB.PNG" alt="AddVectorLayerGDB" /><br /></p>
+<ul>
+<li>Another window will now appear, with a list of layers in this geodatabase. You can look at the &quot;Geometry Type&quot; to identify whether the layer is composed of lines, polygons, or points. If no geometry type is identified, the layer may be a table or metadata. You can use &quot;Select All&quot; to load all layers - this may be a lot of information though, so if there are a lot of layers and a large area, you can look at one layer at a time.</li>
+</ul>
+<p><img src="../Assignment_Images/QGIS_GDB_Layers.PNG" alt="AddVectorLayerGDB" /><br /></p>
+<ul>
+<li>You cannot edit these layers while they are in .gdb files, but you can export them to Shapefiles, and conduct any manipulations/analyses with that format.
+<ul>
+<li>Right click on the layer you need to work with in the Layers Pane of QGIS, and selct &quot;Save As&quot;.</li>
+<li>Keep the Format as ESRI Shapefile and define a filename and location in the &quot;Save As&quot; box. The defaults should work for most purposes. The defaults should load the new Shapefile into your current project, but you can also use standard data import methods to bring the data into QGIS.</li>
+</ul></li>
+</ul>
+<h3 id="removing-unwanted-features-from-vector-layers-e.g.-isolating-a-single-county-of-interest">Removing Unwanted Features from Vector Layers (e.g., isolating a single county of interest)</h3>
+<p>Vector datasets may be available for larger areas than you really want - for example, if you want to work with Tulsa County, Oklahoma, and you download the appropriate layer from The National Map, the layer you have will likely include all counties of Oklahoma (and adjacent counties in neighboring states).</p>
+<p><img src="../Assignment_Images/OK_Counties.PNG" alt="OK Counties" /><br /></p>
+<p>One way, described below, is to do a query on (i.e., filter out) the layer to show only the desired features, based on the Attribute Table. Alternatively, you may make a copy of the shapefile, use the layer editing tools to delete features. Here are instructions for the former option, with an example from the &quot;County or Equivalent&quot; layer for Oklahoma, to only display Tulsa County:</p>
+<ul>
+<li>Right-click the focal layer and select &quot;Properties&quot;</li>
+<li>Along the left side of the Properties window, select the &quot;General&quot; tab.</li>
+<li>Make sure the &quot;Feature subset&quot; section is open by clicking the arrow next to that text, and click the &quot;Query Builder&quot; button (see screen-shot below).</li>
+</ul>
+<p><img src="../Assignment_Images/QGIS_PropertiesGeneral.PNG" alt="QGIS Layer Properties" /><br /></p>
+<ul>
+<li>In the next window that appears, there will be an area that says &quot;Fields&quot; - these are the columns in the Attribute Table for the layer. The field &quot;County_NAM&quot; contains the full names of counties. An example of the window filled as necessary is provided after this section.
+<ul>
+<li>If you click a field name, and in the Values box click either &quot;Sample&quot; or &quot;All&quot;, either a random sample or all of the possible values for the selected attribute will be displayed. So, if you select &quot;COUNTY_NAM&quot; and then click &quot;All&quot;, you will see all of the county names listed.</li>
+</ul></li>
+<li>Double-click the name of the field you wish to filter the data by, and it will appear in the white box towards the bottom of this window. Then select the appropriate operator you wish to use.
+<ul>
+<li>In this case, we wish to select only Counties where the &quot;COUNTY_NAM&quot; is &quot;Tulsa&quot;, so choose the &quot;=&quot; button. If you wanted all counties except for Tulsa, you would use the &quot;!=&quot; button.</li>
+<li>Then type &quot; 'Tulsa' &quot; (or double-click on &quot;Tulsa&quot; in list of Values).</li>
+</ul></li>
+<li>If you click &quot;Test&quot; with these settings, it should tell you &quot;The where clause returned 1 row(s).&quot;, meaning that only one feature in the dataset will be used (i.e., Tulsa County).</li>
+<li>Click &quot;OK&quot;, then Click &quot;OK&quot; again in the Properties window, and now Tulsa County is the only area displayed.</li>
+<li>If you need to un-do this, simply get back into the Query Builder window, and use the &quot;Clear&quot; button towards the bottom.</li>
+</ul>
+<p><img src="../Assignment_Images/QGIS_QueryBuilder.PNG" alt="QGIS Query Builder" /><br /></p>
+<p>And here's what the result should look like:</p>
+<p><img src="../Assignment_Images/OK_TulsaCounty.PNG" alt="OK Tulsa County" /><br /></p>
+<h3 id="mosaicing-rasters">Mosaicing Rasters</h3>
+<p>As we saw with the 1 arc-second Digital Elevation Models for Tulsa, a desired dataset might only be available in tiles, which individually do not cover a focal study area. This can be dealt with in a couple of ways using QGIS. First, you can 'mosaic' the tiles, which is basically like stitching them together and creating a new layer. Second, you can create a 'Virtual Raster Catalogue', which basically knows where the original tiles are stored, and referencs them to make them appear as a single file. Both techniques are effective, but the former requires the computer to work with more data in memory, for a larger area, and computation time. The latter option is very quick, but you must be sure to keep track of the files and maintain the same relative paths for the original files if you move them around on your computer.</p>
+<p>In QGIS, both of these options are reached through the Raster menu (from the Menu Bar), with 'Merge' and 'Build Virtual Raster (Catalogue)'. It is easiest if the individual tiles are in a single folder together. The tiles do not need to be opened in QGIS to perform the operations, but they can be.</p>
+<p><img src="../Assignment_Images/QGIS_Raster_MergeVRT.PNG" alt="QGIS Raster Mosaic" /><br /> To mosaic the tiles and create a new file, you will choose 'Merge'. Then, select the Input files and specify an output file location. You can leave the defaults, and click 'OK'. (See the example dialogue box below.) The output will appear in QGIS upon completion (it will take some procesing time). The underlying tool being used is called 'GDAL Merge' - you can read about the options you may adjust in the dialogue box for this operation at <a href="http://www.gdal.org/gdal_merge.html" class="uri">http://www.gdal.org/gdal_merge.html</a>.</p>
+<p><img src="../Assignment_Images/QGIS_Merge.png" alt="QGIS Raster Mosaic" /><br /> To build a virtual raster of the tiles, which will display as a single layer, you will choose 'Build Virtual Raster (Catalogue)...' instead of 'Merge'. If you have the layers in QGIS already, you can simply specify &quot;Use visible raster layers for input&quot;, but if not, choose the input files manually. Again, specify the output file, and you can leave the default options for now (see below for a sample filled-in dialogue box). Again, the process should run quickly, with the result displayed in the main QGIS window. The underlying tool being used is called 'GDAL Build VRT' - you can read about the options you may adjust in the dialogue box for this operation at <a href="http://www.gdal.org/gdalbuildvrt.html" class="uri">http://www.gdal.org/gdalbuildvrt.html</a>.</p>
+<p><img src="../Assignment_Images/QGIS_BuildVRT.png" alt="QGIS VRT" /><br /></p>
+<h3 id="spatial-reference-information-for-gis-data-layers">Spatial Reference Information for GIS Data Layers</h3>
+<p>When you load data into a GIS program, the projection information should automatically be interpreted by the software, if it is stored correctly with the appropriate files. If the projection information is not automatically loaded, you may need to look through metadata files that come with the data (often stored in '.xml' or '.html' documents, ideally labelled as 'metadata'). If you find the projection you can then set it in your GIS software.</p>
+</body>
+</html>
+      </section>
+      <footer>
+        <p>This project is developed by <a href="http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/">Mike Treglia</a> with support from the <a href="http://www.okepscor.org/">Oklahoma NSF-EPSCoR Program</a> (Grant No. IIA-1301789).</p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("6888715");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+		  <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10771813; 
+var sc_invisible=1; 
+var sc_security="f8fd63c2"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10771813/0/f8fd63c2/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>

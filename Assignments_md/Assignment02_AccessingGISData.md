@@ -50,7 +50,7 @@ Upon clicking the Download links, downloads will begin. If given the option to o
 *Note that the different datasets have certain naming conventions. For example, the title for the 1 arc-second Digital Elevation Models is something along the lines of this: "USGS NED n36w097 1 arc-second 2013 1 x 1 degree IMG". 'USGS NED' indicates these data are part of the USGS National Elevation Dataset.  The 'n36w097' indicates the upper left corner is at 36 degrees latitude, -97 degrees longitude. '1 arc-second 2013' indicates the resolution (pixel size) and year of the data, the '1 x 1 degree' indicates the size of the tile, and the 'IMG' indicates the format.*
 
 
-### USDA GIS Resources
+## USDA GIS Resources
 
 The [USDA Geospatial Gateway](http://datagateway.nrcs.usda.gov/) also has a wide variety of data available for download, including soil data, and high resolution aerial imagery. To get started, go to the [website](http://datagateway.nrcs.usda.gov/) and click the green "Get Data" button (towards the upper-right). 
 
@@ -89,7 +89,7 @@ Climate data are typically recorded at individual weather stations, though in ec
 	* Datasets include current conditions (based on 50 year average), projected future conditions under various climate change scenarios, and historical conditions.
 
 	
-## Some Notes About Working Downloaded Data
+## Potential Workflow Needs for Downloaded Data
 
 ### Uncompressing Data
 
