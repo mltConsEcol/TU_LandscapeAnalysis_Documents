@@ -11,7 +11,7 @@ This table highlights important dates, with dates for reading discussions and da
 |Date			|Reading	|Assignment Due	|
 |:--------------|:----------|:-------------|
 |**Jan. 14**	|[Wiens 1989](http://www.jstor.org/stable/2389612)| NA|
-|**Jan. 21**	|[Foster et al. 2003](http://bioscience.oxfordjournals.org/content/53/1/77.short)| [Assignment 1: Intro to QGIS](./Assignments_web/Assignment01.html) ([PDF](./Assignments_md/Assignment01.pdf))|
+|**Jan. 21**	|[Foster et al. 2003](http://bioscience.oxfordjournals.org/content/53/1/77.short)| [Assignment 1: Intro to QGIS](./Assignments_web/Assignment01.html) ([PDF](./Assignments_web/Assignment01.pdf))|
 |**Jan. 28**	|[Montgomery et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)| Assignment 2|
 |**Feb. 4**		|TBA| Assignment 3	|
 |**Feb. 11**	|TBA| Assignment 4	|
