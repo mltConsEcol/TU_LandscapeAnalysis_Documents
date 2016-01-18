@@ -2,10 +2,11 @@
 title: "Getting Familiar with R"
 author: "Michael L. Treglia"
 date: "Material for Lab 2 of Landscape Analysis and Modeling, Spring 2016"
-output: html_document
+output: pdf_document
 ---
 
-*This document is available online, with active hyperlinks, at: [https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab2_IntroToR.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab2_IntroToR.Rmd)*
+*This document is available online, with active hyperlinks, at: [http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment02_IntroToR.html](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment02_IntroToR.html)*
+
 
 [R](http://www.r-project.org/) is a powerful, free platform for statistical computing, and has become commonly employed in countless fields in the last decade. It is largely command-line driven, however, which creates a steep learning curve. This document and the contained exercises are designed to give new users some familiarity with the program, which we will build upon throughout the course. Users can interface directly with R, or work with [RStudio](http://www.rstudio.com/), which some people find makes it easier to stay organized within a session of R.
 
