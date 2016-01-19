@@ -11,3 +11,5 @@ date:
 * [QGIS Tutorial](http://mltconsecol.github.io/QGIS-Tutorial/)
 
 * [Finding, Downloading, and Using GIS Data (Emphasis on the U.S.)](./Assignments_web/Assignment02_AccessingGISData.html)
+
+* [Getting Started with R](./Assignments_web/Assignment02_IntroToR.html)
