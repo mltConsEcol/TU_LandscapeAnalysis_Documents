@@ -20,7 +20,7 @@ The National Map has lots of ways to view and download data, with semi-regular i
 
 On the left hand panel, you will see a list of existing maps and types of data that might be avaialble for areas of the United States. The *Map* categories are provided as PDFs or GeoPDFs, and are ready to print or use in the field. The *Data* categories are GIS files, that can be brought into QGIS (or other GIS software) for manipulation, analysis, and visualization. In the map area, you can use the icons and your mouse scroll-wheel to zoom in/out, and click and drag to pan the map area in view. If you hold the mouse over specific icons in the map area, text will appear to define what these icons do.
 
-Upon clicking on a check-box in the left pane, that section will expand, with subsequent checkboxes for different data types and file formats. For each data type, you can click the "Show Availability" link, which will shade the map view to indicate areas for which the specified data are available. Below is what it looks like when showing the availability for 1 arc-second Digital Elevation Models (DEM), which have ~90 m pixels.
+Upon clicking on a check-box in the left pane, that section will expand, with subsequent checkboxes for different data types and file formats. For each data type, you can click the "Show Availability" link, which will shade the map view to indicate areas for which the specified data are available. Below is what it looks like when showing the availability for 1 arc-second Digital Elevation Models (DEM), which have ~30 m pixels.
 
 ![The National Map Viewer - DEM Data Availability](../Assignment_Images/TNM_DEM_Availabiltiy_US.PNG)\
 
