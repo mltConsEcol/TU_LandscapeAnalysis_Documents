@@ -12,31 +12,31 @@ date:
 
 * [Week: 2 - Jan. 19-21;	Topic: Some Basics of Spatial Data; Intro to R](#week-02)
   
-* [Week: 3 - Jan. 26-28;	Topic: Nearest Neighbor Analyses; Ripley's K](#week-03)
+* [Week: 3 - Jan. 26-Feb. 2;	Topic: Nearest Neighbor Analyses; Ripley's K](#week-03)
   
-* [Week: 4 - Feb. 2-4;	Topic: Working with Complete Sample Data](#week-04)
+* [Week: 4 - Feb. 4-9;	Topic: Working with Complete Sample Data](#week-04)
   
-* [Week: 5 - Feb. 9-11;	Topic: Quantifying Landscape Configuration: Lecture](#week-05)
+* [Week: 5 - Feb. 11-16;	Topic: Quantifying Landscape Configuration: Lecture](#week-05)
   
-* [Week: 6 - Feb 16-18;	Topic: Quantifying Landscape Configuration: Lab](#week-06)
+* [Week: 6 - Feb 18-23;	Topic: Quantifying Landscape Configuration: Lab](#week-06)
   
-* [Week: 7 - Feb. 23-25;	Topic: Testing for Spatial Autocorrelation](#week-07)
+* [Week: 7 - Feb. 25-Mar. 1;	Topic: Testing for Spatial Autocorrelation](#week-07)
   
-* [Week: 8 - Mar. 1-3;	Topic: Multivariate Spatial Relationships](#week-08)
+* [Week: 8 - Mar. 3-8;	Topic: Multivariate Spatial Relationships](#week-08)
   
-* [Week: 9 - Mar. 8-10;	Topic: Species Distribution Models: Lecture](#week-09)
+* [Week: 9 - Mar. 10-22;	Topic: Species Distribution Models: Lecture](#week-09)
   
 * Spring Break - Dates: Mar. 14-18
   
-* [Week: 10  - Dates: Mar. 22-24	Topic: Species Distribution Models: Lab](#week-10)
+* [Week: 10  - Dates: Mar. 24-29	Topic: Species Distribution Models: Lab](#week-10)
   
-* [Week: 11 - Mar 29-31	Topic: Animal Movement](#week-11)
+* [Week: 11 - Mar. 31-Apr. 5	Topic: Animal Movement](#week-11)
   
-* [Week: 12 - Apr. 5-7	Topic: Landscape Connectivity](#week-12)
+* [Week: 12 - Apr. 7-12	Topic: Landscape Connectivity](#week-12)
   
-* [Week: 13 - Apr. 12-14	Topic: Focus on Projects](#week-13)
+* [Week: 13 - Apr. 14-19	Topic: Focus on Projects; Future of Landscape Ecology](#week-13)
   
-* [Week: 14 - Apr. 19-21	Topic: Future of Landscape Ecology; Presentations](#week-14)
+* [Week: 14 - Apr. 21	Topic: Project Presentations](#week-14)
  
 ### Week 1: Intro to Landscape Ecology and GIS<a id="week-01"></a>
 
@@ -72,13 +72,13 @@ date:
 	
 #### Jan. 21, 2016
 
-*Due: [Assignment 1](./Assignments_web/Assignment01.html)*
+***[Assignment 1 Due](./Assignments_web/Assignment01.html)***
 
 * Readings
 	* [Foster et al. 2003. The importance of land-use legacies to ecology and conservation. Bioscience. 53:77-88.](http://bioscience.oxfordjournals.org/content/53/1/77.short)
 * Agenda
 	* Discuss Reading Material
-	* Work on [Assignment 2]./Assignments_web/Assignment02.html)
+	* Work on [Assignment 2](./Assignments_web/Assignment02.html)
 		* Download GIS Data and Make Your Own Map - see info on getting data 
 		* Introduction to R - answer the questions throughout the document
 
@@ -87,52 +87,85 @@ date:
 
 #### Jan. 26, 2016
 
-#### Jan. 28, 2016
-
-
-### Week 4: Working with Complete Sample Data<a id="week-04"></a>
+* Agenda
+	* Testing Hypotheses - focus on Ordinary Least Squares regression
+	* Complete Population Data
+	* Simple Nearest Neighbor Analyses
+	* Ripley's K
 
 #### Feb. 2, 2016
 
+***[Assignment 2 Due](./Assignments_web/Assignment02.html)***
+
+* Readings:
+	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.] (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
+* Agenda:
+	* Discuss Reading Material
+	* Work on Assignment 3
+		* Working with Scripts in R
+		* Getting Data into R
+		* Basics of Simple Linear Regression
+		* Introducing R Packages
+		* Ripley's K analyses in QGIS and R
+
+
+### Week 4: Other Techniques for Complete Sample Data<a id="week-04"></a>
 
 #### Feb. 4, 2016
+
+* Agenda:
+	* Quadrat Variance Methods
+
+
+#### Feb. 9, 2016
+
+***Assignment 3 Due***
+
+* Readings:
+	* [Kelly, M., et al. 2008. Spatial pattern dynamics of oak mortality and associated disease symptoms in a California hardwood forest affected by sudden oak death. Journal of Forest Research 13:312-319.](http://link.springer.com/article/10.1007/s10310-008-0083-7)
+	
+* Agenda:
+	* Discuss Reading Material
+	* Work on Assignment 4
+		* Getting YOUR data into R
+		* Quadrat Variance Analyses - Setting up sample data in R and Analysis in [PASSaGE](http://www.passagesoftware.net/)
 
 
 ### Week 5: Quantifying Landscape Configuration: Lecture<a id="week-05"></a>
 
-#### Feb. 9, 2016
-
 #### Feb. 11, 2016
+
+#### Feb. 16, 2016
 
 
 ### Week 6: Quantifying Landscape Configuration: Lab<a id="week-06"></a>
 
-#### Feb. 16, 2016
-
 #### Feb. 18, 2016
+
+#### Feb. 23, 2016
 
 	
 ### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)<a id="week-07"></a>
 
-#### Feb. 23, 2016
-
 #### Feb. 25, 2016
+
+#### Mar. 1, 2016
 
 
 
 ### Week 8: Multivariate Spatial Relationships<a id="week-08"></a>
 
-#### Mar. 1, 2016
-
 #### Mar. 3, 2016
-
-
-### Week 9: Species Distribution Models: Lecture<a id="week-09"></a>
 
 #### Mar. 8, 2016
 
 
+### Week 9: Species Distribution Models: Lecture<a id="week-09"></a>
+
 #### Mar. 10, 2016
+
+
+#### Mar. 22, 2016
 
 
 ### ***Spring Break - Have Fun! (And start getting data together for projects!)*** 	
@@ -140,36 +173,36 @@ date:
 
 ### Week 10: Species Distribution Models: Lab<a id="week-10"></a>
 
-#### Mar. 22, 2016
-
 #### Mar. 24, 2016
-
-
-### Week 11: Animal Movement<a id="week-11"></a>
 
 #### Mar. 29, 2016
 
 
+### Week 11: Animal Movement<a id="week-11"></a>
+
 #### Mar. 31, 2016
+
+
+#### Apr. 5, 2016
 
 	
 ### Week 12: Landscape Connectivity<a id="week-12"></a>
 
-#### Apr. 5, 2015
-
 #### Apr. 7, 2015
-
-
-### Week 13: Project Status Updates/Sort Out Problems<a id="week-13"></a>
 
 #### Apr. 12, 2015
 
+
+### Week 13: Project Status Updates/Sort Out Problems; Future of Landscape Ecology<a id="week-13"></a>
+
 #### Apr. 14, 2015
 
-
-### Week 14: Future of Landscape Ecology; Presentations<a id="week-14"></a>
-
 #### Apr. 19, 2015
+
+
+### Week 14: Presentations<a id="week-14"></a>
+
+#### Apr. 21, 2015
 
 #### Apr. 21, 2015
 

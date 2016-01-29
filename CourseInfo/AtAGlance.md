@@ -12,16 +12,16 @@ This table highlights important dates, with dates for reading discussions and da
 |:--------------|:----------|:-------------|
 |**Jan. 14**	|[Wiens 1989](http://www.jstor.org/stable/2389612)| NA|
 |**Jan. 21**	|[Foster et al. 2003](http://bioscience.oxfordjournals.org/content/53/1/77.short)| [Assignment 1: Intro to QGIS](./Assignments_web/Assignment01.html) ([PDF](./Assignments_web/Assignment01.pdf))|
-|**Jan. 28**	|[Montgomery et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)| [Assignment 2: Accessing GIS Data & Intro to R](./Assignments_web/Assignment02.html) ([PDF](./Assignments_web/Assignment02.pdf))
-|**Feb. 4**		|TBA| Assignment 3	|
-|**Feb. 11**	|TBA| Assignment 4	|
-|**Feb. 18**	|TBA| Take Home Exam 1	|
-|**Feb. 25**	|TBA| Assignment 5	|
-|**Mar. 3**		|TBA| Assignment 6	|
-|**Mar. 10**	|TBA| Assignment 7	|
-|**Mar. 24**	|TBA| Project Proposal	|
-|**Mar. 31**	|TBA| Assignment 8	|
-|**Apr. 7**		|TBA| Assignment 9	|
-|**Apr. 14**	|TBA| Assignment 10	|
+|**Feb. 2**	|[Montgomery et al. 2014](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)| [Assignment 2: Accessing GIS Data & Intro to R](./Assignments_web/Assignment02.html) ([PDF](./Assignments_web/Assignment02.pdf))
+|**Feb. 9**		|[Kelly et al. 2008](http://link.springer.com/article/10.1007/s10310-008-0083-7)| Assignment 3	|
+|**Feb. 16**	|TBA| Assignment 4	|
+|**Feb. 23**	|TBA| Take Home Exam 1	|
+|**Mar. 1**		|TBA| Assignment 5	|
+|**Mar. 8**		|TBA| Assignment 6	|
+|**Mar. 22**	|TBA| Assignment 7	|
+|**Mar. 29**	|TBA| Project Proposal	|
+|**Apr. 5**		|TBA| Assignment 8	|
+|**Apr. 12**	|TBA| Assignment 9	|
+|**Apr. 19**	|TBA| Assignment 10	|
 |**Apr. 21**	|TBA| Project Presentations	|
 |**May 5**		|NA| Take Home Exam 2	|
