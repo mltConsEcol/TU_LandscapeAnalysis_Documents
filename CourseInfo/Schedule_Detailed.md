@@ -101,12 +101,12 @@ date:
 	* [Montgomery, R. A., et al. 2014. Where wolves kill moose: the influence of prey life history dynamics on the landscape ecology of predation. *PLoS ONE* 9:e91414.](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0091414)
 * Agenda:
 	* Discuss Reading Material
-	* Work on Assignment 3
+	* Work on [Assignment 3](./Assignments_web/Assignment03_DataImport_Regress_RipleysK.html)
 		* Working with Scripts in R
 		* Getting Data into R
-		* Basics of Simple Linear Regression
+		* Basic Simple Linear Regression in R
 		* Introducing R Packages
-		* Ripley's K analyses in QGIS and R
+		* Ripley's K analyses in R
 
 
 ### Week 4: Other Techniques for Complete Sample Data<a id="week-04"></a>
@@ -119,7 +119,7 @@ date:
 
 #### Feb. 9, 2016
 
-***Assignment 3 Due***
+***[Assignment 3 Due](./Assignments_web/Assignment03_DataImport_Regress_RipleysK.html)***
 
 * Readings:
 	* [Kelly, M., et al. 2008. Spatial pattern dynamics of oak mortality and associated disease symptoms in a California hardwood forest affected by sudden oak death. *Journal of Forest Research* 13:312-319.](http://link.springer.com/article/10.1007/s10310-008-0083-7)

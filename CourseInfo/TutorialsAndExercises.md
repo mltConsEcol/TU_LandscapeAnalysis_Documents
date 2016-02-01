@@ -13,3 +13,5 @@ date:
 * [Finding, Downloading, and Using GIS Data (Emphasis on the U.S.)](./Assignments_web/Assignment02_AccessingGISData.html)
 
 * [Getting Started with R](./Assignments_web/Assignment02_IntroToR.html)
+
+* [Doing more with R: Scripts in R, Introduction to Statistical Models, and Ripley's K Analysis](./Assignments_web/Assignment03_DataImport_Regress_RipleysK.html)
