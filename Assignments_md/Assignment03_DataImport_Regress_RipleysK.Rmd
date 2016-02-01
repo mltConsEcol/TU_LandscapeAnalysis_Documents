@@ -8,7 +8,7 @@ output: pdf_document
 *This document, with active hyperlinks, is available online at: [http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment03_DataImport_Regress_RipleysK.html](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment03_DataImport_Regress_RipleysK.html)*
 
 
-**Due Date: Thursday, 9 February 2016**
+**Due Date: Tuesday, 9 February 2016**
 
 **This assignment is worth 10 Points, with 1 points per question.**
 
