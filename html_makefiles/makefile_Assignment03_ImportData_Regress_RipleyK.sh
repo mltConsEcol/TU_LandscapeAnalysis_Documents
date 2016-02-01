@@ -8,4 +8,4 @@ cat html_head_Down1Dir.html Assignment03_DataImport_Regress_RipleysK_tmp.html ht
 
 rm Assignment03_DataImport_Regress_RipleysK_tmp.html;
 
-#R -e "rmarkdown::render('../Assignments_md/Assignment03_DataImport_Regress_RipleysK.Rmd', 'pdf_document', output_file='../Assignments_web/Assignment03_DataImport_Regress_RipleysK.pdf')";
+R -e "rmarkdown::render('../Assignments_md/Assignment03_DataImport_Regress_RipleysK.Rmd', 'pdf_document', output_file='../Assignments_web/Assignment03_DataImport_Regress_RipleysK.pdf')";
