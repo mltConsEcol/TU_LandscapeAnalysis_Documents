@@ -175,7 +175,7 @@ Though R has great functionality on it's own, a major strength of the software i
 
 Upon starting R, only a limited set of pacakges are loaded by default - there are a few reasons for this, and here are a couple of them. First, multiple packages, developed independently, might have the same name for different functions, thus loading them at the same time can cause confusion (by default, the function in the most-recently loaded package takes priority, though a function for a specific loaded package can be called using 'packageName::function(arguments)'). Another reason for only opening a limited number of packages upon starting R is the potential for lots of memory to be used; sometimes large sets of code underly R functions, which may occupy more temporary computer memory that you may need for working with large files.
 
-Each package has a website hosted by [CRAN (Comprehsnsive R Archive Network)](http://cran.r-project.org/), with at least basic documentation of commands. Some packages also have 'vignettes', which go into detail on accomplishing some particular tasks. For example, the site for spatstat is [http://cran.r-project.org/web/packages/spatstat/index.html](http://cran.r-project.org/web/packages/spatstat/index.html).
+Each package has a website hosted by [CRAN (Comprehsnsive R Archive Network)](http://cran.r-project.org/), with at least basic documentation of commands. For example, the site for spatstat is [http://cran.r-project.org/web/packages/spatstat/index.html](http://cran.r-project.org/web/packages/spatstat/index.html). Some packages also have 'vignettes', which go into detail on accomplishing some particular tasks. 
 
 If you are trying to figure out what R packages might be useful for a particular field or realm of analysis, you may find it helpful to browse the 'Task Views' pages, available at: [https://cran.r-project.org/web/views/](https://cran.r-project.org/web/views/). Clicking on a relevant link there will take you to a page that highlights some R packages and contextualizes how they may be used.
 
@@ -236,7 +236,7 @@ plot(HTreesSub91)
 ```
 
 
-***Question 6: Building on what you've learned, using a simple plotting function and data subsets, plot *Acer rubrum* and *Quercus alba* on the same figure in different symbols. You may need to use two commands, and the arguments 'pch' and 'col'. Here's a hint: look into the function 'points'. You may need to browse resources given in the Lab 2 handout, [Getting Familiar with R](../Assignments_web/Assignment02_IntroToR.html). Don't worry about making a legend, but you should be able to keep track of which points represent which tree species for yourself. The result should look something like what is depicted below; copy and paste your figure into your answer document and provide your code for the plot.***
+***Question 6: Building on what you've learned, using a simple plotting function and data subsets, plot Acer rubrum and Quercus alba on the same figure in different symbols. You may need to use two commands, and the arguments 'pch' and 'col'. Here's a hint: look into the function 'points'. You may need to browse resources given in the Lab 2 handout, [Getting Familiar with R](../Assignments_web/Assignment02_IntroToR.html). Don't worry about making a legend, but you should be able to keep track of which points represent which tree species for yourself. The result should look something like what is depicted below; copy and paste your figure into your answer document and provide your code for the plot.***
 
 ```{r, echo=FALSE}
 plot(subset(HTreesSub91, species=="ACRU"))
@@ -249,7 +249,7 @@ It is definitely possible to make nicer-looking maps in R, but for now, somethin
 
 ## Ripley's K Analyses
 
-Though plotting the arrangement of the two focal tree species might help us guess which trees are clumped or dispersed at different scales, we need to use statistically inference in order to draw strong conclusions. As we covered in lecture, Ripley's K analysis is perfect for this.
+Though plotting the arrangement of the two focal tree species might help us guess which trees are clumped or dispersed at different scales, we need to use statistical inference to draw strong conclusions. As we covered in lecture, Ripley's K analysis is perfect for this.
 
 We will first adjust the dataset to only include the positional information (now stored as a separate entity within the object), and the tree species.
 
