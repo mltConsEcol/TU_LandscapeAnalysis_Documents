@@ -1,0 +1,182 @@
+---
+title: "Quadrat Variance Analysis: Setting up Example Data in R and Conducting Analyses with PASSaGE"
+author: "Michael L. Treglia"
+date: "Material for Lab 4 of Landscape Analysis and Modeling, Spring 2016"
+output: pdf_document
+---
+
+*This document, with active hyperlinks, is available online at: [http://mltconsecol.github.io/TU_
+LandscapeAnalysis_Documents/Assignments_web/Assignment04_QuadratVarianceAnalysis.html](http://mltconsecol.github.io/TU_
+LandscapeAnalysis_Documents/Assignments_web/Assignment04_QuadratVarianceAnalysis.html)*
+
+**Due Date: Tuesday, 16 February 2015**
+
+***PLEASE WRITE YOUR NAME ON YOUR ANSWER DOCUMENT***
+
+**Answer the 10 questions at end of document, worth 10 points total (1 pt each). The first 6 questions are focused on quadrat variance analyses; the other 4 involve working with your own data in R.**
+
+# Introduction
+
+In this lab, we will take be starting with the same dataset we used last week - a multi-year tree census dataset from [Harvard Forest](http://harvardforest.fas.harvard.edu/), the Lyford Mapped Tree Plot Data, available at [http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032](http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf032) .  
+
+Though the dataset is a complete census, and can be analyzed with Ripley's K analysis as we did in the previous, it is rare to have such a dataset, various constraints (e.g., funding, person-power, time, etc.). Thus, we will take a subsets of the data, which will be analogous to a transect, and analyze those with quadrat variance analyses - a form of contiguous units analyses.
+
+This lab will use [R](http://www.r-project.org/) for setting up the data, and [PASSaGE 2](http://www.passagesoftware.net/) for the analyses, which you can download for free at [http://www.passagesoftware.net/](http://www.passagesoftware.net/). There is a paper describing the software in Methods in Ecology and Evolution: 
+ 
+ [Rosenberg, M.S., and C.D. Anderson (2011) PASSaGE: Pattern Analysis, Spatial Statistics and Geographic Exegesis. Version 2. *Methods in Ecology and Evolution* 2(3):229-232.](http://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00081.x/full). There are lots of techniques available in this program, so browse around and check out what it can do.
+
+Note that the documentation for PASSaGE 2, available in the help for the software and on the website, has very good explanations and citations for the methods employed. It may be helpful to look at that information in addition to lecture notes and supplemental reading materials.
+
+
+# Setting Up and Exporting Sample Data in R
+
+You can download the dataset, store it locally and load it into R, as you did in the [previous lab](../Assignments_web/Assignment03_DataImport_Regress_RipleysK.html). Alternatively, for datasets stored online, you can actually import them directly by using the appropriate import command and using the url of the dataset. For this lab we'll import the data and assign it to 'HTrees'. It is good practice to set your working directory to your desired folder, so do that too.
+
+```{r, eval=FALSE}
+#use 'setwd([Folder Path])' to set your working directory.
+HTrees <- read.csv("http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-02-tree.csv")
+```
+
+To simulate a transect through part of the study area, we will only consider trees in a small strip, 20 feet wide,from x-coordinates 20 to 40, running North/South throughout the study area. We'll consider two common tree species, *Acer rubrum* and *Quercus rubrum*, and two focal years - 1969 (when the area was first censused) and 2011 (the most recent census).
+
+We will subset the data individually for each species and each year - we only need the coorinates of the trees, so we will use the 'select' argument in the subset funtion to specify these columns:
+
+
+```{r, eval=FALSE, tidy=TRUE}
+#Acer rubrum documented in transect in 1969
+acruTransect1969 <- subset(HTrees, xsite >20 & xsite <= 40 & species=='ACRU' & cond69 == 'L', select=c('xsite','ysite'))
+#you can plot the trees using the plotting function, like this: 
+#plot(acruTransect1969$xsite, acruTransect1969$ysite)
+
+#Quercus rubrum documented in transect in 1969
+quruTransect1969 <- subset(HTrees, xsite >20 & xsite <= 40 & species=='QURU' & cond69 == 'L', select=c('xsite','ysite'))
+
+#Acer rubrum documented in transect in 2011
+acruTransect2011 <- subset(HTrees, xsite >20 & xsite <= 40 & species=='ACRU' & cond11 == 'L', select=c('xsite','ysite'))
+
+#Quercus rubrum documented in transect in 2011
+quruTransect2011 <- subset(HTrees, xsite >20 & xsite <= 40 & species=='QURU' & cond11 == 'L', select=c('xsite','ysite'))
+```
+
+To use the data in PASSaGE, we will need to export them - we'll export them as .csv files using the 'write.csv' function. These files will be written to your current working directory. You can look at the help for this function to see the arguments available, but for now, we just need the object names and desired filenames as follows:
+
+```{r, eval=FALSE}
+write.csv(acruTransect1969, "acruTransect1969.csv")
+write.csv(quruTransect1969, "quruTransect1969.csv")
+write.csv(acruTransect2011, "acruTransect2011.csv")
+write.csv(quruTransect2011, "quruTransect2011.csv")
+```
+
+# Importing Data into PASSaGE
+
+Now that we have the data set up, we will open up PASSaGE and get the data in. Find 'PASSaGE 2' on your computer and open it up.  
+
+The program may look a bit daunting at first (see the following screen-shot). The 'Output' window is where text of what you do/text output from analyses will be displayed; the 'Data Monitor' window shows what data you have imported and loaded.  At the top of the screen are tabs: Edit, Data, Create, Analysis, Analysis 2, Draw, and View - as you click on different tabs, you will see the available icons change, much like when you work modern versions of Microsoft Office.
+
+
+![](../Assignment_Images/PassageOpening.png)\
+
+
+
+To get data into PASSaGE, click the icon at the top-left of the program (shown below) and select the 'Load Data' option:
+
+
+![](../Assignment_Images/PassageIcon.png)\
+
+
+Then, navigate to any one of your files of interest, and in the next window that comes up, specify that you want PASSaGE to use the Comma as the column delimiters for this file.
+
+
+![](../Assignment_Images/PassageTextFileImport.png)\
+
+
+There is one more window to go through before you have your data in. Here, you will tell PASSaGE that you are importing a dataset of coordinates, specify that the dataset contains Column Headings, and indicate which columns correspond to x- and y-coordinates, as in the following image. You can also change the name of this for use in PASSaGE if you want. I'm working with the transect data for *Quercus rubrum* from 2011, and will keep the default name. When everything is set, click "OK".
+
+
+![](../Assignment_Images/PASSaGE_ImportData_Coords.png)\
+
+
+Now you have a single dataset in PASSaGE. You can follow the same steps for the other datasets. The datasets will be listed in the Data Monitor window.  You can view the points in this dataset by going to the 'Draw' tab and clicking the 'Draw Points' icon. Because the transect is so narrow relative to its length, the points may look like they are simply in a straight line unless you maximize the window to enlarge the plot.
+
+
+# Setting up Quadrats in PASSaGE
+
+We established our 'transect' in R, but for these analyses we still need to set up quadrats - square or rectanuglar areas that will serve as sample units for calculating different types of quadrat variance. Our goal in this step is to set up quadrats and get information about our data associated with each quadrat (e.g., number of trees).  We will do this using the 'Grid Data' tool in the 'Create' tab of PASSaGE. 
+
+
+![](../Assignment_Images/Passage_GridDataIcon.png)\
+
+
+
+In the window that appears, you will have to specify a few things (see the following image for an example):
+
+  1) Which set of coordinates you want to use, if you've brought in more than one set already.
+  2) The number of quadrats or dimensions.
+    
+    * We will specify the dimensions. We know the width is 20 feet, so we can simply make the quadrats square (20 x 20).
+  
+  3) Leave the Format set to 'Column' and rename the output to match your dataset
+  4) You will leave Type set to 'Point Count'.  If you dataset had additional fields (e.g, diameter a breast height, you could potentially calculate the summary statistics too, for each quadrat.)
+
+
+![](../Assignment_Images/Passage_GridDataWindow.png)\
+
+
+After everything is set as desired, click "OK". You will then see the newly created datasets in the Data Monitor. In the example above, the 'quru2011' is a grid, which is similar to a Raster layer in GIS - you can use the 'Draw Surface' tool (in the 'Draw' tab) to visualize this. The 'quru2011_Coords'data is the center coordinates of each quadrat. 
+
+In the Output window you will see text describing everything that you have done to this point. You can also save everything you've done by clicking the icon on at the upper-left of the program and selecting 'Save Workspace'. This will save all files as '\*.pfd' files, and a '\*.pfw', which, if you load in the future, will automatically bring in the respective .pfd files.
+
+# Quadrat Variance Analyses
+
+Now that we have the quadrats set up with counts for our datasets, we can run quadrat variance analyses. Click on the 'Analysis' tab (not 'Analysis 2'), then click on the 'QuadVar' icon, and select 'Quadrat Variance Methods'.
+
+
+![](../Assignment_Images/Passage_QuadVar.png)\
+
+
+
+There are a few things you'll want to specify here - they are briefly described below, but I suggest looking at the Help - if nothing else, take a quick look to see the kind of useful details it gives. For these analyses and data you can set things up as illustrated in the following image (and described  below).
+
+![](../Assignment_Images/Passage_QuadVarWindow.png)\
+
+
+  1) The 'Analysis Dimensions' will be 'Transect'. 
+  2) The Data Matrixis the data that you want to analyze - in this case 'quru2011', which is the count of  *Quercus rubrum* by quadrat in 2011.
+  3) Select the method you want to use - for the questions below, you'll want to use PQV, TTLQV, and 3TLQV.
+  4) Set the 'Maximum Scale (%)' to 50 - this will have the analysis use block sizes and distances for the respecive analyses of up to 1/2 the number of quadrats. (For three-term methods (e.g., 3TLQV), the maximum available will be 33%). It may be easier to adjust this with the slider bar under 'Scale'.
+  5) Set the 'Scaling Factor' to 20. This effectively specifies that the quadrats are 20 units long, and thus when the results are presented, it will based on the native units (feet), rather than the number of quadrats.
+  
+
+
+After clicking "OK" to run the analysis, a results figure will appear, which you can right-click on to save, and copy. You can adjust the formatting by right-clicking and selecting 'Format'.
+
+***To run quadrat covariance analysis, use the 'Quadrat Covariance Methods' when you click the 'QuadVar' icon, then select the two datasets you want to compare and set the other options as appropriate, following the previous examples.***
+
+# Assignment Questions
+
+## Quadrat Variance questions:
+
+*Feel free to include result plots, or simple plots of the data, and annotate them with any explanatory notes you feel necessary. If it aids in your interpretation, check the appropriate boxes to run the randomization tests.*
+
+1) Run TTLQV, 3TLQV, and PQV for *Quercus rubrum* for 1969 for our 'transect'. Which analyses, if any, show a clear pattern for this species in this year? If there is a pattern, at what scale (in feet)?
+
+1) Run TTLQV, 3TLQV, and PQV for *Acer rubrum* for 1969 for our 'transect'. Which analyses, if any, show a clear pattern for this species in this year? If there is a pattern, at what scale (in feet)?
+
+3) Does the 3TLQV seem to make a difference vs. TTLQV for either of these datasets?
+
+4) Run quadrat covariance analyses for *Acer rubrum* and *Quercus rubrum* for 1969. Does there appear to be a clear relationship (association or dissociation) among the two focal species? Remember - positive covariance indicates the species are associated with one-another and negative coveriance indicates the species tend to be separated from one-another.
+
+5) Run quadrat covariance analyses for *Acer rubrum* and *Quercus rubrum* for 2011. Did the general relationships between these two species change from 1969-2011? If so, in what way?
+
+6) Select any of these datasets and any of these quadrat variance techniques, and create a new grid (i.e. quadrats) - keep the x-dimensions set to 20, but change the y-dimensions to 5. This will create wide, short quadrats. What effect, if any, does this have on your result? Specify which dataset you changed and which quadrant variance methods you used.
+
+7) Though quadrat variance techniques have the benefit of requiring much less data than a complete census, there are likely some downsides. Describe a potential shortcoming of these techniques in a sentence or two.
+
+## Working with your data in R:
+
+8) Import your data into R - show that you've done this by copying and pasting either the 'head' or 'structure' of your dataset. If you have a question you are actually interested in answering, describe it briefly here.
+
+9) Make a histogram of a continuous variable that you have.
+
+10) Plot two variables against one another, as you've done for previous assignments. If you only have one continuous variable and the other is a factor variable, present boxplots - one for each group.
+
