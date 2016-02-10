@@ -34,7 +34,7 @@ You can download the dataset, store it locally and load it into R, as you did in
 
 ```{r, eval=FALSE}
 #use 'setwd([Folder Path])' to set your working directory.
-HTrees <- read.csv("http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-02-tree.csv")
+HTrees <- read.csv("http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-01-tree.csv")
 ```
 
 To simulate a transect through part of the study area, we will only consider trees in a small strip, 20 feet wide,from x-coordinates 20 to 40, running North/South throughout the study area. We'll consider two common tree species, *Acer rubrum* and *Quercus rubrum*, and two focal years - 1969 (when the area was first censused) and 2011 (the most recent census).

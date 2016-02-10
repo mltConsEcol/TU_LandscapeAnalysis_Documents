@@ -171,7 +171,7 @@ $(document).ready(function () {
 <h1>Setting Up and Exporting Sample Data in R</h1>
 <p>You can download the dataset, store it locally and load it into R, as you did in the <a href="../Assignments_web/Assignment03_DataImport_Regress_RipleysK.html">previous lab</a>. Alternatively, for datasets stored online, you can actually import them directly by using the appropriate import command and using the url of the dataset. For this lab we’ll import the data and assign it to ‘HTrees’. It is good practice to set your working directory to your desired folder, so do that too.</p>
 <pre class="r"><code>#use 'setwd([Folder Path])' to set your working directory.
-HTrees &lt;- read.csv(&quot;http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-02-tree.csv&quot;)</code></pre>
+HTrees &lt;- read.csv(&quot;http://harvardforest.fas.harvard.edu/data/p03/hf032/hf032-01-tree.csv&quot;)</code></pre>
 <p>To simulate a transect through part of the study area, we will only consider trees in a small strip, 20 feet wide,from x-coordinates 20 to 40, running North/South throughout the study area. We’ll consider two common tree species, <em>Acer rubrum</em> and <em>Quercus rubrum</em>, and two focal years - 1969 (when the area was first censused) and 2011 (the most recent census).</p>
 <p>We will subset the data individually for each species and each year - we only need the coorinates of the trees, so we will use the ‘select’ argument in the subset funtion to specify these columns:</p>
 <pre class="r"><code># Acer rubrum documented in transect in 1969

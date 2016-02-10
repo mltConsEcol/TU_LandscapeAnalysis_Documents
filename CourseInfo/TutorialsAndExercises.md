@@ -15,3 +15,5 @@ date:
 * [Getting Started with R](./Assignments_web/Assignment02_IntroToR.html)
 
 * [Doing more with R: Scripts in R, Introduction to Statistical Models, and Ripley's K Analysis](./Assignments_web/Assignment03_DataImport_Regress_RipleysK.html)
+
+* [Quadrat Variance Analyses: Setting up Sample Data in R and Carrying out Analysies in PASSaGE 2](./Assignments_web/Assignment04_QuadratVarianceAnalysis.html)
