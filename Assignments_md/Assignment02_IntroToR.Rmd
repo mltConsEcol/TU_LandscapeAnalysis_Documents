@@ -74,7 +74,7 @@ Typing any item listed by that function will display that entire dataset.
 
 Note that the 'c' before the list of numbers above is actually a function. So in this case, the function is being used to define the assignment (i.e, what is being called vector1). Functions precede opening parentheses, and have various arguments, depending on the specific function. To see specifics for a function, simply type help([function name]), as with this:
 
-```{r, results='hide'}
+```{r, eval=FALSE}
 help(c)
 ```
 
@@ -132,7 +132,7 @@ You can also plot two variables together.
 
 There are some datasets you can play around with, built into R. To see what they are, type the command below and hit enter/return.
 
-```{r, results='hide'}
+```{r, eval=FALSE}
 data()
 ```
 

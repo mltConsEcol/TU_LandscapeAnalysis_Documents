@@ -135,8 +135,21 @@ date:
 
 #### Feb. 11, 2016
 
+* Agenda
+	* Complete Population Data: Raster Datasets
+	* An Introduction to [Fragstats](http://www.umass.edu/landeco/research/fragstats/fragstats.html)
+	* Landscape and Class Metrics
+
 #### Feb. 16, 2016
 
+***[Assignment 4 Due](./Assignments_web/Assignment04_QuadratVarianceAnalysis.html)***
+
+* Readings:
+	* [McIntyre, N.E. and J.A. Wiens. 2000. A novel use of the lacunarity index to discern landscape function. *Landscape Ecology* 15, 313-321.](http://link.springer.com/article/10.1023/A:1008148514268#)
+* Agenda
+	* Discuss Reading Material
+	* Patch Metrics
+	* Surface Metrics
 
 ### Week 6: Quantifying Landscape Configuration: Lab<a id="week-06"></a>
 
