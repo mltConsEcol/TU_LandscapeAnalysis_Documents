@@ -17,3 +17,5 @@ date:
 * [Doing more with R: Scripts in R, Introduction to Statistical Models, and Ripley's K Analysis](./Assignments_web/Assignment03_DataImport_Regress_RipleysK.html)
 
 * [Quadrat Variance Analyses: Setting up Sample Data in R and Carrying out Analysies in PASSaGE 2](./Assignments_web/Assignment04_QuadratVarianceAnalysis.html)
+
+* [Quantifying Landscape Pattern Part 1 - Patch-Mosaic Data: Setting up Sample Data in QGIS, Carrying out Analysies in FRAGSTATS, and working with Results in R](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html)
