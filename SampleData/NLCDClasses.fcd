@@ -1,0 +1,13 @@
+ID, Name, Enabled, IsBackground
+11, OpenWater			, true, false
+20, Developed			, true, false
+31, Barren				, true, false
+41, DeciduousForest		, true, false
+42, EvergreenForest		, true, false
+43, MixedForest    		, true, false
+52, Shrub				, true, false
+71, Grassland			, true, false
+81, Pasture  			, true, false
+82, Crops    			, true, false
+90, WoodyWetlands		, true, false
+95, EmergentHerbWetlands, true, false
