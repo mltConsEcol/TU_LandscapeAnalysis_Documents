@@ -51,7 +51,7 @@ Though R was developed for statistical computing, the R can be used for a wide v
 We will do some minor data preparation, similar to as we did in Part 1, but this time we will use R instead of QGIS, to highlight some of what we can do in R. In your own work, you can use the tools of your preference, both are powerful and have their own advantages (e.g., R is a simple language to program and script your work in, but might take more work to figure out commands and can be slower for big datasets; QGIS has a GUI (graphical user interface) and is fast for processing, but programming/scripting requires learning another language, Python).
 
 Our analyses will focus on the 30 meter [National Elevation Dataset](http://ned.usgs.gov/) for the same areas as we used in Part 1 (near Catoosa and Claremore, Oklahoma, USA). 
-    * An appropriate 1 x 1 degree tile (tile n36w096) is available on the Harvey website for this class and [here](../SampleData/n37w096.zip) as a .img file.
+    * An appropriate 1 x 1 degree tile (tile n36w096) is available on the Harvey website for this class and [here](../SampleData/DEMn37w096.zip) as a .img file.
       * You should un-zip the file and place it in your preferred file location before conducting analyses.
       * You can also download this layer from from [The National Map Viewer](http://viewer.nationalmap.gov/viewer/). 
     
