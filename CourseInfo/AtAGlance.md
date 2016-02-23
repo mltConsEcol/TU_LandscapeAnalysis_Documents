@@ -16,7 +16,7 @@ This table highlights important dates, with dates for reading discussions and da
 |**Feb. 9**		|[Kelly et al. 2008](http://link.springer.com/article/10.1007/s10310-008-0083-7)| [Assignment 3: Ripley's K and more in R](./Assignments_web/Assignment03_DataImport_Regress_RipleysK.html) ([PDF](./Assignments_web/Assignment03_DataImport_Regress_RipleysK.pdf))	|
 |**Feb. 16**	|[McIntyre and Wiens 2000](http://link.springer.com/article/10.1023/A:1008148514268#)| [Assignment 4: Quadrat Variance Analysis](./Assignments_web/Assignment04_QuadratVarianceAnalysis.html) ([PDF](./Assignments_web/Assignment04_QuadratVarianceAnalysis.pdf))	|
 |**Feb. 23**	|TBA| Take Home Exam 1	|
-|**Mar. 1**		|TBA| Assignment 5 [Part 1](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html)([PDF](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.pdf))	|
+|**Mar. 1**		|TBA| Assignment 5 [Part 1](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html) ([PDF](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.pdf))/[Part 2](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.html) ([PDF](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.pdf))	|
 |**Mar. 8**		|TBA| Assignment 6	|
 |**Mar. 22**	|TBA| Assignment 7	|
 |**Mar. 29**	|TBA| Project Proposal	|
