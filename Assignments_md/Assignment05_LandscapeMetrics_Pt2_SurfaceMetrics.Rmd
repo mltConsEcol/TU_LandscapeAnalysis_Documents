@@ -41,7 +41,7 @@ output: html_document
 
 In its current version, FRAGSTATS is a powerful tool for working with categorical raster layers. Though planned future versions will calculate surface metrics  for continuous rasters (described in the [McGarigal et al. 2009](http://link.springer.com/article/10.1007%2Fs10980-009-9327-y) paper listed above), this feature is not currently implemented. Surface metrics can allow you to characterize landscapes (and patches) according to continuous variables (e.g., elevation, slope, percent canopy cover, percent Software designed to calculate surface metrics can be expensive, though we can calculate some metrics pretty easily using [R](http://www.r-project.org/). We will only focus on a couple here, but this lab will also familiarize you with working with raster datasets in R.
 
-Though R was developed for statistical computing, the R can be used for a wide variety of tasks, and it can integrate with other languages. Thus, myriad packages have been developed for importing data of various formats, and manipulating them in countless ways. For working with spatial data in particular, numerous packages are available, generally outlined in this Task View: [http://cran.r-project.org/web/views/Spatial.html](http://cran.r-project.org/web/views/Spatial.html). For this lab we will use the 'raster' package and s ome dependencies:
+Though R was developed for statistical computing, the R can be used for a wide variety of tasks, and it can integrate with other languages. Thus, myriad packages have been developed for importing data of various formats, and manipulating them in countless ways. For working with spatial data in particular, numerous packages are available, generally outlined in this Task View: [http://cran.r-project.org/web/views/Spatial.html](http://cran.r-project.org/web/views/Spatial.html). For this lab we will use the 'raster' package and some dependencies/suggestions:
   * [rgdal](http://cran.r-project.org/web/packages/rgdal/); 
   * [raster](http://cran.r-project.org/web/packages/raster/); and 
   * [rgeos](http://cran.r-project.org/web/packages/rgeos/). 
@@ -73,11 +73,12 @@ For example, for the raster package, use this code:
 install.packages('raster') 
 
 #To install multiple packages at once, follow this example:
-install.packages(c('raster', 'rgeos'))
+install.packages(c('raster', 'rgeos', 'rgdal'))
 
 #To load packages (must be done individually for each package; when a package has dependencies, the dependencies will be loaded when you load the main package you are loading):
 library(raster)
 library(rgeos)
+library(rgdal)
 ```
 
 
