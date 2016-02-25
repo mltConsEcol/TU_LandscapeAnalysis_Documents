@@ -155,16 +155,28 @@ date:
 
 #### Feb. 18, 2016
 
+* Agenda
+	* Work on [Part 1 of Lab - Patch-Mosaic Analysis](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html)
+
 #### Feb. 23, 2016
 
+* Agenda
+	* Work on [Part 2 of Lab - Surface Analysis](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.html)
 	
 ### Week 7: Testing for Spatial Autocorrelation (Moran's *i* and Geary's *c*)<a id="week-07"></a>
 
 #### Feb. 25, 2016
 
+* Agenda
+	* Lecture about Join Count Analysis and Testing for Spatial Autocorrelation
+
 #### Mar. 1, 2016
 
+***Assignment 5 Due - [Part 1](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html) and [Part 2](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.html)***
 
+* Readings
+	* Discuss [Bone et al. 2013](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
+	* Work on Lab Exercise
 
 ### Week 8: Multivariate Spatial Relationships<a id="week-08"></a>
 
