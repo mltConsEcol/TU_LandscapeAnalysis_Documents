@@ -17,7 +17,7 @@ This table highlights important dates, with dates for reading discussions and da
 |**Feb. 16**	|[McIntyre and Wiens 2000](http://link.springer.com/article/10.1023/A:1008148514268#)| [Assignment 4: Quadrat Variance Analysis](./Assignments_web/Assignment04_QuadratVarianceAnalysis.html) ([PDF](./Assignments_web/Assignment04_QuadratVarianceAnalysis.pdf))	|
 |**Feb. 23**	|TBA| Take Home Exam 1	|
 |**Mar. 1**		|[Bone et al. 2013](http://www.sciencedirect.com/science/article/pii/S0143622813000623)| Assignment 5 [Part 1](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html) ([PDF](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.pdf))/[Part 2](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.html) ([PDF](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.pdf))	|
-|**Mar. 8**		|TBA| Assignment 6	|
+|**Mar. 8**		|TBA| [Assignment 6: Autocorrelation](./Assignments_web/Assignment06_Autocorrelation.html) ([PDF](./Assignments_web/Assignment06_Autocorrelation.pdf))	|
 |**Mar. 22**	|TBA| Assignment 7	|
 |**Mar. 29**	|TBA| Project Proposal	|
 |**Apr. 5**		|TBA| Assignment 8	|
