@@ -9,7 +9,7 @@ output: html_document
 LandscapeAnalysis_Documents/Assignments_web/Assignment06_Autocorrelation.html](http://mltconsecol.github.io/TU_
 LandscapeAnalysis_Documents/Assignments_web/Assignment06_Autocorrelation.html)*
 
-**Due Date: Tuesday, 8 March 2015**
+**Due Date: Tuesday, 8 March 2016**
 
 ***PLEASE WRITE YOUR NAME ON YOUR ANSWER DOCUMENT***
 
