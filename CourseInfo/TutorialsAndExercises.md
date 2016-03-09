@@ -23,3 +23,5 @@ date:
 * [Quantifying Landscape Pattern Part 2 - Surface Metrics: Intro to Working with Rasters in R and Calculating Basic Surface Metrics](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.html)
 
 * [Join Count Analysis and Spatial Autocorrelation Metrics in R](./Assignments_web/Assignment06_Autocorrelation.html)
+
+* [Accounting for Spatial Autocorrelation](./Assignments_web/Assignment07_Mantel_SpRegress.html)

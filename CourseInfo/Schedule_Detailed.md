@@ -174,7 +174,7 @@ date:
 
 ***Assignment 5 Due - [Part 1](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html) and [Part 2](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.html)***
 
-* Readings
+* Agenda
 	* Discuss [Bone et al. 2013](http://www.sciencedirect.com/science/article/pii/S0143622813000623)
 	* Work on Lab Exercise
 
@@ -182,16 +182,32 @@ date:
 
 #### Mar. 3, 2016
 
+*Agenda
+	* Lecture about Variograms, Mantel Tests, Spatial Regression (GLS)
+
 #### Mar. 8, 2016
 
+***[Assignment 6 Due](./Assignments_web/Assignment06_Autocorrelation.html)***
+
+* Agenda
+	* Discuss [Perez et al. 2010](http://www.sciencedirect.com/science/article/pii/S0047248410001612)
+	* Work on [Lab Assignment 7](./Assignments_web/Assignment07_Mantel_SpRegress.html)
 
 ### Week 9: Species Distribution Models: Lecture<a id="week-09"></a>
 
 #### Mar. 10, 2016
 
+* Agenda
+	* Lecture about Species Distribution Modeling
+
 
 #### Mar. 22, 2016
 
+***[Assignment 7 Due](./Assignments_web/Assignment07_Mantel_SpRegress.html)***
+
+* Agenda
+	* Discuss [Kearney et al. 2010](http://onlinelibrary.wiley.com/doi/10.1111/j.1755-263X.2010.00097.x/abstract)
+	* Continued Lecture on Species Distribution Modeling
 
 ### ***Spring Break - Have Fun! (And start getting data together for projects!)*** 	
 
