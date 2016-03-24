@@ -5,9 +5,7 @@ date: "Material for Lab 8 of Landscape Analysis and Modeling, Spring 2015"
 output: pdf_document
 ---
 
-*This document, with active hyperlinks, is available online at:[http://mltconsecol.github.io/TU_
-LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html](http://mltconsecol.github.io/TU_
-LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html)*
+*This document, with active hyperlinks, is available online at:[http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html)*
 ***Questions Associated with this Lab will be given on Tuesday (Due the following Tuesday, 2 April 2015); For now, just work through this material - look at the figures that are being created and think about what is going on.***
 
 
