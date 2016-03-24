@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 *.Rproj
+Bioclim_Tile12/
+County_Boundary/
+SanDiego_1ArcSecondDEM_NED.tif
