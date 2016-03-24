@@ -1,7 +1,7 @@
 ---
 title: "Species Distribution Modeling"
 author: "Michael L. Treglia"
-date: "Material for Lab 8 of Landscape Analysis and Modeling, Spring 2015"
+date: "Material for Lab 8 of Landscape Analysis and Modeling, Spring 2016"
 output: pdf_document
 ---
 
