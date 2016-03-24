@@ -6,6 +6,6 @@ R -e "rmarkdown::render('../Assignments_md/Assignment08_SpeciesDistributionModel
 
 cat html_head_Down1Dir.html Assignment08_SpeciesDistributionModeling_Pt1_tmp.html html_foot.html > ../Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html;
 
-rm Assignment08_SpeciesDistributionModeling_Pt1.html;
+rm Assignment08_SpeciesDistributionModeling_Pt1_tmp.html;
 
 R -e "rmarkdown::render('../Assignments_md/Assignment08_SpeciesDistributionModeling_Pt1.Rmd', 'pdf_document', output_file='../Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.pdf')";

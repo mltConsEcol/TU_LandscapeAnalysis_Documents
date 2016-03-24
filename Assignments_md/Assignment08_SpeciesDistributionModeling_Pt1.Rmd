@@ -31,7 +31,7 @@ There are lots of other R packages available for species distribution modeling, 
 library(raster)
 library(biomod2)
 library(rgdal)
-setwd("../SampleData/")
+setwd("../SampleData/SDM_Data")
 ```
 
 #Data Sources
@@ -44,7 +44,12 @@ Though there are numerous sources for occurrence data, it can be difficult to ac
 
 Given a lack of verifiable absence data, alternative such as 'pseudo-absences' are often used, in which points without locality records are used in place of absences. Various strategies are available for selecting pseudo-absence points, as discussed in lecture.
 
-***For this lab we will focus on locality data for Least Bell's Vireo (*Molothrus ater obscurus*) from VertNet. Go to [http://vertnet.org/](http://vertnet.org/), and from the homepage search for data for this species - use the scientific name. It is often useful to put species names in quotes, to ensure the search only returns results for the species of interest. If you are aware of taxonomic synonyms for a species (i.e., multiple scientific names have been assigned to a species through time), you should check for synonyms. Since we are focusing this work on San Diego County, you can use the Advanced Search Options to specify that. Also check the box for "is mappable" to designate that you need only records with spatial coordinate information. Once you have the search completed, click the link towards the top of the results page to download the data; the file will download as a tab-delimited text file (.txt).***
+***For this lab we will focus on locality data for Least Bell's Vireo (*Molothrus ater obscurus*) from VertNet. Go to [http://vertnet.org/](http://vertnet.org/), and from the homepage search for data for this species - use the scientific name. It is often useful to put species names in quotes, to ensure the search only returns results for the species of interest. If you are aware of taxonomic synonyms for a species (i.e., multiple scientific names have been assigned to a species through time), you should check for synonyms (You don't need to worry about that for this lab). Since we are focusing this work on San Diego County, you can use the Advanced Search Options option to specify that. Also check the box for "is mappable" to designate that you need only records with spatial coordinate information. Your search window should look something like the image below:***
+
+![](../Assignment_Images/Lab8_Pt1_Search.png)\
+
+
+***Once you have the search completed, click the link towards the top of the results page to download the data; the file will download as a tab-delimited text file (.txt).***
 
 
 ##Predictor Variables
@@ -74,7 +79,7 @@ With all of the required data downloaded, we have some processing steps to do.
 
 First, we will import the points for Least Bell's Vireo - this will be similar to as you have done for importing points of spatial data in previous labs. Make sure your working directory is set appropriately, and then we will use the 'read.table' function as shown below. This file had some unusual formatting, so I had to try some different things, and ended up with the code below. This should generally work for importing data from VertNet. We'll name the dataset in R 'bell'.
 
-```{r, tidy=TRUE}
+```{r, tidy=TRUE, eval=FALSE}
 #Set working directory with 'setwd(...)'
 bell <- read.table("M_ater_obscurus.txt", sep='\t', header=TRUE, fill=TRUE, quote="")
 #Adjust the file name to match what you named it
@@ -83,9 +88,9 @@ bell <- read.table("M_ater_obscurus.txt", sep='\t', header=TRUE, fill=TRUE, quot
 #quote="" Excludes characters in quotes
 ```
 
-What we really care about is the latitude and longitude of the points, and we onlyh want unique points. Thus, we can reduce the dataset as follows:
+What we really care about is the latitude and longitude of the points, and we only want unique points. Thus, we can reduce the dataset as follows:
 
-```{r, tidy=TRUE}
+```{r, tidy=TRUE, eval=FALSE}
 #Reduce the dataset to latitude and longitude
 bell <- bell[,c("decimallongitude", "decimallatitude")] 
 bell <- na.omit(bell) #Remove any values where latitude or longitude coordinates are NA
@@ -94,7 +99,7 @@ bell <- unique(bell) #Only keep unique values - removes duplicate rows
 
 Now we need to convert this to something that R sees as a Spatial Object - since all we have is coordinates, with no additional data, a SpatialPoints object will work (SpatialPointsDataFrames have additional data associated with them, as we used with the Harvard Forest dataset). Since we'll be dealing with multiple datasets and may have to adjust projections, we will have to define the projection - the data are in latitude/longitude coordinates in the WGS84 datum, thus we will assign the projection using the 'proj4string' as shown below (the corresponding EPSG code is 4326).
 
-```{r, tidy=TRUE}
+```{r, tidy=TRUE, eval=FALSE}
 bell.sp <- SpatialPoints(cbind(bell$decimallongitude, bell$decimallatitude))
 proj4string(bell.sp) <- "+proj=longlat +datum=WGS84 +no_defs"
 ```
@@ -274,7 +279,7 @@ myRespPlot2D <- response.plot2(models = models1.resp,
                                data_species = get_formal_data(models1,'resp.var'))
 ```
 
-![](./Images/Lab8_RF_ResponseCurves.png)\
+![](../Assignment_Images/Lab8_RF_ResponseCurves.png)\
 
 We can also make projections of sites likely to be suitable for our focal species, based on the statistical models we developed with biomod2.
 
