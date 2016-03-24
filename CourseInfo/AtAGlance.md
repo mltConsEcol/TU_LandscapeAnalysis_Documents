@@ -20,7 +20,7 @@ This table highlights important dates, with dates for reading discussions and da
 |**Mar. 8**		|[Perez et al. 2010](http://www.sciencedirect.com/science/article/pii/S0047248410001612)| [Assignment 6: Autocorrelation](./Assignments_web/Assignment06_Autocorrelation.html) ([PDF](./Assignments_web/Assignment06_Autocorrelation.pdf))	|
 |**Mar. 22**	|[Kearney et al. 2010](http://onlinelibrary.wiley.com/doi/10.1111/j.1755-263X.2010.00097.x/abstract)| [Assignment 7](./Assignments_web/Assignment07_Mantel_SpRegress.html)	|
 |**Mar. 29**	|TBA| [Project Proposal](./Assignments_web/ProjectProposalGuidelines.pdf)	|
-|**Apr. 5**		|TBA| Assignment 8	[Part 1](./Assignments_web/Assignment08_SpeciesDistributionMOdeling_Pt1.html)|
+|**Apr. 5**		|TBA| Assignment 8	[Part 1](./Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html)|
 |**Apr. 12**	|TBA| Assignment 9	|
 |**Apr. 19**	|TBA| Assignment 10	|
 |**Apr. 21**	|TBA| Project Presentations	|
