@@ -182,7 +182,7 @@ plot(bell.sp.bioclim, add=T) #plot the locality points
 plot(sdbound.bioclim, add=T) #plot the San Diego County boundary.
 ```
 
-![](./Images/Lab8_Pt1_PointsoverRaster.png)\
+![](../Assignment_Images/Lab8_Pt1_PointsoverRaster.png)\
 
 
 #Running Species Distribution Models
@@ -232,17 +232,18 @@ It will look somewhat messy, but these are the fit-statistics for each model typ
 
 ```{r, tidy=TRUE, eval=FALSE}
 , , GLM, Full, PA1
+
       Testing.data Cutoff Sensitivity Specificity
-KAPPA        0.592  563.0      74.194      84.848
-TSS          0.590  563.0      74.194      84.848
-ROC          0.875  570.5      74.194      87.879
+KAPPA        0.586  309.0      96.429      62.712
+TSS          0.591  309.0      96.429      62.712
+ROC          0.877  430.5      83.929      76.271
 
 , , RF, Full, PA1
 
       Testing.data Cutoff Sensitivity Specificity
-KAPPA        0.969    532         100       96.97
-TSS          0.970    532         100       96.97
-ROC          0.998    535         100       96.97
+KAPPA        0.983    464      98.214      98.305
+TSS          0.982    464      98.214      98.305
+ROC          0.999    465      98.214     100.000
 ```
 
 
@@ -254,7 +255,7 @@ gg1 <- models_scores_graph(models1, by = 'models', metrics = c('ROC','TSS') )
 
 The result will look something like the image below - the x-axis is the Area Under the Receiver Operating Curve (AUC; ranges 0.5-1.0; higher values are better). The y-axis is the True Skill Statistic, which ranges -1 to 1 (again, higher values are better). Thus, models with performance statistics closer to the top-right corner of the graph are performing better.  The bars around the central point for each model type give an indiciation of how much variation there was among model runs - Random Forests (RF) seems to have performed the best..
 
-![](./Images/Lab8_ModelScoresGraph.png)\
+![](../Assignment_Images/Lab8_ModelScoresGraph.png)\
 
 
 You can also view variable response curves (e.g., Partial Dependence Plots for machine learning techniques). Since Random Forests seemed to perform the best, lets look at those models:
@@ -277,7 +278,6 @@ myRespPlot2D <- response.plot2(models = models1.resp,
 
 We can also make projections of sites likely to be suitable for our focal species, based on the statistical models we developed with biomod2.
 
-models1
 ```{r, tidy=TRUE, eval=FALSE}
 #This first set of code does the projecting 
 #(selected.models="all" does one projection for each model)
@@ -294,9 +294,7 @@ LeastBellVireo.projections <- BIOMOD_Projection(modeling.output = models1,
 plot(LeastBellVireo.projections, str.grep="RF")
 ```
 
-![](./Images/Lab8_RF_Projections_LBV.png)\
+![](../Assignment_Images/Lab8_RF_Projections_LBV.png)\
 
 
-As much material as we've covered so far, there's even a lot more to species distribution modeling... the field is constantly expanding!
-
-
+As much material as we've covered so far, there's even a lot more to species distribution modeling... the field is constantly expanding! We'll see some more in the second part of this lab, next week.
