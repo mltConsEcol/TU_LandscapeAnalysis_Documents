@@ -234,7 +234,7 @@ projections.RF.mean <- projections.RF.mean/1000
 
 
 
-#Optional and Extra Material
+# **Optional and Extra Material**
 
 *Note: The following steps will require additional packages installed:*
 
