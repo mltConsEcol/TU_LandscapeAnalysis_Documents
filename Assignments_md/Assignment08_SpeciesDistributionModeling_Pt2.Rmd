@@ -1,33 +1,33 @@
 ---
 title: "Species Distribution Modeling - Part 2"
 author: "Michael L. Treglia"
-date: "Material for Lab 8  - Part 2 - of Landscape Analysis and Modeling, Spring 2015"
+date: "Material for Lab 8  - Part 2 - of Landscape Analysis and Modeling, Spring 2016"
 output: pdf_document
 ---
 
-*This document, with active hyperlinks, is available online at:[https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab8_SpeciesDistributionModeling_Pt2.Rmd)*
+*This document, with active hyperlinks, is available online at: [http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt2.html](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt2.html)*
 
-**Due Date: Thursday, 2 April 2015**
+**Due Date: Thursday, 5 April 2016**
 
 ***PLEASE WRITE YOUR NAME ON YOUR ANSWER DOCUMENT***
 
 #Questions
 
-1) In the distribution models for Least Bell's Vireo, developd in this lab, we only looked at long-term climate related variables and elevation. Name two other variables or types of that might be important for a species' distribution across the long-term (i.e., what variables might be useful in identifying sites that could have served as habitat at some point, or could potentially be used to create habitat into the future?) Give a brief explanation of why.
+1) In the distribution models for Part 1 of this lab, we only looked at long-term climate related variables and elevation. Name two other variables or types of that might be important for a species' distribution across the long-term time span (i.e., intrinsic characteristics of the landscape - not dynamic variables like land cover?) Give a brief explanation of why.
 
-2) If you were trying to inform current conservation efforts for the Least Bell's Vireo, name two variables might be particularly important to include in distribution models to understand how anthropogenic changes to the landscape influence patterns of the species' occurence - give a brief explanation.
+2) If you were trying to inform current management for a species, name two variables might be particularly important to include in distribution models to understand how anthropogenic changes to the landscape influence patterns of the species' occurence - give a brief explanation.
 
 3) Run the distribution models as described in Part 1 of the lab. Which algorithms appear to perform the best? Which appear to perform the worst?
 
-4) Look at the response curves for the models you just developed, for the best-performing algorithm. Are there any clear patterns in how the probability of presence changes along environmental gradients? Indicate which variable seems to show the strongest pattern - don't give just the abbreviation, but look up the information on Bioclim layers to figure out what that variable means.
+4) Look at the response curves for the models from Part 1 of the lab, for the best-performing algorithm. Are there any clear patterns in how the probability of presence changes along environmental gradients? Indicate which variables seems to show the strongest pattern - don't give just the abbreviation, but look up the information on Bioclim layers to figure out what those variables means.
 
 
 5) Make projections of the species' distribution back to the current landscape conditions. 
 
-    a) Paste maps from the best- and worst- performing algorithms into your answers. (You can include all model runs).
+    a) Paste maps from the best- and worst-performing algorithms into your answers. (You can include all model runs if that is easier).
     b) Are there any clear differences? Does one algorithm seem to be predicting more habitat than the other?
 
-6) Run the distribution models again, assigning them to a different name, but use a reduced set of variables, avoiding highly correlated variables. Which models appear to be performing the best and worst? 
+6) Run the distribution models again, assigning them to a different name, but use a reduced set of variables (as described in this document), avoiding highly correlated variables. Which models appear to be performing the best and worst? 
 
 7) Look at the response curves, for the same algorithm that performed best with all variables included, but with the reduced variable set. How do the response curves for the variables kept in the models differ vs. the ones you looked at in question 4? 
 
@@ -38,7 +38,7 @@ output: pdf_document
     a) In general, did models perform better or worse with all variables included? Why do you think you are seeing this result?
     b) For what ecological/conservation/evolutionary questions might you prefer to use all variables vs. only a selected set of variables? You can give an example of a scientific question you might be trying to answer with the different sets of variables.
 
-10) Look into the help file for BIOMOD_Modeling in R (Or look in the PDF documentation, here: [http://cran.r-project.org/web/packages/biomod2/biomod2.pdf](http://cran.r-project.org/web/packages/biomod2/biomod2.pdf)). List two other algorithms that can be implemented in this package. 
+10) Look into the help file for the BIOMOD_Modeling function in R (Or look in the PDF documentation, here: [http://cran.r-project.org/web/packages/biomod2/biomod2.pdf](http://cran.r-project.org/web/packages/biomod2/biomod2.pdf)). List two other algorithms that can be implemented in this package. 
 
 
 #Introduction
@@ -47,27 +47,23 @@ In the first part of this lab, we got some practice in simply developing some sp
 
 It is helpful to be able to develop these models on your own, or at least work with parts of the data to do things in particular ways.  For example, it is good practice to evaluate correlation between predictor variables. Additionally, when we have presence-only species datasets, we might want to select pseudo-absences with the same bias as our occurrence data.
 
-We will be working with the sdame datasets as in [part 1](https://github.com/mltConsEcol/TU_LandscapeAnalysis_Documents/blob/master/Assignments/Lab8_SpeciesDistributionModeling.Rmd) of the lab.
+We will be working with the same datasets as in [part 1](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html) of the lab.
 
 In this lab we'll need the following packages:
 
 * sp
 * rgdal
 * raster
-* kernlab
-* ks
-* sm
-* usdm
-* PresenceAbsence
+* biomod2
 
 
 #Import Data and Prepare for Analyses
 
-We will import and process the data the same way we did on Thursday - here is the respective code. (Don't forget to download, unzip, and move the datasets to your preferred working directory).
+We will import and process the data the same way we did on Thursday - here is the respective code. (Don't forget to download, unzip, and move the datasets to your preferred working directory, described in the previous lab, or just start with the same working directory if you still have those data).
 
 
 ```{r, tidy=TRUE, eval=FALSE}
-#Set working directory with 'setwd(...)'
+#Set working directory with 'setwd("[Folder Path Name Here]")'
 
 bell <- read.table("M_ater_obscurus.txt", sep="\t", header=TRUE, fill=TRUE, quote="")
 bell <- bell[,c("decimallongitude", "decimallatitude")] 
@@ -92,21 +88,6 @@ setwd("..")
 ```
 
 
-We'll set up our own pseudo-absence points it can be easier to set these up in the same dataset as the presences (and biomod2 requires that if you are using your own absences or pseudo-absences). Thus, while the presence data are currently a SpatialPoints object, we'll convert it to a SpatialPointsDataFrame, with 1s and 0s in a column of the associated table indicating presence and absence, respectively.
-
-```{r, tidy=TRUE, eval=FALSE}
-#Create a vector, with the same number of values as there are presence points - we'll call it "Presence Absence"
-PresAbs <- rep(1,length(bell.sp.bioclim))
-
-#TUrn the vector into a dataframe
-PresAbs <- as.data.frame(PresAbs)
-
-#Turn the locality points into a SpatialPointsDataFrame - use the 'data' argument to indicate what dataset is getting associated with the points
-bell.sp.bioclim <-SpatialPointsDataFrame(bell.sp.bioclim, data=PresAbs)
-
-#You can view the dataframe associated with the SpatialPointsDataFrame by using the '@' symbol following the name of the SpatialPointsDataFrame
-head(bell.sp.bioclim@data)
-```
 
 #Checking for Collinearity in Predictor Variables
 
@@ -168,83 +149,28 @@ models1.reduced <- BIOMOD_Modeling(LeastBellVireo.ModelData.Red,
                 )
 ```
 
+
 You can now use the commands provided in the first part of this lab to look various aspects of the models results.
 
-
-
-#Creating Pseudo-Absences with Same Bias as Occurrence Data
-
-Though biomod2 has a few options for selecting pseudo-absence data points, one that is not included but has been documented as working well is selecting pseudo-absence locations with the same bias as the occurrence points (see [Phillips et al. 2009. Ecological Applications 19(1):181-197](http://www.esajournals.org/doi/abs/10.1890/07-2153.1) for details).
-
-This code creates pseudo-absences of this sort - there are lots of things that can be adjusted, but gives a good start. This code was adapted from supplementary materials of [Fitzpatrick et al. 2013. Ecosphere 4(5): Article 55](http://www.esajournals.org/doi/abs/10.1890/ES13-00066.1). This involves creating a probability surface for the study area, with a Kernetl Density Estimator (KDE), where higher probability values are assigned to areas with more locality points. Then, pseudo-absences are selected probabilistically, based on that surface. 
-
-***You won't need to implement this in this lab - if you wish to try incorporating it into your final project, I will work with you to try and accomplish this.***
-
-
-```{r, eval=FALSE}
-#First, set up the data
-mask <- PredVars.Reduced[[1]]>-1000 #Create a 'mask'
-#basically just a layer that indicates where cells should be NA
-#You can plot the mask to see what it looks like
-bias <- cellFromXY(mask, bell.sp.bioclim) #Identify which cells have points
-cells <- unique(sort(bias)) #Make sure there are no duplicates in the cell IDs
-kernelXY <- xyFromCell(mask, cells) #Get XY coordinates for the cells, from the mask
-samps <- as.numeric(table(bias)) #Count how many locality points were in the cells
-
-# code to create KDE surface
-KDEsur <- sm.density(kernelXY, weights=samps, display="none")
-KDErast=SpatialPoints(expand.grid(x=KDEsur$eval.points[,1], y=KDEsur$eval.points[,2]))
-KDErast = SpatialPixelsDataFrame(KDErast, data.frame(kde = array(KDEsur$estimate, 
-                                                    length(KDEsur$estimate))))
-KDErast <- raster(KDErast)
-KDErast <- resample(KDErast, mask)
-KDErast <- KDErast*mask #Excludes areas outside the study area based on the Mask layer
-KDEpts <- rasterToPoints(KDErast, spatial=F) #(Potential) PseudoAbsences are created here 
-plot(KDErast) #Plot the KDE to see what it looks like
-
-#Now to sample for Pseuooabsences Presence Data
-a=KDEpts[sample(seq(1:nrow(KDEpts)), size=nrow(bell.sp.bioclim@data), replace=T,
-                prob=KDEpts[,"layer"]),1:2]
-Presence<-data.frame(Presence=rep(0,nrow(a)))
-a.sp<-SpatialPoints(a, proj4string=crs(PredVars.Reduced))
-bell.sp.bioclim@data$PresAbs<-as.numeric(bell.sp.bioclim@data$PresAbs)
-a.spdf<-SpatialPointsDataFrame(a.sp, PresAbs)
-a.spdf$PresAbs <- 0 #Set values for PresAbs column of Absences to 0
-PresAbs.spdf<-rbind(bell.sp.bioclim[1],a.spdf) #Join Presences and Absences into 
-#Single Dataset
-
-#You can plot the results like this
-plot(mask) #Plot the mask layer as a background
-plot(a.spdf, add=T) #Plot the absences
-plot(bell.sp.bioclim, add=T, pch=5) #Plot the Presences
-```
-
-The result should look something like this: 
-
-![](./Images/Lab8_Pt2_PseudoAbsences1.png)\
-
-Then, you can set up and run the models, removing arguments for establishing Pseudo-Absences. You create multiple pseudo-absence datasets, run the models once for each, and then compare the models with different pseudo-absences, and perhaps average them.
-
-To set up the model, here is some sample code:
-
-```{r, eval=FALSE, tidy=TRUE}
-LeastBellVireo.ModelData.Red.PresPseudoAbs1 <- BIOMOD_FormatingData(
-  PresAbs.spdf, 
-  PredVars.Reduced, #Designate you're using the reduced predictor variables
-  resp.name="LeastBellVireo.PresPseudoAbs1", #Name this uniquely
-  )
-```
-
-Then, you can run the models individually using the 'BIOMOD_Modeling' function, adjusting the arguments as you see fit.
 
 #Working with Model Projections
 
 When you create models in biomod2, output from the model is automatically saved to your working directory, in a folder by the name assigned in the argument 'resp.name' in the formatting data step.  When you carry out the projection step, the associated files also get saved into a sub-folder, named as you assigned in the 'proj.name' argument. The files are saved in an R-readable format, comprised of two files - '.grd' and '.gri'.
 
-You can easily re-import these projections as a raster stack - for example, with the models developed in the first part of the lab (on Tuesday), you should be able to import projections using the below code:
+You can easily re-import these projections as a raster stack - for example, with the models developed just above, you should be able to import projections using the below code:
 
 ```{r, tidy=TRUE, eval=FALSE}
-projections <- stack("/LeastBellVireo/proj_current/proj_current_LeastBellVireo.grd")
+## Run the projections based on the reduced variable set
+LeastBellVireo.projections <- BIOMOD_Projection(modeling.output = models1.reduced,
+                                                new.env = PredVars.Reduced, 
+                                                #If you wanted to predict to a different area, or different
+                                                #conditions you would change the above line
+                                                proj.name = 'current',
+                                                selected.models = "all" ,
+)
+
+
+projections <- stack("LeastBellVireo/proj_current/proj_current_LeastBellVireo.grd")
 ```
 
 You can use the 'names' function to see which projection layer corresponds to particular models (e.g, 'names(projectoins)'. You can also do raster-math on these to calculate averages, as below.
@@ -294,7 +220,7 @@ plot(projections.RF.mean)
 plot(bell.sp.bioclim, add=T)
 ```
 
-![](./Images/Lab8_Pt2_RFProjections_LocalityData.png)\
+![](../Assignment_Images/Lab8_Pt2_RFProjections_LocalityData.png)\
 
 
 Note that on the output rasters, the values range from 0 to 1000. That is because the results are stored as integers to save file space. We can convert it to decimal by simply dividing by 1000:
@@ -303,12 +229,110 @@ Note that on the output rasters, the values range from 0 to 1000. That is becaus
 projections.RF.mean <- projections.RF.mean/1000
 ```
 
-##Model Evaluation
-
-As we saw in the previous lab, biomod2 calcualates evaluation statistics such as the area under the receiver operating curve, and true skill statistic. Biomod2 can also be used to calculate average model projections, and to evaluate fit statistics for averaged models. However, it is useful to understand how to do these things outside of biomod2 - there are a few great packages, including ROCR and PresenceAbsence that help with this - we'll work with PresenceAbsence.
+***There is still a lot that can be covered on this subject; as you work through any of this on your own projects, I can provide some guidance. There are various R packages that can be employed in species distribution modeling, from organizing data, to evaluating output. Commonly-used ones are biomod2, dismo, and SDMTools. We started with biomod2 because it lets you easily try out a few different model algorithms. However, other packages for SDMs, or even for the specific algorithms (e.g, randomForests for random forests) can allow for greater customizability. Definitely get into the literature, and explore the resources available on the web as you do this.***
 
 
-Basically, we'll take our final averged output raster, and extract the values for points where we had occurrence data. We'll compare the predictions to the true presences, and the pseudo-absences for now. As mentioned before, it is also good practice to use a separate evaluation dataset if enough are data are available. Just as an example, we'll use the average projections based on the Random Forests algorithm, calculate just prior to this section.
+
+
+#Optional and Extra Material
+
+*Note: The following steps will require additional packages installed:*
+
+  * kernlab
+  * ks
+  * sm
+  * usdm
+  * PresenceAbsence
+
+
+##Creating Pseudo-Absences with Same Bias as Occurrence Data
+
+Though biomod2 has a few options for selecting pseudo-absence data points, one that is not included but has been documented as working well is selecting pseudo-absence locations with the same bias as the occurrence points (see [Phillips et al. 2009. Ecological Applications 19(1):181-197](http://www.esajournals.org/doi/abs/10.1890/07-2153.1) for details).
+
+This code creates pseudo-absences of this sort - there are lots of things that can be adjusted, but gives a good start. This code was adapted from supplementary materials of [Fitzpatrick et al. 2013. Ecosphere 4(5): Article 55](http://www.esajournals.org/doi/abs/10.1890/ES13-00066.1). This involves creating a probability surface for the study area, with a Kernetl Density Estimator (KDE), where higher probability values are assigned to areas with more locality points. Then, pseudo-absences are selected probabilistically, based on that surface. 
+
+Thus, while the presence data were defined as a SpatialPoints object, we'll convert it to a SpatialPointsDataFrame, such that 1s and 0s in a column of the associated table can indicating presence and  (pseudo-)absence, respectively.
+
+```{r, tidy=TRUE, eval=FALSE}
+#Create a vector, with the same number of values as there are presence points - we'll call it "Presence Absence"
+PresAbs <- rep(1,length(bell.sp.bioclim))
+
+#TUrn the vector into a dataframe
+PresAbs <- as.data.frame(PresAbs)
+
+#Turn the locality points into a SpatialPointsDataFrame - use the 'data' argument to indicate what dataset is getting associated with the points
+bell.sp.bioclim <-SpatialPointsDataFrame(bell.sp.bioclim, data=PresAbs)
+
+#You can view the dataframe associated with the SpatialPointsDataFrame by using the '@' symbol following the name of the SpatialPointsDataFrame
+head(bell.sp.bioclim@data)
+```
+
+
+Next, we can create the 'bias surface' and define pseudo-absences from that.
+
+
+```{r, eval=FALSE}
+#First, set up the data
+mask <- PredVars.Reduced[[1]]>-1000 #Create a 'mask'
+#basically just a layer that indicates where cells should be NA
+#You can plot the mask to see what it looks like
+bias <- cellFromXY(mask, bell.sp.bioclim) #Identify which cells have points
+cells <- unique(sort(bias)) #Make sure there are no duplicates in the cell IDs
+kernelXY <- xyFromCell(mask, cells) #Get XY coordinates for the cells, from the mask
+samps <- as.numeric(table(bias)) #Count how many locality points were in the cells
+
+# code to create KDE surface
+KDEsur <- sm.density(kernelXY, weights=samps, display="none")
+KDErast=SpatialPoints(expand.grid(x=KDEsur$eval.points[,1], y=KDEsur$eval.points[,2]))
+KDErast = SpatialPixelsDataFrame(KDErast, data.frame(kde = array(KDEsur$estimate, 
+                                                    length(KDEsur$estimate))))
+KDErast <- raster(KDErast)
+KDErast <- resample(KDErast, mask)
+KDErast <- KDErast*mask #Excludes areas outside the study area based on the Mask layer
+KDEpts <- rasterToPoints(KDErast, spatial=F) #(Potential) PseudoAbsences are created here 
+plot(KDErast) #Plot the KDE to see what it looks like
+
+#Now to sample for Pseuooabsences Presence Data
+a=KDEpts[sample(seq(1:nrow(KDEpts)), size=nrow(bell.sp.bioclim@data), replace=T,
+                prob=KDEpts[,"layer"]),1:2]
+Presence<-data.frame(Presence=rep(0,nrow(a)))
+a.sp<-SpatialPoints(a, proj4string=crs(PredVars.Reduced))
+bell.sp.bioclim@data$PresAbs<-as.numeric(bell.sp.bioclim@data$PresAbs)
+a.spdf<-SpatialPointsDataFrame(a.sp, PresAbs)
+a.spdf$PresAbs <- 0 #Set values for PresAbs column of Absences to 0
+PresAbs.spdf<-rbind(bell.sp.bioclim[1],a.spdf) #Join Presences and Absences into 
+#Single Dataset
+
+#You can plot the results like this
+plot(mask) #Plot the mask layer as a background
+plot(a.spdf, add=T) #Plot the absences
+plot(bell.sp.bioclim, add=T, pch=5) #Plot the Presences
+```
+
+The result should look something like this: 
+
+![](../Assignment_Images/Lab8_Pt2_PseudoAbsences1.png)\
+
+Then, you can set up and run the models, removing arguments for establishing Pseudo-Absences. You create multiple pseudo-absence datasets, run the models once for each, and then compare the models with different pseudo-absences, and perhaps average them.
+
+To set up the model, here is some sample code:
+
+```{r, eval=FALSE, tidy=TRUE}
+LeastBellVireo.ModelData.Red.PresPseudoAbs1 <- BIOMOD_FormatingData(
+  PresAbs.spdf, 
+  PredVars.Reduced, #Designate you're using the reduced predictor variables
+  resp.name="LeastBellVireo.PresPseudoAbs1", #Name this uniquely
+  )
+```
+
+Then, you can run the models individually using the 'BIOMOD_Modeling' function, adjusting the arguments as necessary.
+
+
+## Custom Model Evaluation
+
+As we saw in the previous lab, biomod2 calcualates evaluation statistics such as the area under the receiver operating curve, and true skill statistic. Biomod2 can also be used to calculate average model projections, and to evaluate fit statistics for averaged models. However, it is useful to understand how to do these things outside of biomod2 - there are a few packages such as ROCR and PresenceAbsence that help with this - we'll work with PresenceAbsence.
+
+Basically, we'll take our final averged output raster (from the main part of the lab), and extract the values for points where we had occurrence data. We'll compare the predictions to the true presences, and the pseudo-absences for now. As mentioned before, it is also good practice to use a separate evaluation dataset if enough are data are available. Just as an example, we'll use the average projections based on the Random Forests algorithm, calculate just prior to this section.
 
 ```{r, eval=FALSE, tidy=TRUE}
 #THe function 'extract' will get the values from the projection raster for the actual data points
@@ -345,7 +369,7 @@ auc.roc.plot(EvalData)
 
 The AUC plot should look something like this: 
 
-![](./Images/Lab8_Pt2_AUCplot1.png)\
+![](../Assignment_Images/Lab8_Pt2_AUCplot1.png)\
 
 The model does not seem to be performing great (AUC=0.74)... however, it is worth noting that the pseudo-absence points can cause artificially lower values, as we do not have confirmed absences at those locations. (One way to deal with this is only by looking at part of the curve - this is called the Partial AUC (pAUC) - see [Peterson et al. 2008. Ecological Modeling 213:63-72](http://www.sciencedirect.com/science/article/pii/S0304380007006163) for further explanation.)
 
@@ -408,6 +432,3 @@ specificity(ConfMat)
 #Kappa:
 Kappa(ConfMat)
 ```
-
-
-***There is still a lot that can be covered on this subject; as you work through any of this on your own projects, I can provide some guidance. There are various R packages that can be employed in species distribution modeling, from organizing data, to evaluating output. Commonly-used ones are biomod2, dismo, and SDMTools. We started with biomod2 because it lets you easily try out a few different model algorithms. However, other packages for SDMs, or even for the specific algorithms (e.g, randomForests for random forests) can allow for greater customizability. Definitely get into the literature, and explore the resources available on the web as you do this.***
