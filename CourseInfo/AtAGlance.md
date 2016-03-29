@@ -19,8 +19,8 @@ This table highlights important dates, with dates for reading discussions and da
 |**Mar. 1**		|[Bone et al. 2013](http://www.sciencedirect.com/science/article/pii/S0143622813000623)| Assignment 5 [Part 1](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.html) ([PDF](./Assignments_web/Assignment05_LandscapeMetrics_Pt1_PatchMosaicData.pdf))/[Part 2](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.html) ([PDF](./Assignments_web/Assignment05_LandscapeMetrics_Pt2_SurfaceMetrics.pdf))	|
 |**Mar. 8**		|[Perez et al. 2010](http://www.sciencedirect.com/science/article/pii/S0047248410001612)| [Assignment 6: Autocorrelation](./Assignments_web/Assignment06_Autocorrelation.html) ([PDF](./Assignments_web/Assignment06_Autocorrelation.pdf))	|
 |**Mar. 22**	|[Kearney et al. 2010](http://onlinelibrary.wiley.com/doi/10.1111/j.1755-263X.2010.00097.x/abstract)| [Assignment 7](./Assignments_web/Assignment07_Mantel_SpRegress.html)	|
-|**Mar. 29**	|TBA| [Project Proposal](./Assignments_web/ProjectProposalGuidelines.pdf)	|
-|**Apr. 5**		|TBA| Assignment 8	[Part 1](./Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html) ([PDF](./Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html))|
+|**Mar. 29**	|[Broenniman et al. 2012](http://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00698.x/abstract)| [Project Proposal](./Assignments_web/ProjectProposalGuidelines.pdf)	|
+|**Apr. 5**		|TBA| Assignment 8	[Part 1](./Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html) ([PDF](./Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html)) 	[Part 2](./Assignments_web/Assignment08_SpeciesDistributionModeling_Pt2.html) ([PDF](./Assignments_web/Assignment08_SpeciesDistributionModeling_Pt2.pdf))|
 |**Apr. 12**	|TBA| Assignment 9	|
 |**Apr. 19**	|TBA| Assignment 10	|
 |**Apr. 21**	|TBA| Project Presentations	|
