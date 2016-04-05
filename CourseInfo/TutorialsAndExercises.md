@@ -25,3 +25,7 @@ date:
 * [Join Count Analysis and Spatial Autocorrelation Metrics in R](./Assignments_web/Assignment06_Autocorrelation.html)
 
 * [Accounting for Spatial Autocorrelation](./Assignments_web/Assignment07_Mantel_SpRegress.html)
+
+* Species Distribution Modeling (using the [Biomod2 R package](https://cran.r-project.org/web/packages/biomod2/index.html)) [(Part 1)](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt1.html) | [(Part 2)](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment08_SpeciesDistributionModeling_Pt2.html)
+
+* [Estimating Home Ranges](http://mltconsecol.github.io/TU_LandscapeAnalysis_Documents/Assignments_web/Assignment09_AnimalMovement.html)
